@@ -4,11 +4,16 @@ body {
     background-color: #CBB2FE;
 }
 
-li {
-    display: inline;
+nav {
+    background-color: #757BC8;
 }
 
-ul {
+nav li {
+    display: inline;
+    margin: 30px;
+}
+
+nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
