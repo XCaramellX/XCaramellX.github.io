@@ -4,6 +4,12 @@ body {
     background-color: #CBB2FE;
 }
 
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
 
 header {
     font-family: Courier, serif;
