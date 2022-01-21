@@ -72,6 +72,29 @@ img{
     bottom: 600px;
 }
 
+.par10 {
+    position: absolute;
+    bottom: 600px;
+}
+
+.par11 {
+    position: absolute;
+    bottom: 700px;
+}
+
+.par12 {
+    position: absolute;
+    right: 900px;
+    bottom: 300px;
+}
+
+.par13 {
+    position: absolute;
+    right: 740px;
+    bottom: 300px;
+}
+
+
 div.absolute{
    position: relative; 
    right: -800px;
