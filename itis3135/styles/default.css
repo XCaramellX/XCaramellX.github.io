@@ -1,5 +1,6 @@
 body {
     font-family: Tahoma, sans-serif;
+    overflow:hidden;
     color: #8187DC;
     background-color: #DAB6FC;
 }
@@ -10,90 +11,90 @@ nav {
     
 }
 
-img{
-    position: absolute;
-    right: 700px;
-    bottom: 400px;
-    width: 600px;
-    height: 300px;
-}
-
-.par{
-    position: absolute;
-    right: 550px;
-    bottom: 360px;
-}
-.par1 {
-    position: absolute;
-    right: 935px;
-    bottom: 300px;
+.par {
+    position: relative;
+    right: -500px;
+    bottom: -100px;
 }
 
 .par2 {
-    position: absolute;
-    right: 880px;
-}
-
-.par3 {
-    position: absolute;
-    right: 900px;
-    bottom: 600px;
+    position: relative;
+    bottom: 250px;
+    right: -800px;
+   
 }
 
 
-.par4{
-    position: absolute;
-    right: 950px;
-}
-
-.par5 {
-    position: absolute;
-    right: 800px;
-}
 
 .par6 {
     position: absolute;
     right: 900px;
 }
 
-.par7 {
-    position: absolute;
-    right: 550px;
-    bottom: 600px;
-}
 
 .par8 {
-    position: absolute;
-    right: 950px;
+    position: relative;
+    bottom: -50px;
+    right: -850px;
 }
 
-.par9 {
-    position: absolute;
-    bottom: 600px;
-}
 
 .par10 {
-    position: absolute;
-    bottom: 600px;
-}
-
-.par11 {
-    position: absolute;
-    bottom: 700px;
+    position: relative;
+    bottom:-150px;
 }
 
 .par12 {
-    position: absolute;
-    right: 900px;
-    bottom: 300px;
+    position: relative;
+    right: -800px;
+    bottom: -100px;
+    margin: 0;
+    padding: 0;
 }
 
 .par13 {
-    position: absolute;
-    right: 740px;
-    bottom: 300px;
+    position: relative;
+    right: -650px;
+    bottom: -100px;
+    margin: 0;
+    padding: 0;
 }
 
+.par14 {
+    position: relative;
+    bottom: -50px;
+    right: -800px;
+}
+
+img {
+    position: relative;
+    right: -600px;
+    bottom: -150px;
+    width: 600px;
+    height: 300px;
+    
+}
+
+
+.image {
+    position: relative;
+    right: 230px;
+    bottom: -70px;
+    height: 50px;
+    width: 100px;
+    margin: 0;
+    padding: 0;
+}
+
+.image a {
+    position: relative;
+    right: 330px;
+    bottom: -70px;
+    height: 50px;
+    width: 100px;
+    margin: 0;
+    padding: 0;
+}
 
 div.absolute{
    position: relative; 
@@ -105,8 +106,27 @@ div.absolute{
 footer {
     position: relative;
     right: -800px;
-    bottom: -600px;
+    bottom: -100px;
 }
+
+.footer1 {
+    position: relative;
+    right: -800px;
+    bottom: -500px;
+}
+
+.footer2 {
+    position: relative;
+    right: 700px;
+    bottom: -1px;
+}
+
+.footer3 {
+    position: relative;
+    right: 350px;
+    bottom: -1px;
+}
+
 
 .topnav a:hover {
     background-color: #B5179E;
@@ -129,14 +149,14 @@ nav ul {
     padding: 0;
 }
 
-nav a{
+nav a {
     color: #DAB6FC;
 
 }
 
 
 header {
-    font-family: Courier, serif;
+    font-family: Tahoma, sans-serif;
     text-align: center;
     color: #7B2CBF;
 }
