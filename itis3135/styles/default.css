@@ -40,6 +40,7 @@ img{
     bottom: 600px;
 }
 
+
 .par4{
     position: absolute;
     right: 950px;
@@ -48,6 +49,27 @@ img{
 .par5 {
     position: absolute;
     right: 800px;
+}
+
+.par6 {
+    position: absolute;
+    right: 900px;
+}
+
+.par7 {
+    position: absolute;
+    right: 550px;
+    bottom: 600px;
+}
+
+.par8 {
+    position: absolute;
+    right: 950px;
+}
+
+.par9 {
+    position: absolute;
+    bottom: 600px;
 }
 
 div.absolute{
