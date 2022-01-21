@@ -34,6 +34,22 @@ img{
     right: 880px;
 }
 
+.par3 {
+    position: absolute;
+    right: 900px;
+    bottom: 600px;
+}
+
+.par4{
+    position: absolute;
+    right: 950px;
+}
+
+.par5 {
+    position: absolute;
+    right: 800px;
+}
+
 div.absolute{
    position: relative; 
    right: -800px;
