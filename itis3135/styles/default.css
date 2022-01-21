@@ -6,6 +6,21 @@ body {
 
 nav {
     background-color: #7B2CBF;
+   
+    
+}
+
+main p {
+   
+
+}
+
+.topnav a:hover {
+    background-color: #B5179E;
+}
+
+.topnav a:active {
+    background-color: #B5179E;
 }
 
 nav li {
@@ -22,6 +37,7 @@ nav ul {
 
 nav a{
     color: #DAB6FC;
+
 }
 
 
