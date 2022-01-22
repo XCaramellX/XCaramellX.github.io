@@ -5,6 +5,10 @@ body {
     background-color: #DAB6FC;
 }
 
+.italized{
+    font-style: italic;
+}
+
 nav {
     background-color: #7B2CBF;
    
@@ -25,13 +29,6 @@ nav {
 }
 
 
-
-.par6 {
-    position: absolute;
-    right: 900px;
-}
-
-
 .par8 {
     position: relative;
     bottom: -50px;
@@ -44,33 +41,11 @@ nav {
     bottom:-150px;
 }
 
-.par12 {
-    position: relative;
-    right: -800px;
-    bottom: -100px;
-    margin: 0;
-    padding: 0;
-}
-
-.par13 {
-    position: relative;
-    right: -650px;
-    bottom: -100px;
-    margin: 0;
-    padding: 0;
-}
-
-.par14 {
+.par11 {
     position: relative;
     bottom: -50px;
-    right: -800px;
 }
 
-.par15 {
-    position: relative;
-    bottom: -50px;
-    right: -880px;
-}
 
 img {
     position: relative;
@@ -80,6 +55,7 @@ img {
     height: 300px;
     
 }
+
 
 
 .image {
@@ -92,15 +68,28 @@ img {
     padding: 0;
 }
 
-.image a {
+.imageb {
     position: relative;
-    right: 330px;
-    bottom: -70px;
-    height: 50px;
-    width: 100px;
-    margin: 0;
-    padding: 0;
+    right: -710px;
+    bottom: -50px;
+    width: 300px;
+    height: 300px;
 }
+
+.figcaption1 {
+    position: relative;
+    right: -840px;
+    bottom: -50px;
+    font-style:italic;
+}
+
+.figcaption2 {
+    position: relative;
+    right: -850px;
+    bottom: -150px;
+    font-style: italic;
+}
+
 
 div.absolute{
    position: relative; 
@@ -133,6 +122,17 @@ footer {
     bottom: -1px;
 }
 
+.footer4 {
+    position: relative;
+    right: -800px;
+    bottom: -200px;
+}
+
+.footer5 {
+    position: relative;
+    right: -800px;
+    bottom: -30px;
+}
 
 .topnav a:hover {
     background-color: #B5179E;
