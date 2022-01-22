@@ -66,6 +66,12 @@ nav {
     right: -800px;
 }
 
+.par15 {
+    position: relative;
+    bottom: -50px;
+    right: -880px;
+}
+
 img {
     position: relative;
     right: -600px;
