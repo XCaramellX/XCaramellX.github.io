@@ -105,13 +105,13 @@ div.absolute{
 
 footer {
     position: relative;
-    right: -800px;
+    right: -900px;
     bottom: -100px;
 }
 
 .footer1 {
     position: relative;
-    right: -800px;
+    right: -900px;
     bottom: -500px;
 }
 
@@ -121,21 +121,15 @@ footer {
     bottom: -1px;
 }
 
-.footer3 {
-    position: relative;
-    right: 350px;
-    bottom: -1px;
-}
-
 .footer4 {
     position: relative;
-    right: -800px;
+    right: -900px;
     bottom: -200px;
 }
 
 .footer5 {
     position: relative;
-    right: -800px;
+    right: -900px;
     bottom: -30px;
 }
 
