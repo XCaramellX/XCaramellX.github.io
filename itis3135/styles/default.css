@@ -1,6 +1,6 @@
 body {
     font-family: Tahoma, sans-serif;
-    overflow:hidden;
+    overflow-x: hidden;
     color: #8187DC;
     background-color: #DAB6FC;
 }
@@ -29,7 +29,7 @@ nav {
 .par2 {
     position: relative;
     bottom: 250px;
-    right: -850px;
+    right: -800px;
    
 }
 
@@ -49,11 +49,12 @@ nav {
 
 .par10 {
     position: relative;
-    bottom:-150px;
+    bottom:-100px;
 }
 
 .par11 {
     position: relative;
+    right: -300px;
     bottom: -50px;
 }
 
@@ -95,7 +96,7 @@ img {
 
 .figcaption2 {
     position: relative;
-    right: -800px;
+    right: -830px;
     bottom: -150px;
     font-style: italic;
 }
@@ -133,7 +134,7 @@ footer {
 nav li {
     display: inline;
     color: #DAB6FC;
-    margin: 10px;
+    margin: 0px;
 }
 
 nav ul {
