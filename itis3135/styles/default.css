@@ -9,6 +9,11 @@ body {
     font-style: italic;
 }
 
+.bolded{
+    font-weight: bold;
+   
+}
+
 nav {
     background-color: #7B2CBF;
    
