@@ -29,7 +29,7 @@ nav {
 .par2 {
     position: relative;
     bottom: 250px;
-    right: -800px;
+    right: -850px;
    
 }
 
@@ -95,7 +95,7 @@ img {
 
 .figcaption2 {
     position: relative;
-    right: -850px;
+    right: -800px;
     bottom: -150px;
     font-style: italic;
 }
@@ -110,56 +110,15 @@ div.absolute{
 
 footer {
     position: relative;
-    right: -900px;
-    bottom: -100px;
+    right: -800px;
+    bottom: -150px;
 }
 
 .footer1 {
     position: relative;
-    right: -900px;
-    bottom: -500px;
-}
-
-.footer2 {
-    position: relative;
-    right: 1030px;
-    bottom: -1px;
-}
-
-.footer4 {
-    position: relative;
-    right: -900px;
-    bottom: -200px;
-}
-
-.footer5 {
-    position: relative;
-    right: -900px;
-    bottom: -30px;
-}
-
-.footer6 {
-    position: relative;
-    right: 980px;
-    bottom: -1px;
-}
-
-.footer7 {
-    position: relative;
-    right: 1000px;
-    bottom: -1px;
-}
-
-.footer8 {
-    position: relative;
-    right: 720px;
-    bottom: -1px;
-}
-
-.footer9 {
-    position: relative;
-    right: 700px;
-    bottom: -1px;
+    color: #7B2CBF;
+    right: -450px;
+    bottom: -150px;
 }
 
 .topnav a:hover {
