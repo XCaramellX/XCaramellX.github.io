@@ -180,7 +180,19 @@ table tr:nth-child(odd) {
     background-color: #7B2CBF;
     color: #DAB6FC;
 }
- 
 
+.buttoncolor {
+    background-color: #7B2CBF;
+    color: #DAB6FC;
+}
 
+.form1 {
+    position: relative;
+    bottom: -50px;
+    background-color: #B5179E;
+    font-family: Tahoma, sans-serif;
+    color: #DAB6FC;
+    width: 400px;
+    right: -700px;
 
+}
