@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <title>
-        Parker Randolph |  ITIS 3135 | Tables
+        Parker Randolph &#339; ITIS 3135 &#339; Tables
     </title>
     <link href="styles/default.css" type="text/css" rel="stylesheet">
 </head>
@@ -19,59 +19,143 @@
                 <ul>
                     <li><a class="active" href="index.html"><span class="bolded"> Home </span></a> &#339;</li>
                     <li><a href="introduction.html"><span class="bolded"> Introduction</span></a> &#339;</li>
-                    <li><a href="contract.html"><span class="bolded">Contract</span></a></li>
+                    <li><a href="contract.html"><span class="bolded">Contract</span></a> &#339;</li>
+                    <li><a href="tables.html"><span class="bolded">HTML Tables</span></a></li>
 
                 </ul>
             </div>
         </nav>
     </header>
     <main>
-        <h3 class="par8">
-            Introduction
-        </h3>
-        <figure>
-            <img class="imageb" src="images\picofme.png" alt="It's me! Parker Randolph">
-            <figcaption class="figcaption1">It's me!</figcaption>
-        </figure>
+        <h2 class="par8">
+            HTML Tables
+        </h2>
+             <h3>
+                 My Tabular Data:
+             </h3>
+             <ol>
+                 <li><span class="bolded">Carter Ellis</span>: cellis@uncc.edu 12</li>
+                 <li><span class="bolded">David West</span>: dwest@gmail.com</li>
+                 <li><span class="bolded">Hope Bardot</span>: hbardot@gmail.com 9</li>
+                 <li><span class="bolded">Jacob Lopez</span>: jlopez@gmail.com 4</li>
+                 <li><span class="bolded">Jaden Adams</span>: jadams@uncc.edu 5</li>
+                 <li><span class="bolded">Jessica Hart</span>: jhart@gmail.com 7</li>
+                 <li><span class="bolded">Sorin Maxwell</span>: smaxwell@uncc.edu 40</li>
+             </ol>
+               <h3>
+                   Employee Data in Simple Table
+               </h3>
+               <table>
+                   <tr>
+                       <th>Name</th>
+                       <th>Email</th>
+                       <th>Years Of Service</th>
+                   </tr>
+                   <tr>
+                       <td>Jacob Lopez</td>
+                       <td>jlopez@gmail.com</td>
+                       <td>4</td>
+                   </tr>
+                   <tr>
+                       <td>Sorin Maxwell</td>
+                       <td>smaxwell@uncc.edu</td>
+                       <td>40</td>
+                   </tr>
+                   <tr>
+                       <td>Jessica Hart</td>
+                       <td>jlopez@gmail.com</td>
+                       <td>7</td>
+                   </tr>
+                   <tr>
+                       <td>David West</td>
+                       <td>dwest@gmail.com</td>
+                       <td>3</td>
+                   </tr>
+                   <tr>
+                       <td>Hope Bardot</td>
+                       <td>hbardot@gmail.com</td>
+                       <td>9</td>
+                   </tr>
+                   <tr>
+                       <td>Carter Ellis</td>
+                       <td>cellis@uncc.edu</td>
+                       <td>12</td>
+                   </tr>
+                   <tr>
+                       <td>Jaden Adams</td>
+                       <td>jadams@uncc.edu</td>
+                       <td>5</td>
+                   </tr>
+               </table>
+               <h3>
+                   Employee Data in Complex Table
+               </h3>
+               <figure class="table1">
+                   <figcaption class="figcaption3">Employee Information</figcaption>
+                   <table>
+                       <tr>
+                           <th></th>
+                           <th scope="col">Name</th>
+                           <th scope="col">Email</th>
+                           <th scope="col">Years Of Service</th>
+                           <th scope="col">Includes monthly salary</th>
+                       </tr>
+                       <tr>
+                           <th rowspan="3">Marketing</th>
+                           <td headers="mar name">Jacob Lopez</td>
+                           <td headers="mar email">jlopez@gmail.com</td>
+                           <td headers="mar service">4</td>
+                           <td headers="mar salary" rowspan="3">$6000</td>
+                       </tr>
+                       <tr>
 
-        <p>
-            <div class="par11">
-                <ul>
-                    <li>
-                        <span class="bolded">Personal Background</span>: My name is Parker Randolph, I'm 22 and I was born in Hawaii.<br>
-                        I've been in a military family all my life so we moved around a lot. We moved to Georgia in 2008 and then to North Carolina in 2012 and been here ever since.
-                    </li>
-                    <li>
-                        <span class="bolded">Professional Background</span>: I don't have a professional working back ground yet.
-                    </li>
-                    <li>
-                        <span class="bolded">Academic Background</span>: I'm a Undergraduate at Charlotte University and I will graduate with a B.A in Computer Science.
-                    </li>
-                    <li>
-                        <span class="bolded">Background in Course</span>: I took a Software engineering class the semester before I took ITIS 3135. I learned some HTML and CSS but not much.
-                    </li>
-                    <li>
-                        <span class="bolded">Primary Computer Platform</span>: My primary computer platform is my Desktop computer. I find it more comfertable to use than Laptops.
-                    </li>
-                    <li>
-                        <span class="bolded">Courses Taking and why</span>:
-                        <ul>
-                            <li>ITIS-3135 Web App Design and Development: This class looks like it would be fun and I wouldn't mind fron't end devlopment</li>
-                            <li>ITCS-3134 Digital Image Processing: A required class for my degree</li>
-                            <li>ITCS-3160 Database Design & Implementation: A required class for my degree</li>
-                            <li>ITIS-3130 Human Centered Design: A required class for my degree and it looks pretty easy to do as of now.</li>
+                           <td headers="mar name">Sorin Maxwell</td>
+                           <td headers="mar email">smaxwell@uncc.edu</td>
+                           <td headers="mar service">40</td>
+                       </tr>
+                       <tr>
 
-                        </ul>
-                    </li>
-                    <li>
-                        <span class="bolded">My Stories</span>: There was one time where on campus I fell down the stairs near my dorm building.<br>
-                        I sprained my ankle, so it was harder to get around campus and I was happy when we got online classes.
-                    </li>
-                    <li><span class="bolded">Something else about me</span>: I haven't been on campus since 2020 because of covid-19 so most of my classes have been online. </li>
+                           <td headers="mar name">Jessica Hart</td>
+                           <td headers="mar email">jlopez@gmail.com</td>
+                           <td headers="mar service">7</td>
+                       </tr>
+                       <tr>
+                           <th rowspan="3">Sales</th>
+                           <td headers="sales name">David West</td>
+                           <td headers="sales email">dwest@gmail.com</td>
+                           <td headers="sales service">3</td>
+                           <td headers="sales salary" rowspan="3">$4000</td>
+                       </tr>
+                       <tr>
 
-                </ul>
-            </div>
-        </p>
+                           <td headers="sales name">Hope Bardot</td>
+                           <td headers="sales email">hbardot@gmail.com</td>
+                           <td headers="sales service">9</td>
+                       </tr>
+                       <tr>
+
+                           <td headers="sales name">Carter Ellis</td>
+                           <td headers="sales email">cellis@uncc.edu</td>
+                           <td headers="sales service">12</td>
+                       </tr>
+                       <tr>
+
+                           <th rowspan="1">Accounting</th>
+                           <td headers="ac name">Jaden Adams</td>
+                           <td headers="ac email">jadams@uncc.edu</td>
+                           <td headers="ac service">5</td>
+                           <td headers="ac salary" rowspan="1">$7000</td>
+                           
+
+                       </tr>
+                       <tr>
+                           <th colspan="3">Total Years of Service</th>
+                           <td headers="total years">80</td>
+                           <td headers="total salary">$17000</td>
+                       </tr>
+                   </table>
+               </figure>
+
     </main>
     <footer class="footer1">
 

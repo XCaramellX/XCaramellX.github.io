@@ -1,3 +1,9 @@
+header {
+    font-family: Tahoma, sans-serif;
+    text-align: center;
+    color: #7B2CBF;
+}
+
 body {
     font-family: Tahoma, sans-serif;
     overflow-x: hidden;
@@ -20,6 +26,23 @@ nav {
     
 }
 
+nav li {
+    display: inline;
+    color: #DAB6FC;
+    margin: 0px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    color: #DAB6FC;
+
+}
+
 .par {
     position: relative;
     right: -500px;
@@ -33,11 +56,10 @@ nav {
    
 }
 
-
 .par8 {
     position: relative;
     bottom: -50px;
-    right: -850px;
+    right: -830px;
 }
 
 .par9 {
@@ -101,6 +123,13 @@ img {
     font-style: italic;
 }
 
+.figcaption3 {
+    position: relative;
+    right: -220px;
+    bottom: -230px;
+    font-style: italic;
+}
+
 
 div.absolute{
    position: relative; 
@@ -131,26 +160,27 @@ footer {
     color: white;
 }
 
-nav li {
-    display: inline;
+ th, td {
+    border: 1px solid black;
+   
+    
+}
+
+table {
+    position: relative;
+    border-spacing: 0px;
+}
+
+.table1{
+    position: relative;
+    left: -40px;
+}
+
+table tr:nth-child(odd) {
+    background-color: #7B2CBF;
     color: #DAB6FC;
-    margin: 0px;
 }
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-nav a {
-    color: #DAB6FC;
-
-}
+ 
 
 
-header {
-    font-family: Tahoma, sans-serif;
-    text-align: center;
-    color: #7B2CBF;
-}
+
