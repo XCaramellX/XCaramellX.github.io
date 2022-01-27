@@ -38,7 +38,9 @@ nav ul {
     padding: 0;
 }
 
-
+a:link {
+    color: #97DFFC;
+}
 
 a:visited {
     color: #8187DC;
