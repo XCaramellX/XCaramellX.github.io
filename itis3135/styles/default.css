@@ -11,14 +11,6 @@ body {
     background-color: #DAB6FC;
 }
 
-.italized{
-    font-style: italic;
-}
-
-.bolded{
-    font-weight: bold;
-   
-}
 
 nav {
     background-color: #7B2CBF;
@@ -126,21 +118,21 @@ img {
     position: relative;
     right: -840px;
     bottom: -50px;
-    font-style:italic;
+    
 }
 
 .figcaption2 {
     position: relative;
     right: -830px;
     bottom: -150px;
-    font-style: italic;
+    
 }
 
 .figcaption3 {
     position: relative;
     right: -220px;
     bottom: -230px;
-    font-style: italic;
+   
 }
 
 
