@@ -38,9 +38,10 @@ nav ul {
     padding: 0;
 }
 
-nav a {
-    color: #DAB6FC;
 
+
+a:visited {
+    color: #8187DC;
 }
 
 .par {
@@ -77,6 +78,16 @@ nav a {
 .par11 {
     position: relative;
     right: -300px;
+    bottom: -50px;
+}
+
+.par12 {
+    position: relative;
+    bottom: -50px;
+}
+
+.par13 {
+    position: relative;
     bottom: -50px;
 }
 
@@ -140,6 +151,7 @@ div.absolute{
 
 footer {
     position: relative;
+    color: #DAB6FC;
     right: -800px;
     bottom: -150px;
 }
@@ -151,13 +163,8 @@ footer {
     bottom: -150px;
 }
 
-.topnav a:hover {
-    background-color: #B5179E;
-}
-
 .topnav a.active {
-    background-color: #B5179E;
-    color: white;
+    color: #DAB6FC;
 }
 
  th, td {
