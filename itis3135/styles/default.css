@@ -100,13 +100,20 @@ a:visited
     bottom: -50px;
 }
 
+.par14 
+{
+    position: relative;
+    bottom: -50px;
+    right: -840px;
+}
+
 
 img 
 {
     position: relative;
-    right: -600px;
+    right: -700px;
     bottom: -150px;
-    width: 600px;
+    width: 400px;
     height: 300px;
     
 }
@@ -135,16 +142,16 @@ img
 .figcaption1 
 {
     position: relative;
-    right: -840px;
-    bottom: -50px;
+    right: -850px;
+    bottom: -150px;
     
 }
 
 .figcaption2 
 {
     position: relative;
-    right: -830px;
-    bottom: -150px;
+    right: -800px;
+    bottom: -50px;
     
 }
 
