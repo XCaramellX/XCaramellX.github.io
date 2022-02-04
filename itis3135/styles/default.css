@@ -1,3 +1,12 @@
+body 
+{
+    font-family: Tahoma, sans-serif;
+    margin-left: 150px;
+    margin-right: 150px;
+    color: #8187DC;
+    background-color: #DAB6FC;
+}
+
 header 
 {
     font-family: Tahoma, sans-serif;
@@ -5,192 +14,46 @@ header
     color: #7B2CBF;
 }
 
-body 
+footer 
 {
-    font-family: Tahoma, sans-serif;
-    overflow-x: hidden;
-    color: #8187DC;
-    background-color: #DAB6FC;
+    text-align: center;
+    margin-top: 25px;
+    color: #DAB6FC;
+    
+}
+
+
+figure, h2{
+    text-align: center;
+}
+
+figcaption
+{
+    font-style: italic;
+
 }
 
 
 nav 
 {
     background-color: #7B2CBF;
-   
-    
+    padding: 5px;
+
 }
 
 nav li 
 {
     display: inline;
-    color: #DAB6FC;
-    margin: 0px;
-}
-
-nav ul 
-{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-a:link 
-{
-    color: #528AAE;
-}
-
-a:visited 
-{
-    color:  #FFFFFF;
-}
-
-.par 
-{
-    position: relative;
-    right: -500px;
-    bottom: -100px;
-}
-
-.par2 
-{
-    position: relative;
-    bottom: 250px;
-    right: -800px;
-   
-}
-
-.par8 
-{
-    position: relative;
-    bottom: -50px;
-    right: -830px;
-}
-
-.par9 
-{
-    position: relative;
-    bottom: -50px;
-    right: -900px;
-}
-
-
-.par10 
-{
-    position: relative;
-    bottom:-100px;
-}
-
-.par11 
-{
-    position: relative;
-    right: -300px;
-    bottom: -50px;
-}
-
-.par12 
-{
-    position: relative;
-    bottom: -50px;
-}
-
-.par13 
-{
-    position: relative;
-    bottom: -50px;
-}
-
-.par14 
-{
-    position: relative;
-    bottom: -50px;
-    right: -840px;
-}
-
-
-img 
-{
-    position: relative;
-    right: -700px;
-    bottom: -150px;
-    width: 400px;
-    height: 300px;
     
+    color: #DAB6FC;  
 }
 
 
-.image 
-{
-    position: relative;
-    right: 230px;
-    bottom: -70px;
-    height: 50px;
-    width: 100px;
-    margin: 0;
-    padding: 0;
-}
 
-.imageb 
+a
 {
-    position: relative;
-    right: -710px;
-    bottom: -50px;
-    width: 300px;
-    height: 300px;
-}
-
-.figcaption1 
-{
-    position: relative;
-    right: -850px;
-    bottom: -150px;
-    
-}
-
-.figcaption2 
-{
-    position: relative;
-    right: -800px;
-    bottom: -50px;
-    
-}
-
-.figcaption3 
-{
-    position: relative;
-    right: -220px;
-    bottom: -230px;
-   
-}
-
-
-div.absolute
-{
-   position: relative; 
-   right: -800px;
-   bottom: -550px;
-    
-}
-
-footer 
-{
-    position: relative;
-    color: #DAB6FC;
-    right: -800px;
-    bottom: -150px;
-}
-
-.footer1 
-{
-    position: relative;
-    color: #7B2CBF;
-    right: -450px;
-    bottom: -150px;
-}
-
-.topnav a.active 
-{
-    color: #DAB6FC;
+    text-decoration: none;
+    color: #FFFFFF;
 }
 
  th, td 
@@ -224,14 +87,11 @@ table tr:nth-child(odd)
     color: #DAB6FC;
 }
 
-.form1 
+form 
 {
     position: relative;
     bottom: -50px;
     background-color: #B5179E;
     font-family: Tahoma, sans-serif;
     color: #DAB6FC;
-    width: 400px;
-    right: -700px;
-
 }

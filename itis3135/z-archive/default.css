@@ -1,0 +1,219 @@
+header 
+{
+    font-family: Tahoma, sans-serif;
+    text-align: center;
+    color: #7B2CBF;
+}
+
+body 
+{
+    font-family: Tahoma, sans-serif;
+    color: #8187DC;
+    background-color: #DAB6FC;
+}
+
+
+nav 
+{
+    background-color: #7B2CBF;
+   
+    
+}
+
+nav li 
+{
+    display: inline;
+    color: #DAB6FC;
+    margin: 0px;
+}
+
+nav ul 
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+a:link 
+{
+    color: #528AAE;
+}
+
+a:visited 
+{
+    color:  #FFFFFF;
+}
+
+.par 
+{
+    position: relative;
+    right: -500px;
+    bottom: -100px;
+}
+
+.par2 
+{
+    position: relative;
+    bottom: 250px;
+    right: -800px;
+   
+}
+
+.par8 
+{
+    position: relative;
+    bottom: -50px;
+    right: -830px;
+}
+
+.par9 
+{
+    position: relative;
+    bottom: -50px;
+    right: -900px;
+}
+
+
+.par10 
+{
+    position: relative;
+    bottom:-100px;
+}
+
+.par11 
+{
+    position: relative;
+    right: -300px;
+    bottom: -50px;
+}
+
+.par12 
+{
+    position: relative;
+    bottom: -50px;
+}
+
+.par13 
+{
+    position: relative;
+    bottom: -50px;
+}
+
+.par14 
+{
+    position: relative;
+    bottom: -50px;
+    right: -840px;
+}
+
+
+.imageb 
+{
+    position: relative;
+    right: -710px;
+    bottom: -50px;
+    width: 300px;
+    height: 300px;
+}
+
+.figcaption1 
+{
+    position: relative;
+    right: -850px;
+    bottom: -150px;
+    
+}
+
+.figcaption2 
+{
+    position: relative;
+    right: -800px;
+    bottom: -50px;
+    
+}
+
+.figcaption3 
+{
+    position: relative;
+    right: -220px;
+    bottom: -230px;
+   
+}
+
+
+div.absolute
+{
+   position: relative; 
+   right: -800px;
+   bottom: -550px;
+    
+}
+
+footer 
+{
+    position: relative;
+    color: #DAB6FC;
+    right: -800px;
+    bottom: -150px;
+}
+
+.footer1 
+{
+    position: relative;
+    color: #7B2CBF;
+    right: -450px;
+    bottom: -150px;
+}
+
+.topnav a.active 
+{
+    color: #DAB6FC;
+}
+
+ th, td 
+ {
+    border: 1px solid black;
+   
+    
+}
+
+table 
+{
+    position: relative;
+    border-spacing: 0px;
+}
+
+.table1
+{
+    position: relative;
+    left: -40px;
+}
+
+table tr:nth-child(odd) 
+{
+    background-color: #7B2CBF;
+    color: #DAB6FC;
+}
+
+.buttoncolor 
+{
+    background-color: #7B2CBF;
+    color: #DAB6FC;
+}
+
+.form1 
+{
+    position: relative;
+    bottom: -50px;
+    background-color: #B5179E;
+    font-family: Tahoma, sans-serif;
+    color: #DAB6FC;
+    width: 400px;
+    right: -700px;
+
+}
