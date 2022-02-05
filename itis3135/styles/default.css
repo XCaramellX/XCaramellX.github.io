@@ -18,10 +18,8 @@ footer
 {
     text-align: center;
     margin-top: 25px;
-    color: #DAB6FC;
-    
+   
 }
-
 
 figure, h2{
     text-align: center;
@@ -30,54 +28,47 @@ figure, h2{
 figcaption
 {
     font-style: italic;
-
 }
 
+.figcaption1
+{
+    font-style: italic;
+    left: 200px;
+}
 
 nav 
 {
     background-color: #7B2CBF;
     padding: 5px;
-
 }
 
 nav li 
 {
     display: inline;
-    
     color: #DAB6FC;  
 }
-
-
 
 a
 {
     text-decoration: none;
-    color: #FFFFFF;
+    color: blanchedalmond;
 }
 
 a:hover{
     text-decoration: underline;
-    color: red;
+    color: mintcream;
 }
 
  th, td 
  {
     border: 1px solid black;
-   
-    
+
 }
 
 table 
 {
     position: relative;
     border-spacing: 0px;
-}
-
-.table1
-{
-    position: relative;
-    left: -40px;
 }
 
 table tr:nth-child(odd) 
@@ -93,8 +84,9 @@ table tr:nth-child(odd)
 }
 
 form 
-{
-    width: 50%;
+{   position: relative;
+    left: 550px;
+    width: 30%;
     padding:10px;
     background-color: #B5179E;
     color: #DAB6FC;
