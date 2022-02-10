@@ -7,6 +7,7 @@
         Parker Randolph &#339; ITIS 3135 &#339; Form
     </title>
     <link href="styles/default.css" type="text/css" rel="stylesheet">
+    <script src="scripts/defaultscripts.js"></script>
 </head>
 
 <body>
@@ -22,7 +23,8 @@
                 <li><a href="tables.html"><strong>Tables</strong></a> &#339;</li>
                 <li><a href="form.html"><strong>Form</strong></a> &#339;</li>
                 <li><a href="website_evaluations.html"><strong>Website Evaluations</strong></a> &#339;</li>
-                <li><a href="brand-plum-rabbit.html"><strong>My Brand</strong></a></li>
+                <li><a href="brand-plum-rabbit.html"><strong>My Brand</strong></a> &#339;</li>
+                <li><a href="firstjs.html"><strong>My First JS</strong></a></li>
 
             </ul>
         </nav>
@@ -31,7 +33,8 @@
         <h2>
             HTML Form
         </h2>
-        <form action="#">
+        <h3 id="tvalues"><button onclick="textValues()">Form Values</button></h3>
+        <form id="formvalues" action="#">
             <label for="fname">(Required) First name:</label>
             <input type="text" id="fname" name="fname" required><br><br>
             <label for="lname">(Required) Last name:</label>
