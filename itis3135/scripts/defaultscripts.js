@@ -26,8 +26,11 @@ function greetings()
     let fname = document.getElementById("fname").value;
     let lname = document.getElementById("lname").value;
     let feeling = document.getElementById("feeling").value;
-    document.getElementById("nameprompt").innerHTML = "Plum Rabbit welcomes you, " + fname + " " + lname + "!" + " it seems your feeling " + feeling;
+    document.getElementById("nameprompt").innerHTML = "Plum Rabbit welcomes you, " + fname + " " + lname + "!" + 
+    " it seems your feeling " + feeling;
    
 }
+
+
 
 
