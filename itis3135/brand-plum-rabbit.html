@@ -44,6 +44,51 @@
                 text-decoration: underline;
                 color: mintcream;
         }
+
+                .dropdown
+        {  
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdownbutton 
+        {
+            background-color: #7B2CBF;
+            color: blanchedalmond;
+            font-size:inherit;
+            border: none;
+        }
+
+        .dropdowncontent {
+            display: none;
+            position: absolute;
+            background-color: #7B2CBF;
+            min-width: 100px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+
+        .dropdowncontent a
+        {
+            color: blanchedalmond;
+            display: block;
+        }
+
+        .dropdowncontent a:hover 
+        {
+            color: mintcream;
+        }
+
+        .dropdown:hover .dropdowncontent
+        {
+    
+            display: block;
+        }
+
+        .dropdown:hover .dropdownbutton
+        {
+            background-color: #7B2CBF;
+        }
         .imageb 
         {
             position: relative;
@@ -73,10 +118,10 @@
 <body>
     <header>
         <h1>
-            Plum Rabbit <img class="imageb" src="images/purplerabbit(116x120)(flyclipart.com).png" alt="It's me! Parker Randolph">
+            Plum Rabbit <img class="imageb" src="images/purplerabbit(116x120)(flyclipart.com).png" alt="a purple rabbit">
         </h1>
         <nav>
-               <ul>
+            <ul>
                 <li><a href="index.html"><strong>Home</strong></a> &#339;</li>
                 <li><a href="introduction.html"><strong>Introduction</strong></a> &#339;</li>
                 <li><a href="contract.html"><strong>Contract</strong></a> &#339;</li>
@@ -84,18 +129,25 @@
                 <li><a href="form.html"><strong>Form</strong></a> &#339;</li>
                 <li><a href="website_evaluations.html"><strong>Website Evaluations</strong></a> &#339;</li>
                 <li><a href="brand-plum-rabbit.html"><strong>My Brand</strong></a> &#339;</li>
-                <li><a href="firstjs.html"><strong>My First JS</strong></a> &#339;</li>
-                <li><a href="NEW& PAGE.htm"><strong>CRAPPY WEBPAGE</strong></a></li>
-
-                </ul>
+                <li>
+                    <div class="dropdown">
+                        <button class="dropdownbutton"><strong>Activities</strong></button>
+                        <div class="dropdowncontent">
+                            <a href="firstscripts.html"><strong>My First JS</strong></a>
+                            <a href="activity4.html"><strong>Activity #4</strong></a>
+                            <a href="activity6.html"><strong>Activity #6</strong></a>
+                        </div>
+                    </div> &#339;
+                <li><a href="stuff/NEW& PAGE.htm"><strong>CRAPPY WEBPAGE</strong></a></li>
+            </ul>
         </nav>
 
     </header>
     <main>
         <h2>
-            My Brand 
+            My Brand
         </h2>
-         
+
         <p>
             At Plum Rabbit Designs I design logos for specfic company websites like gaming companies and movie companies. I provide my client with quality<br>
             logs to make their company pop!. I provide the logs in a timely manner and communicate with you everystep of the way.<br><br>
@@ -118,24 +170,13 @@
             <strong>Company mailing adderss:</strong> 147 Radroe Rd.
 
         </p>
-       
+
     </main>
     <footer>
-        <a href="https://webpages.charlotte.edu/prandol4/"><strong>Charlotte.edu</strong></a> &#339;
-        <a href="https://github.com/XCaramellX"><strong>Github</strong></a> &#339;
-        <a href="https://xcaramellx.github.io/"><strong>Github.io</strong></a> &#339;
-        <a href="https://xcaramellx.github.io/itis3135/"><strong>ITIS 3135 Github Pages</strong></a> &#339;
-        <a href="https://www.codecademy.com/profiles/ParkerRandolph"><strong>Codeacadamy</strong></a> &#339;
-        <a href="https://www.freecodecamp.org/XCaraX"><strong>freeCodeCamp</strong></a> &#339;
-        <a href="https://jsfiddle.net/user/Caramell/fiddles/"><strong>JSFiddle</strong></a> &#339;
-        <a href="https://www.linkedin.com/in/parker-randolph-655653202/"><strong>Linkedin</strong></a> &#339;
-
-        <p>
-            <a href="randolphinc.co/index.html">Designed by Randolph Inc &copy;2022.</a>
-        </p>
-        <a href="https://validator.w3.org/"> <img src="images/button_validation_html5.png" alt="HTML Validation"></a>
-        <a href="https://jigsaw.w3.org/css-validator/"> <img src="images/button_validation_css.png" alt="CSS Validation"></a>
+        <div data-include="components/footer.html"></div>
     </footer>
+
+    <script src="scripts/include.min.js"></script>
 
 </body>
 

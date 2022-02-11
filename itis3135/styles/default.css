@@ -54,13 +54,59 @@ a
     color: blanchedalmond;
 }
 
-a:hover{
+a:hover
+{
     text-decoration: underline;
     color: mintcream;
 }
 
- th, td 
- {
+.dropdown
+{  
+    position: relative;
+    display: inline-block;
+}
+
+.dropdownbutton 
+{
+    background-color: #7B2CBF;
+    color: blanchedalmond;
+    font-size:inherit;
+    border: none;
+}
+
+.dropdowncontent {
+    display: none;
+    position: absolute;
+    background-color: #7B2CBF;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdowncontent a
+{
+    color: blanchedalmond;
+    display: block;
+}
+
+.dropdowncontent a:hover 
+{
+    color: mintcream;
+}
+
+.dropdown:hover .dropdowncontent
+{
+    
+    display: block;
+}
+
+.dropdown:hover .dropdownbutton
+{
+    background-color: #7B2CBF;
+}
+
+th, td 
+{
     border: 1px solid black;
 
 }
