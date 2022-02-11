@@ -23,10 +23,10 @@ function myTime() {
 
 function greetings()
 {
-    var fname = document.getElementById("fname").value;
-    var lname = document.getElementById("lname").value;
+    var firstname = document.getElementById("firstname").value;
+    var lastname = document.getElementById("lastname").value;
     var feeling = document.getElementById("feeling").value;
-    document.getElementById("nameprompt").innerHTML = "Plum Rabbit welcomes you, " + fname + " " + lname + "!" + 
+    document.getElementById("greeting").innerHTML = "Plum Rabbit welcomes you, " + firstname + " " + lastname + "!" + 
     " it seems your feeling " + feeling;
    
 }
@@ -47,6 +47,36 @@ function repeatString()
  
    document.getElementById("rstring").innerHTML = a.repeat(50) ;
  
+}
+
+function rabbits()
+{
+    var firstname = document.getElementById("firstname1").value;
+    var lastname = document.getElementById("lastname1").value;
+    document.getElementById("rabbit").innerHTML = "Welcome our new rabbit, " + firstname + " " + lastname + "!";
+
+}
+
+function addRabbits()
+{
+    var number = document.getElementById("number1").value;
+    var number2 = document.getElementById("number2").value;
+
+    var sumNumber = parseInt(number) + parseInt(number2);
+
+    document.getElementById("sumofrabbits").innerHTML = "Total number of rabbits " + sumNumber;
+}
+
+function multiplyRabbits()
+{
+    var number = document.getElementById("number3").value;
+    var number2 = document.getElementById("number4").value;
+
+    var multiplyNumber = parseInt(number) * parseInt(number2);
+
+
+    document.getElementById("multirabbits").innerHTML = "Multiplied Rabbits: " + multiplyNumber;
+    
 }
 
 
