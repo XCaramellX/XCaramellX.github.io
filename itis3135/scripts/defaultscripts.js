@@ -79,6 +79,62 @@ function multiplyRabbits()
     
 }
 
+function getShape()
+{
+    var text;
+    var sides = prompt("Plum Rabbit would like to know how many sides the shape is", "1");
+    validateEntry(sides)
+    switch(sides)
+    {
+        case "1":
+            text = "henagon";
+            break;
+        case "2":
+            text = "digon";
+            break;
+        case "3":
+            text = "trigon";
+            break;
+        case "4": 
+            text = "tetragon";
+            break;
+        case "5":
+            text = "pentagon";
+            break;
+        case "6":
+            text = "hexagon";
+            break;
+        case "7":
+            text = "heptagon";
+            break;
+        case "8":
+            text = "octagon";
+            break;
+        case "9":
+            text = "enneagon";
+            break;
+        case "10":
+            text = "decagon";
+            break;
+        default:
+            if (sides > 10) {
+                text = "Your number is too high!";
+            }
+
+    }
+    document.getElementById("numberofsides").innerHTML = text;
+
+}
+
+function validateEntry(sides) {
+
+    if (sides < 1)
+    {
+        alert("The number of sides is invalid. Please try again");
+    }
+    
+}
+
 
 
 
