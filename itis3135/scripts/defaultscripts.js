@@ -23,12 +23,30 @@ function myTime() {
 
 function greetings()
 {
-    let fname = document.getElementById("fname").value;
-    let lname = document.getElementById("lname").value;
-    let feeling = document.getElementById("feeling").value;
+    var fname = document.getElementById("fname").value;
+    var lname = document.getElementById("lname").value;
+    var feeling = document.getElementById("feeling").value;
     document.getElementById("nameprompt").innerHTML = "Plum Rabbit welcomes you, " + fname + " " + lname + "!" + 
     " it seems your feeling " + feeling;
    
+}
+
+function add1to5Numbers()
+{
+    var sumOfNumbers = 0;
+    var numberOfLoops = 5;
+    for(var i = 0; i <= numberOfLoops; i++){
+        sumOfNumbers += i;
+    }
+    document.getElementById("1to5").innerHTML = sumOfNumbers + " Rabbits";
+}
+
+function repeatString()
+{
+    var a = "Plum Rabbit!" + "<br>";
+ 
+   document.getElementById("rstring").innerHTML = a.repeat(50) ;
+ 
 }
 
 

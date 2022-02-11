@@ -24,8 +24,8 @@
                 <li><a href="form.html"><strong>Form</strong></a> &#339;</li>
                 <li><a href="website_evaluations.html"><strong>Website Evaluations</strong></a> &#339;</li>
                 <li><a href="brand-plum-rabbit.html"><strong>My Brand</strong></a> &#339;</li>
-                <li><a href="firstjs.html"><strong>My First JS</strong></a> &#339;</li>
-                <li><a href="NEW& PAGE.htm"><strong>CRAPPY WEBPAGE</strong></a></li>
+                <li><a href="firstscripts.html"><strong>My First JS</strong></a> &#339;</li>
+                <li><a href="stuff/NEW& PAGE.htm"><strong>CRAPPY WEBPAGE</strong></a></li>
             </ul>
         </nav>
     </header>
@@ -39,14 +39,22 @@
         <p>Please tell me your name and how you are feeling today!</p>
 
         <label for="fname"> * First Name:</label>
-        <input type="text" id="fname" name="fname" required>
+        <input type="text" id="fname" name="fname" value = "Parker" required>
         <label for="lname"> * last Name:</label>
-        <input type="text" id="lname" name="lname" required>
-        <label for="feeling">How are you feeling?:</label>
-        <input type="text" id="feeling" name="feeling">
-        <input class="buttoncolor" type="submit" value="Submit">
 
-        <p id="nameprompt"><button onclick="greetings()">Greetings!</button></p>
+        <input type="text" id="lname" name="lname" value = "Randolph" required>
+        <label for="feeling">How are you feeling?:</label>
+
+        <input type="text" id="feeling" name="feeling" value = "good">
+       
+        <input type= "button" onclick="greetings()" value= "Greetings!">
+        <p id="nameprompt"></p>
+
+        <p id="1to5"><button onclick="add1to5Numbers()">Adding numbers 1 to 5!</button></p>
+
+        <p id="rstring"><button onclick="repeatString()">Repeating String!</button></p>
+
+
 
     </main>
 
