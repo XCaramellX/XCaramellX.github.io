@@ -78,7 +78,7 @@ a:hover
     display: none;
     position: absolute;
     background-color: #7B2CBF;
-    min-width: 100px;
+    min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -103,6 +103,11 @@ a:hover
 .dropdown:hover .dropdownbutton
 {
     background-color: #7B2CBF;
+}
+
+.calcbutton {
+    background-color: #B5179E;
+    color: #DAB6FC;
 }
 
 th, td 
@@ -136,4 +141,75 @@ form
     padding:10px;
     background-color: #B5179E;
     color: #DAB6FC;
+}
+
+
+.calculator
+{
+    border-radius: 12px;
+    box-shadow: 0 0 40px 0px rgba(0,0,0,0.15);
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 2em;
+    max-width: 15em;
+    overflow: hidden;
+
+}
+
+.calculator_display 
+{
+    background-color: #7B2CBF;
+    color: #DAB6FC;
+    font-size: 1.714285714em;
+    padding: 0.5em 0.75em;
+    text-align: right;
+}
+
+.calculator_keys 
+{
+
+    background-color: blanchedalmond;
+    display: grid;
+    gap: 1px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.calculator_keys > * 
+{
+    background-color: blanchedalmond;
+    padding: 0.5em 1.25em;
+    position: relative;
+    text-align: center;
+
+}
+
+.calculator_keys > *:active::before, 
+.calculator_keys > .is-depressed::before 
+{
+
+    background-color: palegoldenrod;
+    bottom: 0;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5) inset;
+    content: "";
+    left: 0;
+    opacity: 0.3;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1;
+}
+
+.key-operator 
+{
+    background-color: #B5179E;
+   
+
+}
+
+.key-equal 
+{
+    background-image: linear-gradient(to bottom, blanchedalmond, palegoldenrod);
+    grid-column: -2;
+    grid-row: 2 / span 4;
 }
