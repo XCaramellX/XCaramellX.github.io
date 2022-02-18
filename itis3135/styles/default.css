@@ -134,15 +134,29 @@ table tr:nth-child(odd)
     color: #DAB6FC;
 }
 
+
 form 
-{   position: relative;
-    left: 550px;
+{   position:relative;
+    left: 420px;
     width: 30%;
     padding:10px;
     background-color: #B5179E;
     color: #DAB6FC;
 }
-
+.polyClass
+{  
+    border-size: 5px;
+    border-color: #DAB6FC;
+    background-color: #B5179E;
+}
+.polyButton
+{
+    position: center;
+    margin: 5px;
+    background-color:  #7B2CBF;
+    border-size: 5px;
+    color: blanchedalmond;
+}
 
 .calculator
 {

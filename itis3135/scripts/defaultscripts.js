@@ -117,24 +117,27 @@ function getShape()
             text = "decagon";
             break;
         default:
-            if (sides > 10) {
-                text = "Your number is too high!";
-            }
+              break;
+              
 
     }
-    document.getElementById("numberofsides").innerHTML = text;
+    document.getElementById("numberofsides").innerHTML = alert(text);
 
 }
 
 function validateEntry(sides)
 {
 
-    if (sides < 1)
+    while(isNaN(sides) || sides < 1 || sides > 10 )
     {
-        alert("The number of sides is invalid. Please try again");
+        sides = prompt("The number of sides is invalid. Please try again");
     }
+        sides = Math.round(sides);
+        sides = Math.abs(sides);
+        return sides;  
     
 }
+
 
 function showNum()
 {
@@ -172,18 +175,14 @@ function numkeys()
             const key = e.target;
             const action = key.dataset.action;
             const keyContent = key.textContent;
-            var displayedNum = display.textContext;
+            const displayedNum = display.textContent;
             const previousKeyType = calculator.dataset.previousKeyType;
             if (!action)
             {
                 if (displayedNum === '0' || previousKeyType === 'operator') {
                     display.textContent = keyContent;
                 } else {
-                    var tempValue = displayedNum;
-                    tempValue = keyContent;
-                    displayedNum = tempValue;
                     display.textContent = displayedNum + keyContent;
-                   // display.textContent = displayedNum;
                 }
                 console.log('number key!')
             }
