@@ -83,60 +83,74 @@ function getShape()
 {
     var text;
     var sides = prompt("Plum Rabbit would like to know how many sides the shape is", "1");
-    validateEntry(sides)
+    validateEntry(sides);
     switch(sides)
     {
         case "1":
-            text = "henagon";
+            
+            alert(text = "henagon");
+             
             break;
         case "2":
-            text = "digon";
+            alert(text = "digon");
+           
             break;
         case "3":
-            text = "trigon";
+            alert(text = "trigon");
+            
             break;
         case "4": 
-            text = "tetragon";
+            alert(text = "tetragon");
+            
             break;
         case "5":
-            text = "pentagon";
+            alert(text = "pentagon");
+            
             break;
         case "6":
-            text = "hexagon";
+            alert(text = "hexagon");
+           
             break;
         case "7":
-            text = "heptagon";
+            alert(text = "heptagon");
+            
             break;
         case "8":
-            text = "octagon";
+            alert(text = "octagon");
+            
             break;
         case "9":
-            text = "enneagon";
+            alert(text = "enneagon");
+            
             break;
         case "10":
-            text = "decagon";
+            alert(text = "decagon");
+            
             break;
         default:
               break;
-              
+
+            
 
     }
-    document.getElementById("numberofsides").innerHTML = alert(text);
 
 }
 
 function validateEntry(sides)
 {
 
-    while(isNaN(sides) || sides < 1 || sides > 10 )
+
+    while (isNaN(sides) || sides > 10 || sides % 1 != 0 || sides < 0)
     {
-        sides = prompt("The number of sides is invalid. Please try again");
+        
+       sides = prompt("You've entered something other than a number, a decimal, or a number not 1-10");
     }
-        sides = Math.round(sides);
-        sides = Math.abs(sides);
-        return sides;  
-    
+
+
+    return sides;
+ 
 }
+
 
 
 function showNum()
@@ -174,15 +188,22 @@ function numkeys()
         {
             const key = e.target;
             const action = key.dataset.action;
-            const keyContent = key.textContent;
-            const displayedNum = display.textContent;
+            var keyContent = key.textContent;
+            var displayedNum = display.textContent;
             const previousKeyType = calculator.dataset.previousKeyType;
             if (!action)
             {
                 if (displayedNum === '0' || previousKeyType === 'operator') {
                     display.textContent = keyContent;
-                } else {
-                    display.textContent = displayedNum + keyContent;
+                } else if (displayedNum === keyContent)
+                {
+                    var temp = displayedNum;
+                    temp = temp + keyContent;
+                    display.textContent = temp;
+
+                }else
+                {
+                    display.textContent = "" + displayedNum + keyContent;
                 }
                 console.log('number key!')
             }
@@ -243,6 +264,9 @@ window.onload = function ()
     //seperate statements for the arrays assignment
     document.getElementById("results_table").onclick = displaySalary;
     document.getElementById("salary").onclick = addSalary;
+
+    // polygons
+    //document.getElementById("numberofsides").onclick = getShape;
 
 }
 

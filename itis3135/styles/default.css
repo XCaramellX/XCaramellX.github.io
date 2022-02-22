@@ -3,7 +3,7 @@ body
     font-family: Tahoma, sans-serif;
     margin-left: 150px;
     margin-right: 150px;
-    color: #8187DC;
+    color: darkmagenta;
     background-color: #DAB6FC;
 }
 
@@ -14,11 +14,12 @@ header
     color: #7B2CBF;
 }
 
-footer 
-{
+footer {
     text-align: center;
     margin-top: 25px;
-   
+    padding: 5px;
+    color: #DAB6FC;
+    background-color: #7B2CBF;
 }
 
 figure, h2{
@@ -51,7 +52,7 @@ nav li
 a
 {
     text-decoration: none;
-    color: blanchedalmond;
+    color:antiquewhite;
 }
 
 a:hover
@@ -69,8 +70,8 @@ a:hover
 .dropdownbutton 
 {
     background-color: #7B2CBF;
-    color: blanchedalmond;
-    font-size:inherit;
+    color: antiquewhite;
+    font-size: inherit;
     border: none;
 }
 
@@ -136,25 +137,29 @@ table tr:nth-child(odd)
 
 
 form 
-{   position:relative;
-    left: 420px;
+{   
+    
+    margin:auto;
     width: 30%;
     padding:10px;
     background-color: #B5179E;
     color: #DAB6FC;
 }
-.polyClass
-{  
-    border-size: 5px;
+
+.formbutton
+{
+    text-align: center;
+}
+.polyClass {
+    margin: 20px;
     border-color: #DAB6FC;
-    background-color: #B5179E;
+    
 }
 .polyButton
 {
-    position: center;
-    margin: 5px;
+    position: relative;
+    left: 650px;
     background-color:  #7B2CBF;
-    border-size: 5px;
     color: blanchedalmond;
 }
 
