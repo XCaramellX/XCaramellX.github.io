@@ -177,98 +177,149 @@ function showNum()
     }
 }
 
-function numkeys()
+function numKeys()
 {
     const calculator = document.querySelector('.calculator');
     const keys = calculator.querySelector('.calculator_keys');
-    var display = document.querySelector('.calculator_display');
-    keys.addEventListener('click', e =>
-    {
-        if (e.target.matches('button'))
-        {
+    const display = document.querySelector('.calculator_display');
+    keys.addEventListener('click', e => {
+        if (e.target.matches('button')) {
             const key = e.target;
             const action = key.dataset.action;
-            var keyContent = key.textContent;
-            var displayedNum = display.textContent;
+            const keyContent = key.textContent;
+            const displayedNum = display.textContent;
             const previousKeyType = calculator.dataset.previousKeyType;
+            const calculate = (n1, operator, n2) => {
+                let result = '';
+
+                if (operator === 'add') {
+
+                    return parseFloat(n1) + parseFloat(n2);
+
+                } else if (operator === 'subtract') {
+
+                    return parseFloat(n1) - parseFloat(n2);
+                }
+                else if (operator === 'multiply') {
+
+                    return parseFloat(n1) * parseFloat(n2);
+                } else if (operator === 'divide') {
+
+                    return parseFloat(n1) / parseFloat(n2);
+                }
+
+            }
             if (!action)
             {
-                if (displayedNum === '0' || previousKeyType === 'operator') {
+                if (displayedNum === '0' || previousKeyType === 'operator' || previousKeyType === 'calculate')
+                {
                     display.textContent = keyContent;
-                } else if (displayedNum === keyContent)
-                {
-                    var temp = displayedNum;
-                    temp = temp + keyContent;
-                    display.textContent = temp;
-
-                }else
-                {
-                    display.textContent = "" + displayedNum + keyContent;
+                } else {
+                    display.textContent =  displayedNum + keyContent;
                 }
+                calculator.dataset.previousKey = 'number';
                 console.log('number key!')
             }
             if (action === 'add' || action === 'subtract' || action === 'multiply' || action === 'divide')
             {
+                const firstValue = calculator.dataset.firstValue;
+                const operator = calculator.dataset.operator;
+                const secondValue = displayedNum;
+
+                if (firstValue && operator && previousKeyType !== 'operator' && previousKeyType != 'calculate') {
+
+                    const calcValue = calculate(firstValue, operator, secondValue);
+                    display.textContent = calcValue;
+                    calculator.dataset.firstValue = calcValue;
+                } else {
+                    calculator.dataset.firstValue = displayedNum;
+                }
+
                 key.classList.add('is-depressed');
-                calculator.dataset.previousKeyType = 'operator';
+                calculator.dataset.previousKeyType = 'operator'; 
+                calculator.dataset.operator = action;
                 console.log('operator key!');
             }
             if (action === 'decimal')
             {
+                if (!displayedNum.includes('.'))
+                {
+                    display.textContent = displayedNum + '.';
 
-                display.textContent = displayedNum + '.';
+                } else if (previousKeyType === 'operator' || previousKeyType === 'calculate')
+                {
+                    display.textContent = '0.'
+                }
+                
+                calculator.dataset.previousKey = 'decimal';
                 console.log('decimal key!');
 
             }
             if (action === 'clear')
             {
                 console.log('clear key');
-
+                calculator.dataset.previousKey = 'clear';
             }
             if (action === 'calculate')
             {
+                const firstValue = calculator.dataset.firstValue;
+                const operator = calculator.dataset.operator;
+                const secondValue = displayedNum;
+
                 
+                if (firstValue)
+                {
+                    if (previousKeyType === 'calculate')
+                    {
+                        firstVlaue = displayedNum;
+                        secondValue = calculator.dataset.modVlaue;
+                    }
+                    display.textContent = calculate(firstValue, operator, secondValue);
+                }
+                calculator.dataset.modValue = secondValue;
+                calculator.dataset.previousKey = 'calculate';
                 console.log('equal key!');
 
             }
+           
+            if (action !== 'clear') {
+                const clearButton = calculator.querySelector('[data-action=clear]')
+                clearButton.textContent = 'CE';
+            }
+
+            if (action === 'clear') {
+                if (key.textContent === 'AC') {
+                    calculator.dataset.firstValue = '';
+                    calculator.dataset.modValue = '';
+                    calculator.dataset.operator = '';
+                    calculator.dataset.previousKeyType = '';
+                } else {
+                    key.textContent = 'AC';
+                }
+                display.textContent = 0;
+                calculator.dataset.previousKeyType = 'clear';
+            }
+            
 
             Array.from(key.parentNode.children)
                 .forEach(k => k.classList.remove('is-depressed'))
-            
+
         }
-    })
+    });
     
 
 }
 
-window.onload = function ()
-{
-    document.getElementById("addbutton").onclick = numkeys;
-    document.getElementById("subtractbutton").onclick = numkeys;
-    document.getElementById("multiplybutton").onclick = numkeys;
-    document.getElementById("dividebutton").onclick = numkeys;
-    document.getElementById("button7").onclick = numkeys;
-    document.getElementById("button8").onclick = numkeys;
-    document.getElementById("button9").onclick = numkeys;
-    document.getElementById("button4").onclick = numkeys;
-    document.getElementById("button5").onclick = numkeys;
-    document.getElementById("button6").onclick = numkeys;
-    document.getElementById("button1").onclick = numkeys;
-    document.getElementById("button2").onclick = numkeys;
-    document.getElementById("button3").onclick = numkeys;
-    document.getElementById("button0").onclick = numkeys;
-    document.getElementById("decimalbutton").onclick = numkeys;
-    document.getElementById("clearbutton").onclick = numkeys;
-    document.getElementById("calculatebutton").onclick = numkeys;
+window.onload = function () {
 
-    //seperate statements for the arrays assignment
-    document.getElementById("results_table").onclick = displaySalary;
-    document.getElementById("salary").onclick = addSalary;
+   
+    numKeys();
+    
 
     // polygons
-    //document.getElementById("numberofsides").onclick = getShape;
+    ///document.getElementById("numberofsides").onclick = getShape;
 
-}
+};
 
 var person = [];
 var salaries = [];
@@ -323,13 +374,13 @@ function displaySalary()
     var table = document.createElement("table")
     var tableRows = table.insertRow();
     var cell;
-    var eachrow = 1;
+    var eachrow = 10;
    person.forEach((value) =>
     {
         cell = tableRows.insertCell();
         cell.innerHTML = value;
         var nextEntry = 1;
-        if (nextEntry % eachrow == 0 && nextEntry != person.length)
+        if (nextEntry % eachrow == 1 && nextEntry != person.length)
         {
 
             tableRows = table.insertRow();
@@ -340,7 +391,7 @@ function displaySalary()
         cell = tableRows.insertCell();
         cell.innerHTML = value;
         var nextEntry =  1;
-        if (nextEntry % eachrow == 0 && nextEntry != person.length) {
+        if (nextEntry % eachrow == 1 && nextEntry != person.length) {
 
             tableRows = table.insertRow();
         }
@@ -348,6 +399,45 @@ function displaySalary()
     });
    
     document.getElementById("results_table").appendChild(table);
+}
+
+function displayAverage()
+{
+    for (i = 0; i <= 3; i++)
+    {
+        addSalary();
+        salaries[i] = (parseInt(salaries[i]) + parseInt(salaries[i]) / i);
+        document.getElementById("results").innerHTML = salaries[i];
+        for (j = 0; i <= 5; j++)
+        {
+
+            document.getElementById("results").innerHTML = person[j];
+
+        }
+
+
+    }
+    document.getElementById("results").innerHTML = salaries[i];
+    document.getElementById("results").innerHTML = person[j];
+
+}
+
+function displayHighest() {
+    for (i = 0; i <= 3; i++) {
+        addSalary();
+        if (salaries[i] == 7000) {
+            document.getElementById("results").innerHTML = salaries[i];
+
+        }
+    }
+    document.getElementById("results").innerHTML = salaries[i];
+}
+
+window.onload = function () {
+    document.getElementById("results_table").onclick = displaySalary;
+    document.getElementById("salary").onclick = addSalary;
+    document.getElementById("results").onclick = displayAverage;
+    document.getElementById("results").onclick = displayHighest;
 }
 
 
