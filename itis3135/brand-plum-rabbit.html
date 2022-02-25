@@ -4,10 +4,11 @@
 <head>
     <meta charset="utf-8" />
     <title>
-        Parker Randolph &#339; ITIS 3135 &#339; My Brand
+       
+         <div data-include="components/head.html" data-replace="%pagename%:My Brand"></div>
     </title>
     <style>
-        header 
+        header
         {
             font-family: Tahoma, sans-serif;
             text-align: center;
@@ -18,8 +19,8 @@
             overflow-x: hidden;
             margin-left: 150px;
             margin-right: 150px;
-            color: #DEC9E9;
-            background-color: #B185DB;
+            color: darkmagenta;
+            background-color: #DAB6FC;
         }
 
         nav {
@@ -100,7 +101,9 @@
         footer {
             text-align: center;
             margin-top: 25px;
+            padding: 5px;
             color: #DAB6FC;
+            background-color: #7B2CBF;
         }
 
 
@@ -116,33 +119,13 @@
 </head>
 
 <body>
-    <header>
+  <header>
         <h1>
-            Plum Rabbit <img class="imageb" src="images/purplerabbit(116x120)(flyclipart.com).png" alt="a purple rabbit">
+            Plum Rabbit <img class="imageb" src="images/purplerabbit(116x120)(flyclipart.com).png" alt="a purple rabbit">         
         </h1>
-        <nav>
-            <ul>
-                <li><a href="index.html"><strong>Home</strong></a> &#339;</li>
-                <li><a href="introduction.html"><strong>Introduction</strong></a> &#339;</li>
-                <li><a href="contract.html"><strong>Contract</strong></a> &#339;</li>
-                <li><a href="tables.html"><strong>Tables</strong></a> &#339;</li>
-                <li><a href="form.html"><strong>Form</strong></a> &#339;</li>
-                <li><a href="website_evaluations.html"><strong>Website Evaluations</strong></a> &#339;</li>
-                <li><a href="brand-plum-rabbit.html"><strong>My Brand</strong></a> &#339;</li>
-                <li>
-                    <div class="dropdown">
-                        <button class="dropdownbutton"><strong>Activities</strong></button>
-                        <div class="dropdowncontent">
-                            <a href="firstscripts.html"><strong>My First JS</strong></a>
-                            <a href="activity4.html"><strong>Activity #4</strong></a>
-                            <a href="activity6.html"><strong>Activity #6</strong></a>
-                        </div>
-                    </div> &#339;
-                <li><a href="stuff/NEW& PAGE.htm"><strong>CRAPPY WEBPAGE</strong></a></li>
-            </ul>
-        </nav>
+        <div data-include="components/header.html" data-replace="%pagename%"></div>
+        </header>
 
-    </header>
     <main>
         <h2>
             My Brand
