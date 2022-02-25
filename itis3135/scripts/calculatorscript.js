@@ -93,7 +93,7 @@ window.onload = function ()
                     if (previousKeyType === 'calculate')
                     {
                         firstVlaue = displayedNum;
-                        secondValue = calculator.dataset.modVlaue;
+                        secondValue = calculator.dataset.modValue;
                     }
                     display.textContent = calculate(firstValue, operator, secondValue);
                 }
