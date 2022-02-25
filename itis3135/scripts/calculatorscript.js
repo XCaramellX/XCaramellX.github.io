@@ -28,6 +28,7 @@ window.onload = function ()
 
                     return parseFloat(n1) / parseFloat(n2);
                 }
+                return result;
 
             }
             if (!action)
@@ -38,7 +39,7 @@ window.onload = function ()
                 } else {
                     display.textContent =  displayedNum + keyContent;
                 }
-                calculator.dataset.previousKey = 'number';
+                calculator.dataset.previousKeyType = 'number';
                 console.log('number key!')
             }
             if (action === 'add' || action === 'subtract' || action === 'multiply' || action === 'divide')
