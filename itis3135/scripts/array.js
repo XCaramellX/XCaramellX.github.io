@@ -62,7 +62,7 @@ function displayAverage()
         number += salaries[i];
         
 
-        return document.getElementById("average").innerHTML = "The average is " + parseFloat(number / x);
+        return document.getElementById("average").innerHTML = "The average is $" + parseInt(number / x);
         
     }
     
@@ -82,7 +82,7 @@ function displayHighest() {
 
         }
     }
-    return document.getElementById("highest").innerHTML = "The highest is "  + maximum;
+    return document.getElementById("highest").innerHTML = "The highest is $"  + maximum;
 }
 
 window.onload = function () {
