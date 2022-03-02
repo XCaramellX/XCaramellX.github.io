@@ -4,45 +4,18 @@ var salaries = [];
 function addSalary()
 {
     
-    for (var i = 0; i <= 5; i++)
+    for (var i = 0; i < 1; i++)
     {
-        person[i] = document.getElementById("employee").value;
-        for (var j = 0; j <= 3; j++)
+
+        person.push(document.getElementById("employee").value);
+
+        for (var j = 0; j < 1; j++)
         {
-            if (person[i] == "Carter Ellis")
-            {
-                salaries[j] = " "  + '$4000';
-               
-                
-            }
-            if (person[i] == "David West")
-            {
-                salaries[j] = " " + '$4000';
-                
-            }
-            if (person[i] == "Hope Bardot")
-            {
-                salaries[j] = " " + '$4000';
-                
-            }
 
-            if (person[i] == "Jacob Lopez")
-            {
+            salaries.push(document.getElementById("salaryamount").value);
 
-                salaries[j] = " " + '$6000';
-                
-            }
-            if (person[i] == "Jaden Adams")
-            {
-                salaries[j] = " " + '$7000';
-                
-            }
         }
-
-        
     }
-    
-
     
 }
 
@@ -51,7 +24,7 @@ function displaySalary()
     var table = document.createElement("table")
     var tableRows = table.insertRow();
     var cell;
-    var eachrow = 10;
+    var eachrow = 1;
    person.forEach((value) =>
     {
         cell = tableRows.insertCell();
@@ -80,24 +53,41 @@ function displaySalary()
 
 function displayAverage()
 {
-    for (i = 0; i <= 3; i++)
+    var number = 0;
+    var x = salaries.length;
+   
+
+    for (i = 0; i <= x; i++)
+    {
+        number += salaries[i];
+        
+
+        return document.getElementById("average").innerHTML = "The average is " + parseFloat(number / x);
+        
+    }
     
+
+   
 }
 
 function displayHighest() {
-    for (i = 0; i <= 3; i++) {
-        addSalary();
-        if (salaries[i] == 7000) {
-            document.getElementById("results").innerHTML = salaries[i];
+
+    var maximum = salaries[0];
+
+    for (i = 0; i <= salaries.length; i++)
+    {
+
+        if (salaries[i] > maximum) {
+            maximum = salaries[i];
 
         }
     }
-    document.getElementById("results").innerHTML = salaries[i];
+    return document.getElementById("highest").innerHTML = "The highest is "  + maximum;
 }
 
 window.onload = function () {
     document.getElementById("results_table").onclick = displaySalary;
     document.getElementById("salary").onclick = addSalary;
-    document.getElementById("results").onclick = displayAverage;
-    document.getElementById("results").onclick = displayHighest;
+    document.getElementById("resultaverage").onclick = displayAverage;
+    document.getElementById("resulthighest").onclick = displayHighest;
 }
