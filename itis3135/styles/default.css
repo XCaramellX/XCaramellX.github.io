@@ -158,8 +158,7 @@ form
 }
 .polyButton
 {
-    position: relative;
-    left: 650px;
+    text-align: center;
     background-color:  #7B2CBF;
     color: blanchedalmond;
 }
