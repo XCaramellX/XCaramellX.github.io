@@ -73,14 +73,14 @@ window.onload = function ()
                     display.textContent = '0.'
                 }
                 
-                calculator.dataset.previousKey = 'decimal';
+                calculator.dataset.previousKeyType = 'decimal';
                 console.log('decimal key!');
 
             }
             if (action === 'clear')
             {
                 console.log('clear key');
-                calculator.dataset.previousKey = 'clear';
+                calculator.dataset.previousKeyType = 'clear';
             }
             if (action === 'calculate')
             {
@@ -99,7 +99,7 @@ window.onload = function ()
                     display.textContent = calculate(firstValue, operator, secondValue);
                 }
                 calculator.dataset.modValue = secondValue;
-                calculator.dataset.previousKey = 'calculate';
+                calculator.dataset.previousKeyType = 'calculate';
                 console.log('equal key!');
 
             }

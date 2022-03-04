@@ -24,7 +24,7 @@ function displaySalary()
     var table = document.createElement("table")
     var tableRows = table.insertRow();
     var cell;
-    var eachrow = 2;
+    var eachrow = 5;
    person.forEach((value) =>
     {
         cell = tableRows.insertCell();
