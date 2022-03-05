@@ -3,52 +3,37 @@ var salaries = [];
 
 function addSalary()
 {
+
     
-    for (var i = 0; i < 1; i++)
-    {
 
-        person.push(document.getElementById("employee").value);
+    person.push("Carter Ellis");
+    person.push("David West");
+    person.push("Hope Bardot");
+    person.push("Jacob Lopez");
+    person.push("Jaden Adams");
 
-        for (var j = 0; j < 1; j++)
-        {
-
-            salaries.push(document.getElementById("salaryamount").value);
-
-        }
-    }
+    salaries.push("4000");
+    salaries.push("5000");
+    salaries.push("6000");
+    salaries.push("7000");
+    salaries.push("8000");
+        
+    
     
 }
 
 function displaySalary()
 {
-    var table = document.createElement("table")
-    var tableRows = table.insertRow();
-    var cell;
-    var eachrow = 5;
-   person.forEach((value) =>
-    {
-        cell = tableRows.insertCell();
-        cell.innerHTML = value;
-        var nextEntry = 1;
-        if (nextEntry % eachrow == 1 && nextEntry != person.length)
-        {
+    var table = '<table>';
 
-            tableRows = table.insertRow();
-        }
+    for (var i = 0; i < person.length; i++) {
 
-   });
-    salaries.forEach((value) => {
-        cell = tableRows.insertCell();
-        cell.innerHTML = value;
-        var nextEntry =  1;
-        if (nextEntry % eachrow == 1 && nextEntry != person.length) {
+        table += "<tr><td>" + person[i] + "</td><td>" + "$" + salaries[i] + "</td></tr>";
 
-            tableRows = table.insertRow();
-        }
+    }
+    table += "</table>";
 
-    });
-   
-    document.getElementById("results_table").appendChild(table);
+    document.getElementById("display").innerHTML = table;
 }
 
 function displayAverage()
