@@ -1,0 +1,57 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body
+{
+    height: 100px;
+    background: linear-gradient(to right, white 0%, white 50%, black 50%, black 100%);
+}
+
+.kingdiv
+{
+    position: absolute;
+    right: 1300px;
+    bottom: 300px;
+    width: 150px;
+    height: 400px;
+    background-image: url("../projects/project_images/chessboardking.jpg");
+    background-position:center;
+    background-color:aqua;
+}
+
+.queendiv {
+    position: absolute;
+    right: 1150px;
+    bottom: 300px;
+    width: 150px;
+    height: 400px;
+    background-image: url("../projects/project_images/chessboardqueen.jpg");
+    background-position: center;
+    background-color: aqua;
+}
+img 
+{
+    max-width: auto;
+    max-height: auto;
+    position: relative;
+    object-fit: contain;
+    display: block;
+    bottom: -180px;
+    left: 45px;
+}
+
+.queenposition 
+{
+    max-width: auto;
+    max-height: auto;
+    position: relative;
+    object-fit: contain;
+    display: block;
+    bottom: -190px;
+    left: 45px;
+}
+
+
+
