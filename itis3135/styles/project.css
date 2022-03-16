@@ -50,22 +50,13 @@ nav li
 }
 
 div
-=======
-.kingdiv 
->>>>>>> Stashed changes
 {
 
     position: absolute;
-<<<<<<< Updated upstream
-    
     transition: transform .2s;
     display: block;
     right: 70%;
     bottom: 32%;
-=======
-    right: 70%;
-    bottom: 20%;
->>>>>>> Stashed changes
     width: 150px;
     height: 350px;
     background-image: url("../projects/project_images/chessboardking.jpg");
