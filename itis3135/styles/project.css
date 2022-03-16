@@ -1,7 +1,3 @@
-* {
-    padding: 0;
-    margin: 0;
-}
 
 body
 {
@@ -11,6 +7,7 @@ body
     background: linear-gradient(to right, white 0%, white 50%, black 50%, black 100%);
 }
 
+<<<<<<< Updated upstream
 header
 {
     font-family: 'Julius Sans One', sans-serif;
@@ -53,13 +50,22 @@ nav li
 }
 
 div
+=======
+.kingdiv 
+>>>>>>> Stashed changes
 {
+
     position: absolute;
+<<<<<<< Updated upstream
     
     transition: transform .2s;
     display: block;
     right: 70%;
     bottom: 32%;
+=======
+    right: 70%;
+    bottom: 20%;
+>>>>>>> Stashed changes
     width: 150px;
     height: 350px;
     background-image: url("../projects/project_images/chessboardking.jpg");
@@ -74,10 +80,15 @@ div:hover
 
 .queendiv {
     position: absolute;
+<<<<<<< Updated upstream
     transition: transform .2s;
     display: block;
     right: 62%;
     bottom: 32%;
+=======
+    right: 60.5%;
+    bottom: 20%;
+>>>>>>> Stashed changes
     width: 150px;
     height: 350px;
     background-image: url("../projects/project_images/chessboardqueen.jpg");
