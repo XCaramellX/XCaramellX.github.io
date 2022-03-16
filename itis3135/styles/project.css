@@ -73,15 +73,11 @@ div:hover
 }
 
 .queendiv {
-    position: absolute;
-    transition: transform .2s;
-    display: block;
     right: 62%;
     bottom: 32%;
     width: 150px;
     height: 350px;
     background-image: url("../projects/project_images/chessboardqueen.jpg");
-    background-position: center;
 }
 img 
 {
