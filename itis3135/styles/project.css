@@ -7,7 +7,7 @@ body
     background: linear-gradient(to right, white 0%, white 50%, black 50%, black 100%);
 }
 
-<<<<<<< Updated upstream
+
 header
 {
     font-family: 'Julius Sans One', sans-serif;
@@ -15,6 +15,12 @@ header
     font-size: medium;
     font-weight: normal;
 }
+
+h1{
+    position: absolute;
+    bottom: 92%;
+}
+
 
 nav {
     font-family: 'Julius Sans One', sans-serif;
