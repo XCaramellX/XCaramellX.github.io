@@ -6,8 +6,8 @@
 body
 {
     height: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
     background: linear-gradient(to right, white 0%, white 50%, black 50%, black 100%);
 }
 
@@ -17,7 +17,6 @@ header
     font-family: 'Julius Sans One', sans-serif;
     display: flex;
     padding: 15px 10%;
-    top: 0.5%;
     text-transform: uppercase;
     
     
@@ -26,8 +25,6 @@ header
 header h1 
 {
     font-weight: lighter;
-    right: 75%;
-    bottom: 90%;
 }
 
 header h1 a
@@ -40,6 +37,8 @@ nav
 {
     text-transform: uppercase;
     font-size: larger;
+    margin-left: auto;
+    margin-right: 24%;
 }
 
 nav a 
@@ -60,7 +59,7 @@ nav li
   padding: 10px;
 }
 
-.rightnav a 
+.rightnav a
 {
     color: white;
 }
