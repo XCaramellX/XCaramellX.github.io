@@ -6,11 +6,8 @@
 body
 {
     height: 100px;
-    margin-left: 50px;
-    margin-right: 50px;
     background: linear-gradient(to right, white 0%, white 50%, black 50%, black 100%);
 }
-
 
 
 
@@ -18,7 +15,10 @@ header
 {
     font-family: 'Julius Sans One', sans-serif;
     display: flex;
-    padding: 15px 10%;
+    justify-content: space-between;
+    padding-left: 1%;
+    padding-right: 26%;
+    align-items: center;
     text-transform: uppercase;
     
 }
@@ -34,8 +34,8 @@ body h2
  h1 
 {
     font-weight: lighter;
-    position:absolute;
-    left: 5%;
+    
+   
 }
 
 
@@ -49,8 +49,7 @@ nav
 {
     text-transform: uppercase;
     font-size: larger;
-    margin-left: auto;
-    margin-right: 24%;
+    
 }
 
 nav a 
@@ -62,6 +61,12 @@ nav a
 nav a:hover
 {
     color: lightgrey;
+}
+
+nav ul
+{
+  
+
 }
 
 nav li
@@ -85,8 +90,8 @@ div
     display: block;
     right: 70%;
     bottom: 27%;
-    width: 150px;
-    height: 350px;
+    width: 10%;
+    height: 46%;
     background-image: url("../projects/project_images/chessboardking.jpg");
     background-position:center;
 }
@@ -98,9 +103,7 @@ div:hover
 }
 
 .queendiv {
-    right: 62%;
-    width: 150px;
-    height: 350px;
+    right: 60%;
     background-image: url("../projects/project_images/chessboardqueen.jpg");
 }
 img 
