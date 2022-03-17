@@ -12,20 +12,32 @@ body
 }
 
 
-header 
+
+
+header
 {
     font-family: 'Julius Sans One', sans-serif;
     display: flex;
     padding: 15px 10%;
     text-transform: uppercase;
     
-    
 }
 
-header h1 
+body h2 
+{
+    padding: 15px 10%;
+    text-transform: uppercase;
+    font-family: 'Julius Sans One', sans-serif;
+    text-align: center;
+}
+
+ h1 
 {
     font-weight: lighter;
+    position:absolute;
+    left: 5%;
 }
+
 
 header h1 a
 {
