@@ -1,65 +1,76 @@
-
+*
+{
+    margin: 0;
+    padding: 0;
+}
 body
 {
     height: 100px;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 100px;
+    margin-right: 100px;
     background: linear-gradient(to right, white 0%, white 50%, black 50%, black 100%);
 }
 
 
-header
+header 
 {
     font-family: 'Julius Sans One', sans-serif;
+    display: flex;
+    padding: 15px 10%;
+    top: 0.5%;
     text-transform: uppercase;
-    font-size: medium;
-    font-weight: normal;
+    
+    
 }
 
-h1{
-    position: absolute;
+header h1 
+{
+    font-weight: lighter;
     right: 75%;
     bottom: 90%;
 }
 
+header h1 a
+{
+    text-decoration: none;
+    color: black;
+}
 
-nav {
-    font-family: 'Julius Sans One', sans-serif;
-    position: absolute;
-    top: 0.5%;
-    right: 50%;
+nav 
+{
     text-transform: uppercase;
-    font-weight: normal;
     font-size: larger;
 }
 
-nav ul
+nav a 
 {
-    display: block;
+    text-decoration: none;
+    color: black;
+}
 
+nav a:hover
+{
+    color: lightgrey;
 }
 
 nav li
-{  
+{ 
   list-style-type: none;
-  display: inline;
-  margin: 0;
-  padding: 5px;
+  display: inline-block;
+  padding: 10px;
 }
 
-.rightnav
+.rightnav a 
 {
-
-    right: 27%;
-    color:white;
-
+    color: white;
 }
+
 
 div
 {
 
     position: absolute;
-    transition: transform .2s;
+    transition: transform .2s ease 0s;
     display: block;
     right: 70%;
     bottom: 27%;
