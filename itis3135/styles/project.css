@@ -3,39 +3,63 @@
     margin: 0;
     padding: 0;
 }
-body
-{
-    height: 100px;
-    background: linear-gradient(to right, white 0%, white 50%, black 50%, black 100%);
-}
-
-
 
 header
 {
     font-family: 'Julius Sans One', sans-serif;
     display: flex;
     justify-content: space-between;
-    padding-left: 1%;
-    padding-right: 26%;
+    padding-left: 2%;
+    padding-right: 27%;
     align-items: center;
     text-transform: uppercase;
     
 }
+
+body
+{
+    height: 100px;
+    background: linear-gradient(to right, white 0%, white 50%, black 0%, black 100%);
+}
+
 
 body h2 
 {
     padding: 15px 10%;
     text-transform: uppercase;
     font-family: 'Julius Sans One', sans-serif;
+    background: linear-gradient(to right, white 0%, white 50%, black 0%, black 100%);
+    background-clip: text;
     text-align: center;
+}
+
+span
+{
+    color: white;
+}
+
+.halfcolor
+{
+    position: relative;
+    color: white;
+}
+
+.halfcolor:before
+{
+    position:absolute;
+    top: 0%;
+    width: 30%;
+    height: 50%;
+    content: attr(attribute);
+    color: black;
+    overflow: hidden;
+    
 }
 
  h1 
 {
     font-weight: lighter;
-    
-   
+
 }
 
 
@@ -49,7 +73,6 @@ nav
 {
     text-transform: uppercase;
     font-size: larger;
-    
 }
 
 nav a 
@@ -63,24 +86,17 @@ nav a:hover
     color: lightgrey;
 }
 
-nav ul
-{
-  
-
-}
-
 nav li
 { 
   list-style-type: none;
   display: inline-block;
-  padding: 10px;
+  padding: 5px;
 }
 
 .rightnav a
 {
     color: white;
 }
-
 
 div
 {
@@ -93,6 +109,7 @@ div
     width: 10%;
     height: 46%;
     background-image: url("../projects/project_images/chessboardking.jpg");
+    background-repeat: no-repeat;
     background-position:center;
 }
 
