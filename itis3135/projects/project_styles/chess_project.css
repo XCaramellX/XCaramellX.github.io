@@ -28,8 +28,6 @@ body h2
     padding: 15px 10%;
     text-transform: uppercase;
     font-family: 'Julius Sans One', sans-serif;
-    background: linear-gradient(to right, white 0%, white 50%, black 0%, black 100%);
-    background-clip: text;
     text-align: center;
 }
 
@@ -98,17 +96,17 @@ nav li
     color: white;
 }
 
-div
-{
+/*Chess images*/
 
+.kingdiv
+{
     position: absolute;
     transition: transform .2s ease 0s;
-    display: block;
     right: 70%;
     bottom: 27%;
-    width: 10%;
+    width: 8%;
     height: 46%;
-    background-image: url("../projects/project_images/chessboardking.jpg");
+    background-image: url("../project_images/chessboardking.jpg");
     background-repeat: no-repeat;
     background-position:center;
 }
@@ -120,8 +118,15 @@ div:hover
 }
 
 .queendiv {
+    position: absolute;
+    transition: transform .2s ease 0s;
     right: 60%;
-    background-image: url("../projects/project_images/chessboardqueen.jpg");
+    bottom: 27%;
+    width: 8%;
+    height: 46%;
+    background-image: url("../project_images/chessboardqueen.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 img 
 {
@@ -132,6 +137,14 @@ img
     display: block;
     bottom: 0%;
     left: 30%;
+}
+
+/*Chess piece pages*/
+
+.kingpopup {
+    position: absolute;
+    width: 8%;
+    background-color: blue;
 }
 
 
