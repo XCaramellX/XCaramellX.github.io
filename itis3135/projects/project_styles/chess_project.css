@@ -9,10 +9,10 @@ header
     font-family: 'Julius Sans One', sans-serif;
     display: flex;
     justify-content: space-between;
-    padding-left: 2%;
-    padding-right: 27%;
+    padding-right: 24%;
     align-items: center;
     text-transform: uppercase;
+    background-color: rgb(74, 72, 72, 0.5);
     
 }
 
@@ -54,10 +54,10 @@ span
     
 }
 
- h1 
+h1 
 {
+    padding-left: 5%;
     font-weight: lighter;
-
 }
 
 
@@ -91,14 +91,15 @@ nav li
   padding: 5px;
 }
 
-.rightnav a
+.rightnav a 
 {
+   
     color: white;
 }
 
 /*Chess images*/
 
-.kingdiv
+.kingdiv 
 {
     position: absolute;
     transition: transform .2s ease 0s;
@@ -108,43 +109,188 @@ nav li
     height: 46%;
     background-image: url("../project_images/chessboardking.jpg");
     background-repeat: no-repeat;
-    background-position:center;
+    background-position: center;
 }
 
-div:hover
+
+.queendiv 
 {
-    overflow:hidden;
-    transform: scale(1.5);
-}
-
-.queendiv {
     position: absolute;
     transition: transform .2s ease 0s;
-    right: 60%;
-    bottom: 27%;
+    right: 62%;
+    bottom: 25%;
     width: 8%;
     height: 46%;
     background-image: url("../project_images/chessboardqueen.jpg");
     background-repeat: no-repeat;
     background-position: center;
+   
 }
-img 
-{
-    max-width: auto;
-    max-height: auto;
+
+.bishopdiv {
     position: absolute;
-    object-fit: contain;
-    display: block;
-    bottom: 0%;
-    left: 30%;
+    transition: transform .2s ease 0s;
+    right: 54%;
+    bottom: 25%;
+    width: 8%;
+    height: 46%;
+    background-image: url("../project_images/chessboardbishop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
 }
+
+.knightdiv {
+    position: absolute;
+    transition: transform .2s ease 0s;
+    right: 38%;
+    bottom: 23%;
+    width: 8%;
+    height: 46%;
+    background-image: url("../project_images/chessboardknight.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.castlediv {
+    position: absolute;
+    transition: transform .2s ease 0s;
+    right: 30%;
+    bottom: 22.5%;
+    width: 8%;
+    height: 46%;
+    background-image: url("../project_images/chessboardcastle.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.pawndiv {
+    position: absolute;
+    transition: transform .2s ease 0s;
+    right: 23%;
+    bottom: 20%;
+    width: 8%;
+    height: 46%;
+    background-image: url("../project_images/chessboardpawn.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div.kingdiv:hover 
+{
+    animation: fadeinhover 1s ease-out;
+}
+
+div.queendiv:hover 
+{
+    animation: fadeinhover 1s ease-out;
+}
+
+div.bishopdiv:hover {
+    animation: fadeinhover 1s ease-out;
+}
+
+div.knightdiv:hover {
+    animation: fadeinhover 1s ease-out;
+}
+
+div.castlediv:hover {
+    animation: fadeinhover 1s ease-out;
+}
+
+div.pawndiv:hover {
+    animation: fadeinhover 1s ease-out;
+}
+
+
 
 /*Chess piece pages*/
 
-.kingpopup {
-    position: absolute;
-    width: 8%;
-    background-color: blue;
+.modalbackground 
+{
+   display: none;
+   position: fixed;
+   z-index: 1;
+   left: 0;
+   right: 0;
+   width: 100%;
+   height: 100%;
+   overflow:auto;
+   background: linear-gradient(to right, rgb(255, 255, 255, 0.7), rgba(0, 0, 0, 0.7));
+
+}
+
+.modalcontent {
+    padding-top: 15%;
+    padding-bottom: 10%;
+    margin-top: 10%;
+    border: 2px solid;
+    background-color: white;
+    animation: fadein 2s ease-in;
+}
+
+@keyframes fadein
+{
+    0% 
+    {
+        opacity: 0;
+    }
+
+    20% 
+    {
+        opacity: 1;
+    }
+
+    40% 
+    {
+        opacity: 1;
+        
+    }
+    60%
+    {
+        opacity: 1;
+    }
+
+    80%
+    {
+        opacity: 1;
+    }
+
+    100% 
+    {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeinhover {
+    0% 
+    {
+        opacity: 0.1;
+    }
+
+    20% 
+    {
+        opacity: 0.2;
+    }
+
+    40% 
+    {
+        opacity: 0.4;
+    }
+
+    60% 
+    {
+        opacity: 0.6;
+    }
+
+    80% 
+    {
+        opacity: 0.8;
+    }
+
+    100% 
+    {
+        opacity: 1;
+    }
 }
 
 

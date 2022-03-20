@@ -7,7 +7,7 @@
         Charlotte Chess
     </title>
     <link href="../project_styles/chess_project.css" type="text/css" rel="stylesheet" />
-    <script src="../project_scripts/chess_project.js"></script>
+    
 </head>
 <body>
     <header>
@@ -18,28 +18,37 @@
                 <li><a href="famous_chess_players.html">Famous Chess Players</a></li>
             </ul>
         </nav>
-        <nav >
+        <nav>
             <ul>
-                <li class="rightnav"><a href="chess_clubs.html">Chess Clubs</a></li>
+                <li class="rightnav"><a href="chess_clubs.html">Charlotte Chess Clubs</a></li>
                 <li class="rightnav"><a href="about.html">About</a></li>
                 <li class="rightnav"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
+
         <div class="kingdiv" id="king"></div>
-        <div class="kingpopup">
-            <div>
+        <div class="queendiv" id="queen"></div>
+        <div class="bishopdiv" id="bishop"></div>
+        <div class="knightdiv" id="knight"></div>
+        <div class="castlediv" id="castle"></div>
+        <div class="pawndiv" id="pawn"></div>
+
+
+        <div id="kingmodal" class="modalbackground">
+            <div class="modalcontent">
                 <div>
 
                 </div>
             </div>
         </div>
-        <div class="queendiv" id="queen"></div>
+
     </main>
     <footer>
 
     </footer>
+    <script src="../project_scripts/chess_project.js"></script>
 </body>
 
 </html>
