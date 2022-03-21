@@ -1,6 +1,8 @@
 
+/* id variables */
 var kingButton = document.getElementById("king");
 var kingModal = document.getElementById("kingmodal");
+
 
 
 window.onclick = function(event)
@@ -12,9 +14,10 @@ window.onclick = function(event)
 
     if (event.target == kingModal)
     {
-        kingModal.style.display = "none";
+       
+         kingModal.style.display = "none";
+  
     }
-
-    
+ 
 }
 
