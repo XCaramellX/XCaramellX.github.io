@@ -4,16 +4,15 @@
     padding: 0;
 }
 
-header
+header 
 {
     font-family: 'Julius Sans One', sans-serif;
+    align-items: center;
     display: flex;
     justify-content: start;
-    align-items: center;
     text-transform: uppercase;
     background-color: rgb(74, 72, 72, 0.5);
     animation: fadein 2s ease-in;
-    
 }
 
 body
@@ -69,8 +68,7 @@ header h1 a
 
 nav 
 {
-    
-    
+    margin-left: 8.5%;
     text-transform: uppercase;
     padding: 5px;
     font-size: larger;
@@ -108,10 +106,11 @@ nav li
     position: absolute;
     right: 70%;
     bottom: 27%;
-    width: 10%;
+    width: 8%;
     height: 46%;
     background-image: url("../project_images/chessboardking.jpg");
     background-repeat: no-repeat;
+    background-position: center;
     animation: fadein 2s ease-in;
 }
 
@@ -124,6 +123,7 @@ nav li
     height: 46%;
     background-image: url("../project_images/chessboardqueen.jpg");
     background-repeat: no-repeat;
+    background-position: center;
     animation: fadein 2s ease-in;
 }
 
@@ -173,6 +173,11 @@ nav li
     background-repeat: no-repeat;
     background-position: center;
     animation: fadein 2s ease-in;
+}
+
+@media screen
+{
+
 }
 
 div.kingdiv:hover 
@@ -289,11 +294,6 @@ div.pawndiv:hover {
         opacity: 1;
     }
 } 
-
-/*Used in chess_project.js*/
-
-
-/*--------------------*/
 
 @keyframes fadeinhover 
 {
