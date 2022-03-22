@@ -12,15 +12,15 @@
 <body>
     <header>
         <h1><a href="index.html">Charlotte Chess</a></h1>
-        <nav>
+        <div class="navbar-header">
             <ul>
-                <li><a href="home.html">creation</a></li>
-                <li><a href="famous_chess_players.html">Famous Chess Players</a></li>
-                <li class="rightnav"><a href="chess_clubs.html">Charlotte Chess Clubs</a></li>
-                <li class="rightnav"><a href="about.html">About</a></li>
-                <li class="rightnav"><a href="contact.html">Contact</a></li>
+                <li><a class="navbar-left" href="chess-history.html">chess history</a></li>
+                <li><a class="navbar-left" href="famous_chess_players.html">Famous Chess Players</a></li>
+                <li><a class="navbar-right" href="chess_clubs.html">Charlotte Chess Clubs</a></li>
+                <li><a class="navbar-right" href="openings-and-stratagies.html">Openings and stratagies</a></li>
+                <li><a class="navbar-right" href="contact.html">Contact</a></li>
             </ul>
-            </nav>
+        </div>
     </header>
     <main>
 
@@ -31,11 +31,133 @@
         <div class="castlediv" id="castle"></div>
         <div class="pawndiv" id="pawn"></div>
 
-
         <div id="kingmodal" class="modalbackground">
             <div class="modalcontentbox">
-                <div>
-                   
+                <div class="inner-modal-content-box">
+                    <h1 class="h1-modal-content-box">King</h1>
+                    <p id="p-inner-modal-content-box">
+                        While the king is not the most powerful piece on the board, it is the most important. You can't capture a king, it can only be attacked.
+                        If your king is being attacked it is in "check". A king can't move into check (it is an illegal move) and if a king is put into check it must get out of check.
+                        If the king can not get out of check, it's checkmate! <br /><br />
+                        A king can get out of checkmate if:<br /><br />
+
+                        1. You move the king out of check <br />
+                        2. block the check with another piece <br />
+                        3. capture the piece putting the king in check <br /><br />
+                    </p>
+                    <span class="link-span">To learn more about the king piece, click this link: <a href="https://www.chess.com/terms/chess-king">King page at chess.com</a></span>
+                </div>
+                <div class="positionfigure">
+                    <figure>
+                        <img src="../project_images/kingmovement.png" alt="The spaces the king can move" />
+                        <figcaption><i>The spaces a King can move</i></figcaption><br />
+                        <figcaption>Credit to chess.com</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div id="queenmodal" class="modalbackground">
+            <div class="modalcontentbox">
+                <div class="inner-modal-content-box">
+                    <h1 class="h1-modal-content-box">Queen</h1>
+                    <p id="p-inner-modal-content-box">
+                        The queen is the most powerful of all the chess pieces because it can attack and defend more squares than the other pieces.
+                        They can move in any direction like a king, can move up, down, left, right like a rook, and they can move diagonal like the bishop.
+                        <br /><br />
+                    </p>
+                    <span class="link-span">To learn more about the Queen, piece click this link: <a href="https://www.chess.com/terms/chess-queen">Queen page at chess.com</a></span>
+                </div>
+                <div class="positionfigure">
+                    <figure>
+                        <img src="../project_images/queenmovement.png" alt="The spaces the queen can move" />
+                        <figcaption><i>The spaces a Queen can move</i></figcaption>
+                        <figcaption>Credit to chess.com</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div id="bishopmodal" class="modalbackground">
+            <div class="modalcontentbox">
+                <div class="inner-modal-content-box">
+                    <h1 class="h1-modal-content-box">Bishop</h1>
+                    <p id="p-inner-modal-content-box">
+                        The bishop can move as far as it wants to but only on diagonals. It is a long ranged piece and is restrained to half of the board 
+                        and can only move on it's respective light or dark squares. A light squared-bishop can only move on light squares and a dark-squared bishop can move only on dark sqaures.
+                        A light-sqaured bisop can not change to a dark-sqaured bishop or vise-versa.<br /><br />
+                    </p>
+                    <span class="link-span">To learn more about the Bishop, piece click this link: <a href="https://www.chess.com/terms/chess-bishop">Bishop page at chess.com</a></span>
+                </div>
+                <div class="positionfigure">
+                    <figure>
+                        <img src="../project_images/bishopmovement.png" alt="The spaces the bishop can move" />
+                        <figcaption><i>The spaces a Bishop can move</i></figcaption>
+                        <figcaption>Credit to chess.com</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div id="knightmodal" class="modalbackground">
+            <div class="modalcontentbox">
+                <div class="inner-modal-content-box">
+                    <h1 class="h1-modal-content-box">Knight</h1>
+                    <p id="p-inner-modal-content-box">
+                        This piece moves diffrently than other pieces, it moves multiple squares each move. They can either move vertically up or down one square and
+                        horizontally over two squares, or up or virtically up or down two squares and over one squre horizontally. Their movement can be represented as an "L" shape.
+                        They can also jump over pieces and can change between the colored squares.
+                        <br /><br />
+                    </p>
+                    <span class="link-span">To learn more about the Knight, piece click this link: <a href="https://www.chess.com/terms/chess-knight">Knight page at chess.com</a></span>
+                </div>
+                <div class="positionfigure">
+                    <figure>
+                        <img src="../project_images/knightmovement.png" alt="The spaces the Knight can move" />
+                        <figcaption><i>The spaces a Knight can move</i></figcaption>
+                        <figcaption>Credit to chess.com</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="castlemodal" class="modalbackground">
+            <div class="modalcontentbox">
+                <div class="inner-modal-content-box">
+                    <h1 class="h1-modal-content-box">Rook</h1>
+                    <p id="p-inner-modal-content-box">
+                        The rook is the second most powerful piece in chess. The rook can move foward, backward, or sideways but it can't move diagonally.
+                        The rook can move up or down vertically and left or right horizontally on a square.<br /><br />
+                    </p>
+                    <span class="link-span">To learn more about the Rook piece, click this link: <a href="https://www.chess.com/terms/chess-rook">Rook page at chess.com</a></span>
+                </div>
+                <div class="positionfigure">
+                    <figure>
+                        <img src="../project_images/rookmovement.png" alt="The spaces the Rook can move" />
+                        <figcaption><i>The spaces a Rook can move</i></figcaption>
+                        <figcaption>Credit to chess.com</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+
+        <div id="pawnmodal" class="modalbackground">
+            <div class="modalcontentbox">
+                <div class="inner-modal-content-box">
+                    <h1 class="h1-modal-content-box">Pawn</h1>
+                    <p id="p-inner-modal-content-box">
+                        The pawn is the least powerful chess piece but can be promoted into any other chess piece. They can move foward one sqaure unless it's their first move.
+                        If it is their first move they can move one or two squares.<br /><br />
+                    </p>
+                    <span class="link-span">To learn more about the Pawn piece, click this link: <a href="https://www.chess.com/terms/chess-pawn">Pawn page at chess.com</a></span>
+                </div>
+                <div class="positionfigure">
+                    <figure>
+                        <img src="../project_images/pawnmovement.png" alt="The spaces the king can move" />
+                        <figcaption><i>The spaces a Pawn can move, Please note that after the first move they can only move once!</i></figcaption>
+                        <figcaption>Credit to chess.com</figcaption>
+                    </figure>
                 </div>
             </div>
         </div>
