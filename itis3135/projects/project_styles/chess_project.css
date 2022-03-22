@@ -9,6 +9,7 @@
 header {
     font-family: 'Julius Sans One', sans-serif;
     display: flex;
+    flex-wrap:wrap;
     align-items: center;
     text-transform: uppercase;
     background-color: rgb(74, 72, 72, 0.5);
@@ -17,7 +18,7 @@ header {
 
 .navbar-header 
 {
-    margin-left: 10.5vw;
+    margin-left: 12%;
 
 }
 
@@ -39,10 +40,11 @@ li a:hover{
 }
 
 li {
-    
+   
     list-style-type: none;
     display: inline-block;
-    margin-left: 1vw;
+    margin-left: 10px;
+   
 }
 
 .navbar-left 
@@ -69,7 +71,7 @@ body
 body h2 
 {
     position:absolute;
-    padding: 5vw 5vw;
+    padding: 5% 5%;
     font-size: 50px;
     text-transform: uppercase;
     letter-spacing: 5px;
@@ -79,7 +81,7 @@ body h2
 h3
 {
     position:absolute;
-    padding: 10vw 5vw;
+    padding: 10% 5%;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -87,7 +89,17 @@ h3
 .second-h3
 {
     position:absolute;
-    padding: 26vw 5vw;
+    padding: 26% 5%;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.stratagies-h3 
+{
+    position: absolute;
+    padding: 10% 5%;
+    right: 33%;
+    color: white;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -102,24 +114,34 @@ h3
 .p-info 
 {
     position: absolute;
-    top: 25vh;
+    top: 25%;
     inline-size: 700px;
     overflow-wrap: break-word;
     font-size: large;
 }
 
-.p-famous-info 
+.p-multiple-info 
 {
     position: absolute;
-    top: 30vh;
+    top: 30%;
     inline-size: 700px;
     overflow-wrap: break-word;
     font-size: large;
 }
 
-.p-second-famous-info {
+.p-second-multiple-info {
     position: absolute;
-    top: 62vh;
+    top: 62%;
+    inline-size: 700px;
+    overflow-wrap: break-word;
+    font-size: large;
+}
+
+.p-stratagy-info {
+    position: absolute;
+    top: 30%;
+    right: 10%;
+    color: white;
     inline-size: 700px;
     overflow-wrap: break-word;
     font-size: large;
@@ -133,20 +155,20 @@ p a:hover
 .history-info-image
 {
     position:absolute;
-    top: 25vh;
-    right: 5vw;
+    top: 25%;
+    right: 5%;
 }
 
 .famous-info-image {
     position: absolute;
-    top: 25vh;
-    right: 18vw;
+    top: 25%;
+    right: 18%;
 }
 
 .second-famous-info-image {
     position: absolute;
-    top: 60vh;
-    right: 18vw;
+    top: 60%;
+    right: 18%;
 }
 
 .info-image-caption 
@@ -166,76 +188,40 @@ p a:hover
 
                                                 /************************************************Chess home images************************************************************/
 
-.kingdiv {
-    position: absolute;
-    right: 70vw;
-    bottom: 27vh;
-    width: 8vw;
-    height: 46vh;
-    background-image: url("../project_images/chessboardking.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
+.kingdiv 
+{
+
+    margin-top: 16%;
+    margin-left: 20%;
     animation: fadein 2s ease-in;
 }
 
 
 .queendiv {
-    position: absolute;
-    right: 62vw;
-    bottom: 25vh;
-    width: 8vw;
-    height: 46vh;
-    background-image: url("../project_images/chessboardqueen.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
+
+    
     animation: fadein 2s ease-in;
 }
 
 .bishopdiv {
-    position: absolute;
-    right: 54vw;
-    bottom: 25vh;
-    width: 8vw;
-    height: 46vh;
-    background-image: url("../project_images/chessboardbishop.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
+
+ 
     animation: fadein 2s ease-in;
 }
 
-.knightdiv {
-    position: absolute;
-    right: 38vw;
-    bottom: 23vh;
-    width: 8vw;
-    height: 46vh;
-    background-image: url("../project_images/chessboardknight.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
+.knightdiv 
+{
+    margin-left: 10%;
     animation: fadein 2s ease-in;
 }
 
 .castlediv {
-    position: absolute;
-    right: 30vw;
-    bottom: 22.5vh;
-    width: 8vw;
-    height: 46vh;
-    background-image: url("../project_images/chessboardcastle.png");
-    background-repeat: no-repeat;
-    background-position: center;
+
     animation: fadein 2s ease-in;
 }
 
 .pawndiv {
-    position: absolute;
-    right: 23vw;
-    bottom: 20vh;
-    width: 8vw;
-    height: 46vh;
-    background-image: url("../project_images/chessboardpawn.png");
-    background-repeat: no-repeat;
-    background-position: center;
+
     animation: fadein 2s ease-in;
 }
 
@@ -244,104 +230,33 @@ and (min-devie-width: 1200px)
 and (max-device-width: 1600px)
 and (-webkit-min-device-pixel-ratio: 1)
 {
-    .kingdiv {
-        position: absolute;
-        right: 70%;
-        bottom: 27%;
-        width: 8vw;
-        height: 46vh;
-        background-image: url("../project_images/chessboardking.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        animation: fadein 2s ease-in;
-    }
-
-
-    .queendiv {
-        position: absolute;
-        right: 62%;
-        bottom: 25%;
-        width: 8vw;
-        height: 46vh;
-        background-image: url("../project_images/chessboardqueen.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        animation: fadein 2s ease-in;
-    }
-
-    .bishopdiv {
-        position: absolute;
-        right: 54%;
-        bottom: 25%;
-        width: 8vw;
-        height: 46vh;
-        background-image: url("../project_images/chessboardbishop.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        animation: fadein 2s ease-in;
-    }
-
-    .knightdiv {
-        position: absolute;
-        right: 38%;
-        bottom: 23%;
-        width: 8vw;
-        height: 46vh;
-        background-image: url("../project_images/chessboardknight.jpg");
-        background-repeat: no-repeat;
-        background-position: center;
-        animation: fadein 2s ease-in;
-    }
-
-    .castlediv {
-        position: absolute;
-        right: 30%;
-        bottom: 22.5%;
-        width: 8vw;
-        height: 46vh;
-        background-image: url("../project_images/chessboardcastle.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        animation: fadein 2s ease-in;
-    }
-
-    .pawndiv {
-        position: absolute;
-        right: 23%;
-        bottom: 20%;
-        width: 8vw;
-        height: 46vh;
-        background-image: url("../project_images/chessboardpawn.png");
-        background-repeat: no-repeat;
-        background-position: center;
-        animation: fadein 2s ease-in;
-    }
+   
 
 }
 
-div.kingdiv:hover 
+img.kingdiv:hover 
 {
     animation: fadeinhover 1s ease-out;
 }
 
-div.queendiv:hover 
+img.queendiv:hover 
 {
     animation: fadeinhover 1s ease-out;
 }
 
-div.bishopdiv:hover {
+img.bishopdiv:hover {
     animation: fadeinhover 1s ease-out;
 }
 
-div.knightdiv:hover {
+img.knightdiv:hover {
     animation: fadeinhover 1s ease-out;
 }
 
-div.castlediv:hover {
+img.castlediv:hover {
     animation: fadeinhover 1s ease-out;
 }
 
-div.pawndiv:hover {
+img.pawndiv:hover {
     animation: fadeinhover 1s ease-out;
 }
 
@@ -349,33 +264,28 @@ div.pawndiv:hover {
 
                                                              /*******************************************Chess piece modal*******************************************************/
 
-.modalbackground 
-{
+.modalbackground {
     display: none;
-    position: fixed;
     z-index: 1;
+    position:fixed;
+    top: 0%;
     left: 0;
     right: 0;
-    width: 100vw;
-    height: 100vh;
-    overflow: auto;
+    overflow:auto;
+    width: 100%;
+    height: 100%;
     background: linear-gradient(to right, rgb(255, 255, 255, 0.7), rgba(0, 0, 0, 0.7));
-    
 }
 
 .modalcontentbox 
 {
-    padding-top: 15vw;
-    padding-bottom: 12vw;
-    margin-top: 10vw;
+    margin-top: 10%;
+    margin-bottom: 20%;
     background-color: white;
     animation: fadeinmodal 2s ease-in;
 }
 
-.inner-modal-content-box {
-    position: absolute;
-    top: 20vh;
-}
+
 
 .inner-modal-content-box a:hover {
     color: lightgray;
@@ -383,34 +293,43 @@ div.pawndiv:hover {
 
 .h1-modal-content-box {
     font-weight: 100;
-    margin-left: 5vw;
+    margin-left: 5%;
     font-size: 100px;
     text-transform: uppercase;
     letter-spacing: 5px;
 }
 
-#p-inner-modal-content-box 
+.p-inner-modal-content-box 
 {
     inline-size: 1000px;
     overflow-wrap: break-word;
-    display: flex;
     font-size: x-large;
 
 }
 
 .positionfigure 
 {
-    position: absolute;
-    top: 30vh;
-    right: 15vw;
+
+    margin-left: 20%;
     text-align: center;
 }
 
 .link-span 
 {
     color: black;
-    margin-left: 5vw;
+    margin-left: 5%;
     font-size: x-large;
+}
+
+.link-span-modal
+{
+    text-decoration: underline;
+    
+}
+
+.link-span-modal:hover
+{
+    color:lightgrey;
 }
 
                                                             /*************************************************animations***************************************************************/
