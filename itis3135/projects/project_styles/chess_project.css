@@ -307,9 +307,17 @@ img.pawndiv:hover {
 
 }
 
-.positionfigure 
+.position-figure-container
 {
+    position: absolute;
+    margin-left: 20%;
+    text-align: center;
+}
 
+.position-figure
+{
+    
+    top: 50%;
     margin-left: 20%;
     text-align: center;
 }
