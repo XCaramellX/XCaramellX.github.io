@@ -18,8 +18,12 @@ header {
 
 .navbar-header 
 {
-    margin-left: 12%;
+    margin-left: 3%;
 
+}
+
+.famous-navbar-header {
+    margin-left: 2.5%;
 }
 
 h1 
@@ -78,6 +82,11 @@ body h2
     font-family: 'Julius Sans One', sans-serif;
 }
 
+.famous-h2
+{
+    padding: 5% 1%;
+}
+
 h3
 {
     position:absolute;
@@ -86,10 +95,9 @@ h3
     text-transform: uppercase;
 }
 
-.second-h3
-{
-    position:absolute;
-    padding: 26% 5%;
+.famous-h3 {
+    position: absolute;
+    padding: 28% 5%;
     font-weight: bold;
     text-transform: uppercase;
 }
@@ -104,35 +112,35 @@ h3
     text-transform: uppercase;
 }
 
- p 
+p 
 {
     margin-left: 5vw;
 
 }
 
 
-.p-info 
+.p-history-info 
 {
     position: absolute;
     top: 25%;
-    inline-size: 700px;
+    inline-size: 600px;
     overflow-wrap: break-word;
     font-size: large;
 }
 
-.p-multiple-info 
+.p-famous-info 
 {
     position: absolute;
     top: 30%;
-    inline-size: 700px;
+    inline-size: 600px;
     overflow-wrap: break-word;
     font-size: large;
 }
 
-.p-second-multiple-info {
+.p-second-famous-info {
     position: absolute;
-    top: 62%;
-    inline-size: 700px;
+    top: 68%;
+    inline-size: 600px;
     overflow-wrap: break-word;
     font-size: large;
 }
@@ -156,7 +164,7 @@ p a:hover
 {
     position:absolute;
     top: 25%;
-    right: 5%;
+    right: 2%;
 }
 
 .famous-info-image {
@@ -167,7 +175,7 @@ p a:hover
 
 .second-famous-info-image {
     position: absolute;
-    top: 60%;
+    top: 68%;
     right: 18%;
 }
 
@@ -188,48 +196,162 @@ p a:hover
 
                                                 /************************************************Chess home images************************************************************/
 
-.kingdiv 
-{
-
+.landing-page-chess {
     margin-top: 16%;
-    margin-left: 20%;
+    margin-left: 18%;
     animation: fadein 2s ease-in;
 }
 
 
-.queendiv {
 
-    
-    animation: fadein 2s ease-in;
-}
-
-.bishopdiv {
-
- 
-    animation: fadein 2s ease-in;
-}
 
 .knightdiv 
 {
-    margin-left: 10%;
+    margin-left: 5%;
     animation: fadein 2s ease-in;
 }
 
-.castlediv {
 
-    animation: fadein 2s ease-in;
-}
-
-.pawndiv {
-
-    animation: fadein 2s ease-in;
-}
 
 @media screen
-and (min-devie-width: 1200px)
-and (max-device-width: 1600px)
+and (min-width: 1200px)
+and (max-width: 1600px)
 and (-webkit-min-device-pixel-ratio: 1)
 {
+    .navbar-header 
+    {
+        margin-left: 3%;
+    }
+
+    .famous-navbar-header {
+        margin-left: 2.5%;
+    }
+
+    .p-history-info {
+        position: absolute;
+        top: 25%;
+        inline-size: 600px;
+        overflow-wrap: break-word;
+        font-size: large;
+    }
+
+    .history-info-image {
+        position: absolute;
+        top: 25%;
+        right: 2%;
+    }
+
+    .famous-h2 {
+        padding: 5% 1%;
+    }
+
+    .famous-h3 {
+        position: absolute;
+        padding: 28% 5%;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .p-famous-info {
+        position: absolute;
+        top: 30%;
+        inline-size: 600px;
+        overflow-wrap: break-word;
+        font-size: large;
+    }
+
+    .p-second-famous-info {
+        position: absolute;
+        top: 68%;
+        inline-size: 600px;
+        overflow-wrap: break-word;
+        font-size: large;
+    }
+
+    .second-famous-info-image {
+        position: absolute;
+        top: 68%;
+        right: 18%;
+    }
+
+    .landing-page-chess {
+        margin-top: 16%;
+        margin-left: 18%;
+        animation: fadein 2s ease-in;
+    }
+
+    .knightdiv {
+        margin-left: 5%;
+        animation: fadein 2s ease-in;
+    }
+
+    .modalbackground {
+        display: none;
+        z-index: 1;
+        position: fixed;
+        top: 0%;
+        left: 0;
+        right: 0;
+        overflow: auto;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(to right, rgb(255, 255, 255, 0.7), rgba(0, 0, 0, 0.7));
+    }
+
+    .king-modal-content-box {
+        margin-top: 8%;
+        padding-bottom: 5%;
+        background-color: white;
+        animation: fadeinmodal 2s ease-in;
+    }
+
+    .specific-chess-modal-content-box {
+        margin-top: 11%;
+        padding-bottom: 7%;
+        background-color: white;
+        animation: fadeinmodal 2s ease-in;
+    }
+
+
+    .castle-modal-content-box {
+        margin-top: 12%;
+        padding-bottom: 7%;
+        background-color: white;
+        animation: fadeinmodal 2s ease-in;
+    }
+
+
+    .inner-modal-content-box a:hover {
+        color: lightgray;
+    }
+
+    .h1-modal-content-box {
+        font-weight: 100;
+        margin-left: 5%;
+        font-size: 100px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+    }
+
+    .p-inner-modal-content-box {
+        inline-size: 900px;
+        overflow-wrap: break-word;
+        font-size: x-large;
+    }
+
+    .position-figure-container {
+        position: absolute;
+        top: 25%;
+        margin-left: 75%;
+        text-align: center;
+    }
+
+    .position-rook-figure-container {
+        position: absolute;
+        top: 28%;
+        margin-left: 75%;
+        text-align: center;
+    }
    
 
 }
@@ -277,15 +399,29 @@ img.pawndiv:hover {
     background: linear-gradient(to right, rgb(255, 255, 255, 0.7), rgba(0, 0, 0, 0.7));
 }
 
-.modalcontentbox 
+.king-modal-content-box 
 {
   
-    margin-top: 7%;
-    padding-bottom: 12%;
+    margin-top: 8%;
+    padding-bottom: 5%;
     background-color: white;
     animation: fadeinmodal 2s ease-in;
 }
 
+.specific-chess-modal-content-box {
+    margin-top: 11%;
+    padding-bottom: 7%;
+    background-color: white;
+    animation: fadeinmodal 2s ease-in;
+}
+
+
+.castle-modal-content-box {
+    margin-top: 12%;
+    padding-bottom: 7%;
+    background-color: white;
+    animation: fadeinmodal 2s ease-in;
+}
 
 
 .inner-modal-content-box a:hover {
@@ -303,7 +439,7 @@ img.pawndiv:hover {
 
 .p-inner-modal-content-box 
 {
-    inline-size: 1000px;
+    inline-size: 900px;
     overflow-wrap: break-word;
     font-size: x-large;
 
@@ -317,8 +453,15 @@ img.pawndiv:hover {
     text-align: center;
 }
 
-.link-span 
+.position-rook-figure-container 
 {
+    position: absolute;
+    top: 28%;
+    margin-left: 75%;
+    text-align: center;
+}
+
+.link-span {
     color: black;
     margin-left: 5%;
     font-size: x-large;
