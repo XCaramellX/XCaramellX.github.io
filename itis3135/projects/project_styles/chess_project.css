@@ -279,8 +279,9 @@ img.pawndiv:hover {
 
 .modalcontentbox 
 {
-    margin-top: 10%;
-    margin-bottom: 20%;
+  
+    margin-top: 7%;
+    padding-bottom: 12%;
     background-color: white;
     animation: fadeinmodal 2s ease-in;
 }
@@ -291,7 +292,8 @@ img.pawndiv:hover {
     color: lightgray;
 }
 
-.h1-modal-content-box {
+.h1-modal-content-box 
+{
     font-weight: 100;
     margin-left: 5%;
     font-size: 100px;
@@ -309,16 +311,9 @@ img.pawndiv:hover {
 
 .position-figure-container
 {
-    position: absolute;
-    margin-left: 20%;
-    text-align: center;
-}
-
-.position-figure
-{
-    
-    top: 50%;
-    margin-left: 20%;
+    position:absolute;
+    top: 25%;
+    margin-left: 75%;
     text-align: center;
 }
 
