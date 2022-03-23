@@ -145,7 +145,18 @@ p
     font-size: large;
 }
 
-.p-stratagy-info {
+
+.p-stratagy-info 
+{
+    position: absolute;
+    top: 30%;
+    inline-size: 600px;
+    overflow-wrap: break-word;
+    font-size: large;
+}
+
+.p-second-stratagy-info 
+{
     position: absolute;
     top: 30%;
     right: 10%;
