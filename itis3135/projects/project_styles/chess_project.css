@@ -106,7 +106,7 @@ h3
 {
     position: absolute;
     padding: 10% 5%;
-    right: 33%;
+    right: 34%;
     color: white;
     font-weight: bold;
     text-transform: uppercase;
@@ -114,7 +114,7 @@ h3
 
 p 
 {
-    margin-left: 5vw;
+    margin-left: 5%;
 
 }
 
@@ -159,7 +159,7 @@ p
 {
     position: absolute;
     top: 30%;
-    right: 10%;
+    right: 0%;
     color: white;
     inline-size: 700px;
     overflow-wrap: break-word;
@@ -285,8 +285,38 @@ and (-webkit-min-device-pixel-ratio: 1)
         right: 18%;
     }
 
+    .stratagies-h3 
+    {
+    position: absolute;
+    padding: 10% 5%;
+    right: 34%;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    }
+
+    .p-stratagy-info 
+    {
+    position: absolute;
+    top: 30%;
+    inline-size: 600px;
+    overflow-wrap: break-word;
+    font-size: large;
+    }
+
+    .p-second-stratagy-info 
+    {
+    position: absolute;
+    top: 30%;
+    right: 0%;
+    color: white;
+    inline-size: 700px;
+    overflow-wrap: break-word;
+    font-size: large;
+    }
+
     .landing-page-chess {
-        margin-top: 16%;
+        margin-top: 14%;
         margin-left: 18%;
         animation: fadein 2s ease-in;
     }
@@ -487,9 +517,23 @@ img.pawndiv:hover {
 .link-span-modal:hover
 {
     color:lightgrey;
+
 }
 
-                                                            /*************************************************animations***************************************************************/
+                                                            /*************************************************Stratagy modal***********************************************************/
+
+.basic-concept-container
+{
+    position: absolute;
+    top: 40%;
+    margin-left: 20%;
+    background-color:blue;
+    border-radius: 25px;
+    
+}
+
+                            
+/*************************************************animations***************************************************************/
 
 @keyframes fadein
 {
