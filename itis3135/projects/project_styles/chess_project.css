@@ -4,16 +4,49 @@
     padding: 0;
 }
 
-                                                        /*************************************************header and nav bar***************************************************************/
+ /*************************************************header and nav bar***************************************************************/
+
+
+body {
+    height: 100px;
+    font-family: 'Julius Sans One', sans-serif;
+    background: linear-gradient(to right, white 0%, white 50%, black 0%, black 100%);
+}
+
 
 header {
-    font-family: 'Julius Sans One', sans-serif;
+   
     display: flex;
     flex-wrap:wrap;
     align-items: center;
     text-transform: uppercase;
     background-color: rgb(74, 72, 72, 0.5);
     animation: fadein 2s ease-in;
+}
+
+h1 {
+    font-weight: lighter;
+}
+
+
+h2 {
+    position: absolute;
+    padding: 5% 5%;
+    font-size: 50px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+
+h3 {
+    position: absolute;
+    padding: 10% 5%;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+p {
+    margin-left: 5%;
 }
 
 .navbar-header 
@@ -26,11 +59,7 @@ header {
     margin-left: 2.5%;
 }
 
-h1 
-{
-   
-    font-weight: lighter;
-}
+
 
 a 
 {
@@ -39,17 +68,17 @@ a
 }
 
 
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+
 li a:hover{
     color: lightgray;
 }
 
-li {
-   
-    list-style-type: none;
-    display: inline-block;
-    margin-left: 10px;
-   
-}
 
 .navbar-left 
 {
@@ -63,37 +92,18 @@ li {
     font-size:large;
 }
 
-                                                    /************************************************History, Famous chess players info, etc goes here************************************************/
+ /************************************************History, Famous chess players info, etc goes here************************************************/
 
-body 
-{
-    height: 100px;
-    font-family: 'Julius Sans One', sans-serif;
-    background: linear-gradient(to right, white 0%, white 50%, black 0%, black 100%);
-}
 
-body h2 
-{
-    position:absolute;
-    padding: 5% 5%;
-    font-size: 50px;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    font-family: 'Julius Sans One', sans-serif;
-}
+
+
 
 .famous-h2
 {
     padding: 5% 1%;
 }
 
-h3
-{
-    position:absolute;
-    padding: 10% 5%;
-    font-weight: bold;
-    text-transform: uppercase;
-}
+
 
 .famous-h3 {
     position: absolute;
@@ -110,12 +120,6 @@ h3
     color: white;
     font-weight: bold;
     text-transform: uppercase;
-}
-
-p 
-{
-    margin-left: 5%;
-
 }
 
 
@@ -205,7 +209,7 @@ p a:hover
 
 
 
-                                                /************************************************Chess home images************************************************************/
+  /************************************************Chess home images************************************************************/
 
 .landing-page-chess {
     margin-top: 16%;
@@ -425,7 +429,7 @@ img.pawndiv:hover {
 
 
 
-                                                             /*******************************************Chess piece modal*******************************************************/
+ /*******************************************Chess piece modal*******************************************************/
 
 .modalbackground {
     display: none;
