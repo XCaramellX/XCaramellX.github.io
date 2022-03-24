@@ -65,6 +65,17 @@ nav li
     color: #DAB6FC;  
 }
 
+.slide-show-images{
+    display: none;
+
+}
+
+.p-slide-show{
+  display:flex;
+  align-content:center;
+  margin-left: 27%;
+}
+
 a
 {
     text-decoration: none;
@@ -246,4 +257,15 @@ form
     background-image: linear-gradient(to bottom, blanchedalmond, palegoldenrod);
     grid-column: -2;
     grid-row: 2 / span 4;
+}
+
+@media screen and (min-width: 1200px)
+and (max-width: 1600px)
+and (-webkit-min-device-pixel-ratio: 1)
+{
+    .p-slide-show {
+        display: flex;
+        align-content: center;
+        margin-left: 18%;
+    }
 }
