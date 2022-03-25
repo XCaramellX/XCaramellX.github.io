@@ -429,7 +429,7 @@ border-style: solid;
     text-align:left;
     display:flex;
     flex-direction: column;
-    inline-size: 200px;
+    inline-size: 350px;
     overflow-wrap:break-word;
     margin-top: 5%;
     margin-left: 5%;
@@ -467,7 +467,7 @@ border-style: solid;
 {
     position: absolute;
     top: 80%;
-    left: 45%;
+    left: 42%;
     height: 5%;
     width: 10%;
     padding: 1%;

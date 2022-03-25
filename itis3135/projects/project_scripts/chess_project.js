@@ -182,7 +182,9 @@ window.onclick = function(event)
 
     if(event.target == materialSpan){
         materialBox.style.display = "block";
-    }else{
+    }else if(event.target == pieceSpan || event.target == pawnSpan ||
+         event.target == spaceSpan || event.target == kingSafetySpan) {
+
         materialBox.style.display = "none";
     }
 
@@ -194,7 +196,9 @@ window.onclick = function(event)
 
     if(event.target == pieceSpan){
         pieceBox.style.display = "block";
-    }else{
+    }else if(event.target == materialSpan || event.target == pawnSpan ||
+        event.target == spaceSpan || event.target == kingSafetySpan){
+
         pieceBox.style.display = "none";
     }
 
@@ -206,7 +210,9 @@ window.onclick = function(event)
 
     if(event.target == pawnSpan){
         pawnBox.style.display = "block";
-    }else{
+    }else if(event.target == materialSpan || event.target == pieceSpan ||
+        event.target == spaceSpan || event.target == kingSafetySpan){
+
         pawnBox.style.display = "none";
     }
 
@@ -217,7 +223,9 @@ window.onclick = function(event)
     /* space */
     if(event.target == spaceSpan){
         spaceBox.style.display = "block";
-    }else{
+    }else if(event.target == pieceSpan || event.target == pawnSpan ||
+        event.target == materialSpan || event.target == kingSafetySpan){
+
         spaceBox.style.display = "none";
     }
 
@@ -228,7 +236,9 @@ window.onclick = function(event)
     /* king safety*/
     if(event.target == kingSafetySpan){
         kingSafetyBox.style.display = "block";
-    }else{
+    }else if(event.target == pieceSpan || event.target == pawnSpan ||
+        event.target == spaceSpan || event.target == materialSpan){
+
         kingSafetyBox.style.display = "none";
     }
 
@@ -242,7 +252,9 @@ window.onclick = function(event)
 
     if(event.target == sicilianSpan){
         sicilianBox.style.display = "block";
-    }else{
+    }else if(event.target == frenchSpan || event.target == ruylopezSpan ||
+        event.target == carokannSpan){
+
         sicilianBox.style.display = "none";
     }
 
@@ -254,7 +266,8 @@ window.onclick = function(event)
 
     if(event.target == frenchSpan){
         frenchBox.style.display = "block";
-    }else{
+    }else if(event.target == sicilianSpan || event.target == ruylopezSpan ||
+        event.target == carokannSpan){
         frenchBox.style.display = "none";
     }
 
@@ -266,7 +279,8 @@ window.onclick = function(event)
 
     if(event.target == ruylopezSpan){
         ruylopezBox.style.display = "block";
-    }else{
+    }else if(event.target == frenchSpan || event.target == sicilianSpan ||
+        event.target == carokannSpan){
         ruylopezBox.style.display = "none";
     }
 
@@ -278,7 +292,8 @@ window.onclick = function(event)
 
      if(event.target == carokannSpan){
         carokannBox.style.display = "block";
-    }else{
+    }else if(event.target == frenchSpan || event.target == ruylopezSpan ||
+        event.target == sicilianSpan){
         carokannBox.style.display = "none";
     }
 
