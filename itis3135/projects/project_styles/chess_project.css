@@ -81,8 +81,8 @@ a
 
 li {
     list-style-type: none;
-    display: inline-block;
-    margin-left: 10px;
+    display: inline-block;  
+    margin-left: 40px;
 }
 
 
@@ -103,7 +103,7 @@ li a:hover{
     font-size:large;
 }
 
- /************************************************History, Famous chess players info, etc goes here************************************************/
+ /************************************************History and Famous chess players info goes here************************************************/
 
 
 
@@ -499,31 +499,28 @@ border-style: solid;
 }
 
 /*************************************************Chess Clubs**************************************************************/
-.chess-club-h3 {
-    position: absolute;
-    font-weight: bold;
-    
-}
+
 
 .chess-club-center-and-school-h3 {
     position: absolute;
-    padding: 25% 5%;
+    padding: 27% 5%;
     font-weight: bold;
     
 }
 
 .chess-club-p{
     position: absolute;
-    top: 30%;
+    top: 27%;
     inline-size: 550px;
     overflow-wrap: break-word;
 }
 
 .chess-club-center-and-school-p{
     position: absolute;
-    top: 65%;
+    top: 63%;
     inline-size: 550px;
     overflow-wrap: break-word;
+    
 }
 
 
@@ -536,6 +533,12 @@ border-style: solid;
     text-align: center;
 }
 
+.chess-club-images{
+    border-style: solid;
+    border-color: white;
+    
+}
+
 .chess-club-center-and-school-figure
 {
     position: absolute;
@@ -543,6 +546,28 @@ border-style: solid;
     left: 65%;
     color: white;
     text-align: center;
+}
+
+
+/******************************************************contact page***********************************************************/
+
+.parent-contact-info
+{
+    position: relative;
+  
+}
+
+.contact-info 
+{
+
+    position: absolute;
+    top: 30%;
+    margin-left: 30px;
+}
+
+.contact-info li
+{
+    display: list-item;
 }
 
 
@@ -554,6 +579,28 @@ and (min-width: 1200px)
 and (max-width: 1600px)
 and (-webkit-min-device-pixel-ratio: 1)
 {
+    header {
+   
+        display: flex;
+        flex-wrap:wrap;
+        align-items: center;
+        text-transform: uppercase;
+        background-color: rgb(74, 72, 72, 0.5);
+        animation: fadein 2s ease-in;
+    }
+
+    li {
+        list-style-type: none;
+        display: inline-block;  
+        margin-left: 45px;
+    }
+
+    h3 {
+        position: absolute;
+        padding: 10% 5%;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
     .navbar-header 
     {
         margin-left: 3%;
@@ -639,6 +686,54 @@ and (-webkit-min-device-pixel-ratio: 1)
     overflow-wrap: break-word;
     font-size: large;
     }
+
+    .chess-club-center-and-school-h3 {
+        position: absolute;
+        padding: 27% 5%;
+        font-weight: bold;
+        
+    }
+    
+    .chess-club-p{
+        position: absolute;
+        top: 30%;
+        inline-size: 550px;
+        overflow-wrap: break-word;
+    }
+    
+    .chess-club-center-and-school-p{
+        position: absolute;
+        top: 64%;
+        inline-size: 550px;
+        overflow-wrap: break-word;
+        
+    }
+    
+    
+    .chess-club-figure
+    {
+        position: absolute;
+        top: 10%;
+        left: 65%;
+        color: white;
+        text-align: center;
+    }
+    
+    .chess-club-images{
+        border-style: solid;
+        border-color: white;
+        
+    }
+    
+    .chess-club-center-and-school-figure
+    {
+        position: absolute;
+        top: 65%;
+        left: 65%;
+        color: white;
+        text-align: center;
+    }
+    
 
     .basic-concept-container
 {

@@ -1,4 +1,77 @@
-var $ = function (id) {
+
+/***current slides variables***/
+let myCircles = document.getElementsByClassName("slideshow-circle");
+let count = 0;
+/***previous and next***/
+
+var previousButton = document.getElementById("previous-button");
+var nextButton = document.getElementById("next-button");
+
+
+
+    let slideIndex = 1;
+
+    function plusSlides(n){
+        showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n){
+        showSlides(slideIndex = n);
+    }
+
+    function showSlides(n){
+        let i;
+        let slides = document.getElementsByClassName("my-beach-slides");
+        let circles = document.getElementsByClassName("slideshow-circle");
+        if(n > slides.length) {slideIndex = 1}
+        if(n < 1) {slideIndex = slides.length}
+        for(i = 0; i < slides.length; i++){
+            slides[i].style.display = "none";
+        }
+
+
+        for(i = 0; i < circles.length; i++){
+            circles[i].className = circles[i].className.replace(" active", "");
+        }
+
+        slides[slideIndex-1].style.display = "block";
+        circles[slideIndex-1].className += " active";
+    }
+
+    /*for(var i = 0; i < myCircles.length; i++){
+        if(myCircles[i].onclick == plusSlides(i)){
+            plusSlides(count);
+            
+        }
+        
+        count++;
+    }*/
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*var $ = function (id) {
     return document.getElementById(id);
 };
 
@@ -32,4 +105,4 @@ window.onload = function () {
             captionNode.firstChild.nodeValue = image.title;
         },
         2000);
-};
+};*/

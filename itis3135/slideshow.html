@@ -19,17 +19,62 @@
         <h2>
             Slide Show
         </h2>
-        <ul class="slide-show-images" id="beach_image_list">
-            <li><a href="images/beach1.jpg" title ="Want to go for a swim?"></a></li>
-            <li><a href="images/beach2.jpg" title="Nice Day"></a></li>
-            <li><a href="images/beach3.jpg" title="The water looks beautiful"></a></li>
-            <li><a href="images/beach4.jpg" title="Fun in the sun"></a></li>
-            <li><a href="images/beach5.jpg" title="Relax"></a></li>
-            <li><a href="images/beach6.jpg" title="Lets stay here forever!"></a></li>
-        </ul>
-        
-        <p class="p-slide-show"><img src="images/beach1.jpg" alt="beatiful beach" id="beach_image_1" /></p>
-        <h2 id="beach_caption">Want to fo for a swim?</h2>
+
+            <div class="slideshow-container">
+
+
+                <div class="my-beach-slides fade">
+                    <div class="numbered-slideshow">1 / 6</div>
+                    <img class="beachSlide" src="images/beach1.jpg" alt="1st beach">
+                    <div class="caption-text">Want to go for a swim?</div>
+                </div>
+                
+                <div class="my-beach-slides fade">
+                    <div class="numbered-slideshow">2 / 6</div>
+                    <img class="beachSlide" src="images/beach2.jpg" alt="1st beach">
+                    <div class="caption-text">Nice Day</div>
+                </div>
+
+                <div class="my-beach-slides fade">
+                    <div class="numbered-slideshow">3 / 6</div>
+                    <img class="beachSlide" src="images/beach3.jpg" alt="1st beach">
+                    <div class="caption-text">The water looks beautiful</div>
+                </div>
+
+                <div class="my-beach-slides fade">
+                    <div class="numbered-slideshow">4 / 6</div>
+                    <img class="beachSlide" src="images/beach4.jpg" alt="1st beach">
+                    <div class="caption-text">Fun in the sun</div>
+                </div>
+
+                <div class="my-beach-slides fade">
+                    <div class="numbered-slideshow">5 / 6</div>
+                    <img class="beachSlide" src="images/beach5.jpg" alt="1st beach">
+                    <div class="caption-text">Relax</div>
+                </div>
+
+                <div class="my-beach-slides fade">
+                    <div class="numbered-slideshow">6 / 6</div>
+                    <img class="beachSlide" src="images/beach6.jpg" alt="1st beach">
+                    <div class="caption-text">Lets stay here forever!</div>
+                </div>
+
+                <a id="previous-button" class="previous" onclick="plusSlides(-1)">&#10094;</a>
+                <a id="next-button" class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <br>
+
+            <div class="click-circles">
+                <span id="current-slide1" class="slideshow-circle" onclick="currentSlide(1)"></span>
+                <span id="current-slide2" class="slideshow-circle" onclick="currentSlide(2)"></span>
+                <span id="current-slide3" class="slideshow-circle" onclick="currentSlide(3)"></span>
+                <span id="current-slide4" class="slideshow-circle" onclick="currentSlide(4)"></span>
+                <span id="current-slide5" class="slideshow-circle" onclick="currentSlide(5)"></span>
+                <span id="current-slide6" class="slideshow-circle" onclick="currentSlide(6)"></span>
+            </div>
+                
+            
     </main>
     <footer>
         <div data-include="components/footer.html"></div>
