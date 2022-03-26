@@ -11,16 +11,7 @@
 </head>
 <body>
     <header>
-        <h1><a href="index.html">Charlotte Chess</a></h1>
-        <div class="navbar-header">
-            <ul>
-                <li><a class="navbar-left" href="chess-history.html">chess history</a></li>
-                <li><a class="navbar-left" href="famous_chess_players.html">Famous Chess Players</a></li>
-                <li><a class="navbar-right" href="chess_clubs.html">Charlotte Chess Clubs</a></li>
-                <li><a class="navbar-right" href="openings-and-stratagies.html">Openings and stratagies</a></li>
-                <li><a class="navbar-right" href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+        <div data-include="../project_components/project_header.html" data-replace="%pagename%"></div>
     </header>
     <main>
         <h2>Chess Stratagies</h2>
@@ -141,7 +132,7 @@
             <span class="link-span-modal" id="french-defense-click">French Defense</span>, 
             <span class="link-span-modal" id="ruy-lopez-opening-click">Ruy Lopez Opening</span>, 
             and the <span class="link-span-modal" id="caro-kann-defense-click">Caro-Kann Defense</span> are the four most popular openings.
-            If you want to know more about openings click here: <a href="https://www.chess.com/openings">Chess openings.com</a>
+            If you want to know more about openings click here: <a href="https://www.chess.com/openings">Chess openings at chess.com</a>
         </p>
 
         <div id="sicillian-box" class="openings-container">
@@ -163,13 +154,15 @@
         </div>
 
         <div id="french-box" class="openings-container">
-            <h4>Material Count</h4>
+            <h4>French Defense</h4>
             <p class="p-basic-concept-and-openings">
-                fsdfddfgd
+                One of the most oldest openings in chess. The name comes from an 1834 game
+                between the London Chess Club and the Paris Chess Club. It is a repsonse to white's e4
+                by moving to e6.
             </p>
             <figure class="stratagy-figure">
                 <img src="../project_images/french_defense.jpeg" alt="material count">
-                <figcaption><i>White has more material</i></figcaption>
+                <figcaption><i>e6 in response to e4</i></figcaption>
                 <figcaption>Credit to chess.com</figcaption>
             </figure>
 
@@ -179,13 +172,17 @@
         </div>
 
         <div id="ruy-lopez-box" class="openings-container">
-            <h4>Material Count</h4>
+            <h4>Ruy Lopez Opening</h4>
             <p class="p-basic-concept-and-openings">
-                fsdfddfgd
+                This opening is also known as the Spanish Opening or Spanish Game. It is one of
+                most analyzed openings in chess history. Most adopt this opening as apart of their
+                repertoire. This opening starts after the moves e4 e5(pawn moves to e5 in response to e4)
+                , Nf3 Nc6(knight to c6 in response to Knight to f3), and bb5(bishop goes to b5). White 
+                usually fights for control of the center and Black has hard time getting an advantage in this opening.
             </p>
             <figure class="stratagy-figure">
                 <img src="../project_images/ruy_lopez_opening.jpeg" alt="material count">
-                <figcaption><i>White has more material</i></figcaption>
+                <figcaption><i>Ruy Lopez Opening</i></figcaption>
                 <figcaption>Credit to chess.com</figcaption>
             </figure>
 
@@ -195,13 +192,15 @@
         </div>
 
         <div id="caro-kann-box" class="openings-container">
-            <h4>Material Count</h4>
+            <h4>Caro Kann Defense</h4>
             <p class="p-basic-concept-and-openings">
-                fsdfddfgd
+                It is known for it's solidity and it's defining move is c6 in response to e4.
+                It then goes to d5 without blocking the light-squared bishop. Which is considered
+                the main drawback of it's cousin the French Defense.
             </p>
             <figure class="stratagy-figure">
                 <img src="../project_images/caro_kann_defense.jpeg" alt="material count">
-                <figcaption><i>White has more material</i></figcaption>
+                <figcaption><i>c6 in repsonse to e4</i></figcaption>
                 <figcaption>Credit to chess.com</figcaption>
             </figure>
 
@@ -213,5 +212,6 @@
     <footer>
     </footer>
     <script src="../project_scripts/chess_project.js"></script>
+    <script src="../project_scripts/include.min.js"></script>
 </body>
 </html>

@@ -181,6 +181,12 @@ li a:hover{
     font-size: large;
 }
 
+.p-second-stratagy-info a
+{
+ color: white;
+}
+
+
 .history-info-image
 {
     position:absolute;
@@ -449,19 +455,6 @@ border-style: solid;
     text-align:center;
 }
 
-.link-span-modal
-{
-    text-decoration: underline;
-    
-}
-
-.link-span-modal:hover
-{
-    color:lightgrey;
-    cursor: pointer;
-
-}
-
 
 .white-stratagy-close-button
 {
@@ -492,7 +485,65 @@ border-style: solid;
     cursor: pointer;
 }
 
+.link-span-modal
+{
+    text-decoration: underline;
+    
+}
 
+.link-span-modal:hover
+{
+    color:lightgrey;
+    cursor: pointer;
+
+}
+
+/*************************************************Chess Clubs**************************************************************/
+.chess-club-h3 {
+    position: absolute;
+    font-weight: bold;
+    
+}
+
+.chess-club-center-and-school-h3 {
+    position: absolute;
+    padding: 25% 5%;
+    font-weight: bold;
+    
+}
+
+.chess-club-p{
+    position: absolute;
+    top: 30%;
+    inline-size: 550px;
+    overflow-wrap: break-word;
+}
+
+.chess-club-center-and-school-p{
+    position: absolute;
+    top: 65%;
+    inline-size: 550px;
+    overflow-wrap: break-word;
+}
+
+
+.chess-club-figure
+{
+    position: absolute;
+    top: 10%;
+    left: 65%;
+    color: white;
+    text-align: center;
+}
+
+.chess-club-center-and-school-figure
+{
+    position: absolute;
+    top: 65%;
+    left: 65%;
+    color: white;
+    text-align: center;
+}
 
 
 
@@ -534,7 +585,7 @@ and (-webkit-min-device-pixel-ratio: 1)
         position: absolute;
         padding: 28% 5%;
         font-weight: bold;
-        text-transform: uppercase;
+        
     }
 
     .p-famous-info {
@@ -588,6 +639,87 @@ and (-webkit-min-device-pixel-ratio: 1)
     overflow-wrap: break-word;
     font-size: large;
     }
+
+    .basic-concept-container
+{
+    position: absolute;
+    top: 47%;
+    height: 50%;
+    width: 40%;
+    margin-left: 5%;
+    display: none;
+    background-color: black;
+    color:white;
+    border-radius: 25px;
+    text-align: center;
+    
+}
+
+
+.stratagy-figure
+{
+    position: absolute;
+    top: 25%;
+    left: 65%;
+
+}
+
+
+
+.p-basic-concept-and-openings
+{
+    text-align:left;
+    display:flex;
+    flex-direction: column;
+    inline-size: 350px;
+    overflow-wrap:break-word;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+.openings-container
+{
+    position: absolute;
+    top: 47%;
+    height: 50%;
+    width: 40%;
+    margin-left: 55%;
+    display: none;
+    background-color: white;
+    color:black;
+    border-radius: 25px;
+    text-align:center;
+}
+
+
+.white-stratagy-close-button
+{
+    position: absolute;
+    top: 80%;
+    left: 42%;
+    height: 5%;
+    width: 10%;
+    padding: 1%;
+    color:black;
+    background-color:white;
+    border-radius: 25px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.black-stratagy-close-button
+{
+    position: absolute;
+    top: 80%;
+    left: 45%;
+    height: 5%;
+    width: 10%;
+    padding: 1%;
+    color:white;
+    background-color:black;
+    border-radius: 25px;
+    cursor: pointer;
+}
 
     .landing-page-chess {
         margin-top: 14%;

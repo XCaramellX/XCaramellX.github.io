@@ -11,19 +11,9 @@
 </head>
 <body>
     <header>
-        <h1><a href="index.html">Charlotte Chess</a></h1>
-        <div class="navbar-header">
-            <ul>
-                <li><a class="navbar-left" href="chess-history.html">chess history</a></li>
-                <li><a class="navbar-left" href="famous_chess_players.html">Famous Chess Players</a></li>
-                <li><a class="navbar-right" href="chess_clubs.html">Chess Clubs</a></li>
-                <li><a class="navbar-right" href="openings-and-stratagies.html">Openings and stratagies</a></li>
-                <li><a class="navbar-right" href="contact.html">Contact</a></li>
-            </ul>
-        </div>
+        <div data-include="../project_components/project_header.html" data-replace="%pagename%"></div>
     </header>
     <main>
-
 
         <div class="landing-page-chess">
             <img class="kingdiv" id="king" src="../project_images/chessboardking.jpg" alt="king piece" />
@@ -33,7 +23,6 @@
             <img class="castlediv" id="castle" src="../project_images/chessboardcastle.png" alt="castle piece" />
             <img class="pawndiv" id="pawn" src="../project_images/chessboardpawn.png" alt="pawn piece" />
         </div>
-
 
 
         <div id="kingmodal" class="modalbackground">
@@ -197,6 +186,7 @@
 
     </footer>
     <script src="../project_scripts/chess_project.js"></script>
+    <script src="../project_scripts/include.min.js"></script>
 </body>
 
 </html>
