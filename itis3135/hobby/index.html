@@ -4,121 +4,283 @@
 <head>
     <meta charset="utf-8" />
     <title>
-        Parker Randolph &infin; Infinity Gaming
+        Parker Randolph &infin; Randolph Gaming
     </title>
-    <script src="hobby_scripts/videogame.js"></script>
 
     <style>
        
-
+        *{
+            margin: 0;
+            padding: 0;
+        }
        header {
-            font-family: Tahoma, sans-serif;
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            position: sticky;
+            display: flex;
+            justify-content: space-between;
             text-transform: uppercase;
             text-align: center;
-            color: black;
-            height: 100px;
-            background-color: darkred;
-        }
-
-        nav
-        {
-            
-            background-color:blue;
+            color: red;
+            height: 50px;
            
         }
 
         nav li
         {
             display:inline-block;
-            color: green;
+            color:white;
             text-transform:none;
+            margin: 5px;
         }
 
         h1 {
             
-            left: 29%;
-            top: 3%;
+            margin-left: 5%;
+            letter-spacing: 5px;
         }
 
-        h2:hover
+        h2 {
+
+            font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            text-align: center;
+            color: red;
+        }
+
+        p{
+            margin-left: 25%;
+            margin-bottom: 1%;
+            inline-size: 700px;
+
+        }
+
+        footer p {
+            text-align: center;
+            margin-left: 30%;
+        }
+
+        nav li:hover
         {
-            color: grey;
-            text-decoration:underline;
+            color: red;
+            
         }
 
         body {
           
-            font-family: Tahoma, sans-serif;
+            margin: 30px;
+            
             background-color: black;
            
             
         }
 
+        figure
+        {
+            margin-top: 5%;
+            text-align: center; 
+               
+              
+        }
+
+        .side-by-side-figure{
+            flex: 20%;
+            padding: 5px;
+            width: 100%;
+        }
+
         section {
+            font-family: Tahoma, sans-serif;
+           
+            display: block;
+            color:white;
             
-      
-            color:darkred
+        }
+
+        .home-section{
+            display: block;
+        }
+
+        .events-directs-section{
+            display: flex;
+            display: none;
+           
+        }
+
+        .favorite-games-section{
+            display: flex;
+            display: none;
+            
+        }
+
+        .esports-section{
+            display: flex;
+            display: none;
+           
+        }
+
+        .about-section{
+            display: none;
         }
 
         footer
         {
-            background-color: darkred;
+            
+            text-align: center;
+            height: 100px;
+            background-color:red;
            
         } 
 
-        @media screen and (min-width: 1200) and (max-width: 1600) and (-webkit-min-device-pixel-ratio: 1) {
+
+
+        @media screen and (min-width: 1200px) and (max-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
         }
     </style>
 </head>
 <body>
     <header>
-            <h1>Parker Randolph  &infin; Infinity Gaming</h1>
+            <h1>Randolph &infin; Gaming</h1>
             <nav>
                 <ul>
                     <li><h3 id="home">Home</h3></li>
-                    <li><h3 id="company-events">PlayStation Events and Nintendo Directs</h3></li>
-                    <li><h3 id="events">Charlotte Esport Events</h3></li>
-                    <li><h3 id="transport">Event Transportation</h3></li>
+                    <li><h3 id="company-events">Upcoming Games</h3></li>
+                    <li><h3 id="events">Favorite Games</h3></li>
+                    <li><h3 id="esport">Esport Events</h3></li>
                     <li><h3 id="about">About Me</h3></li>
                 </ul>
             </nav>
         </header>
     <main>
-    <section>
+    <section id="section-home">
         <h2>
-           Section header(pagename)
+           Home
         </h2>
+        
+        <figure>
+            <img src="hobby_images/video-games.jpg" alt="video games">
+            <figcaption><i>My love of video games</i></figcaption>
+        </figure>
+        <p>
+            
+            Welcome to Randolph Gaming! here you will see how I got into video games, what my favoirte games are, and more!
+            I got into video games at a young age and wanted to make games myself as I grew older. I realized now that making games
+            are no joke and it is a difficult process. While I don't to make video games as career anymore, I do want to make some as a hobby. <br><br>
+        </p>
 
-        <p>rgmldngkdnglkdngslengltngl</p>
+        <p>
+            I've also made some mods (modifications) to games that I have played in the past such as, Crusader Kings 2 and 3. I loved playing grand stratagy games
+            and they are among some of the best games I've played.
+        </p> 
+
     </section>
 
-    <section>
-        <h2>
-        Section header(pagename)
+    <section  class="events-directs-section" id="section-events-directs">
+
+    <h2>
+        PlayStation Events and Nintendo Directs
      </h2>
 
-     <p>rgmldngkdnglkdngslengltngl</p>
+     <figure class="side-by-side-figure">
+        <img src="hobby_images/state-of-play-sony.jpg" alt="sony playstation"> 
+        <figcaption><i>Sony's State of Play</i></figcaption>
+    </figure>
+
+    <figure class="side-by-side-figure">
+        <img src="hobby_images/nintendo-direct.jpg" alt="nintendo direct">
+        <figcaption><i>Nintendo Direct</i></figcaption>
+    </figure>
+
+     <p> 
+        Sony state of play are live online events that showcase what games are coming out in the near future.
+        This recent state of play(March 9th 2022) is the one I'm excited about it shows that two games I'm waiting for. Forspoken and 
+        The DioField Chronicles. 
+     </p> <br>
+
+     <p>
+        For Nintendo Directs there hasn't been much I've been looking foward too. However their are some games that look intresting in the past Nintendo Directs. Like 
+        Kirby the forgotten lands and Xenoblade chronicles 3.
+     </p>
+     
     </section>
 
-    <section>
+    <section class="favorite-games-section" id="section-favorite-games">
     <h2>
-        Section header(pagename)
+        Favorite Games
     </h2>
     
-    <p>rgmldngkdnglkdngslengltngl</p>
+
+    <figure class="side-by-side-figure">
+        <img src="hobby_images/kingdom_hearts.jpg" alt="kingdom hearts">
+        <figcaption><i>My favorite Series</i></figcaption>
+    </figure>
+
+    
+    <figure class="side-by-side-figure">
+        <img src="hobby_images/undertale.jpg" alt="undertale">
+        <figcaption><i>Best game of 2015</i></figcaption>
+    </figure>
+
+    <p> 
+        My favorite series of games has to be kingdom hearts. Ever since I was a kid kingdom hearts with it's great story and characters had to have been the best game I've played.
+        My second favorite game had to be undertale, I really like the story presented with the relationship monsters and humans. I also like that you could have diffrent endings
+        to the story and the game even remebered what choices you made throught the game, even if you started a new one.
+    </p>
+
     </section>
 
-    <section>
+    <section class="esports-section" id="esports-section">
     <h2>
-    Section header(pagename)
+     Esport Events
     </h2>
+
+    <figure class="side-by-side-figure">
+        <img src="hobby_images/lolsports.png" alt="league of legends">
+        <figcaption><i>League of legends</i></figcaption>
+    </figure>
+
+    <figure class="side-by-side-figure">
+        <img src="hobby_images/dota2.png" alt="DOTA 2">
+        <figcaption><i>Dota 2</i></figcaption>
+    </figure>
     
-    <p>rgmldngkdnglkdngslengltngl</p>
+    <p>
+        I've never been to an esport event but there are a few I would love to go see. The first one being the League Of Legends World Championship and the 
+        second being the DOTA2 2022 International. The reason I want to go is because I love being in the action.
+    </p>
     </section>
+
+    <section class="about-section" id="about-section">
+        <h2>
+         About
+        </h2>
+
+        <figure>
+            <img src="hobby_images/picofme.png" alt="it's me">
+            <figcaption><i>It's me!</i></figcaption>
+        </figure>
+
+        <p>
+            My name is Parker Randolph and I'm a student at the Universty of North Carolina at Charlotte the loves to play video games.
+            I was born in Honolulu, Hawaii, my family and I were a military family so we moved around a lot. Eventualy, after my dad's 20 years of service,
+            we settled down in North Carolina.
+        </p>
+
+        <p>
+            It's a smaller town where I live but after living on campus in bigger cities such as Charlotte. I think I prefer it's peacefulness and quietness over 
+            the bustling city.
+        </p>
+
+     </section>
+    
     </main>
     <footer>
-        dwdwd
+        <p>
+            @2022
+        </p>
+        <a href="https://validator.w3.org/check?uri=referer" id = "validation_link_html"><img src="hobby_images/button_validation_html5.png" alt="html validation"></a>
+        <a href="https://jigsaw.w3.org/css-validator/check/referer" id = "validation_link_css"><img src="hobby_images/button_validation_css.png" alt="css validation"></a>
     </footer>
-</body>
 
+    <script src="hobby_scripts/videogame.js"></script>
+    <script src="hobby_scripts/htmlscript.js"></script>
+</body>
 </html>

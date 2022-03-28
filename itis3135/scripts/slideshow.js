@@ -50,27 +50,6 @@ var nextButton = document.getElementById("next-button");
     
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /*var $ = function (id) {
     return document.getElementById(id);
 };
