@@ -206,6 +206,13 @@ li a:hover{
     right: 18%;
 }
 
+.history-img-border{
+    
+    border: 1px solid white;
+    
+
+}
+
 .info-image-caption 
 {
     color: white;
