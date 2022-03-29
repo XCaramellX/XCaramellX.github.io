@@ -59,8 +59,8 @@ function rabbits()
 
 function addRabbits()
 {
-    var number = document.getElementById("number1").value;
-    var number2 = document.getElementById("number2").value;
+    var number = document.getElementById("firstnumber1").value;
+    var number2 = document.getElementById("secondnumber1").value;
 
     var sumNumber = parseInt(number) + parseInt(number2);
 
@@ -69,8 +69,8 @@ function addRabbits()
 
 function multiplyRabbits()
 {
-    var number = document.getElementById("number3").value;
-    var number2 = document.getElementById("number4").value;
+    var number = document.getElementById("firstnumber2").value;
+    var number2 = document.getElementById("secondnumber2").value;
 
     var multiplyNumber = parseInt(number) * parseInt(number2);
 
