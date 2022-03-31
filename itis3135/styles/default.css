@@ -65,6 +65,11 @@ nav li
     color: #DAB6FC;  
 }
 
+li{
+    
+    display: inline-block;
+}
+
 .slide-show-images{
     display: none;
 
@@ -259,7 +264,7 @@ form
     grid-row: 2 / span 4;
 }
 
-/***slideshow*/
+/***slideshow****/
 
 .slideshow-container{
     max-width: 1000px;
@@ -455,4 +460,7 @@ and (-webkit-min-device-pixel-ratio: 1)
         from {opacity: .4}
         to{opacity: 1}
     }
+
+
+    
 }
