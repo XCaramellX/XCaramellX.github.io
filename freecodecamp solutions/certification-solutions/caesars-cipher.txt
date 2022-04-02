@@ -1,0 +1,50 @@
+function rot13(str) {
+  const rot13Key =
+  [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z",
+  ];
+
+  var accumalator = '';
+
+  for (var i = 0; i < str.length; i++)
+  {
+      const char = str[i];
+      const isALetter = rot13Key.includes(char);
+
+      if(isALetter === false){
+        accumalator += char;
+        }else{
+          const letterIndex = rot13Key.findIndex((c) => c === char);
+          accumalator += rot13Key[letterIndex + 13] || rot13Key[letterIndex - 13];
+        }
+      }
+  
+  return accumalator;
+}
+
+rot13("SERR PBQR PNZC");

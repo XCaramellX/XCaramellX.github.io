@@ -20,6 +20,10 @@ p
    margin-right: 0px;
 }
 
+.p-image-swap-center{
+    text-align: center;
+}
+
 footer {
     text-align: center;
     margin-top: 25px;
