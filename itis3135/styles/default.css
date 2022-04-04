@@ -36,11 +36,21 @@ figure, h2
 {
     text-align: center;
 }
+
+.peer-review-h2{
+    text-align: left;
+}
+
 h3 {
     text-decoration:underline;
     text-align: center;
 }
 .homeh3 
+{
+    text-decoration:none;
+}
+
+.tables-h3 
 {
     text-decoration:none;
 }
@@ -69,7 +79,7 @@ nav li
     color: #DAB6FC;  
 }
 
-li{
+.activity10-li{
     
     display: inline-block;
 }
