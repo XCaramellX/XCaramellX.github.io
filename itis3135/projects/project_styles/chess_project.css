@@ -62,7 +62,7 @@ p a:hover
 
 .navbar-header 
 {
-    margin-left: 3%;
+    margin-left: 16%;
 
 }
 
@@ -174,7 +174,7 @@ li a:hover{
 {
     position: absolute;
     top: 30%;
-    right: 0%;
+    right: 7%;
     color: white;
     inline-size: 700px;
     overflow-wrap: break-word;
@@ -191,7 +191,7 @@ li a:hover{
 {
     position:absolute;
     top: 25%;
-    right: 2%;
+    right: 5%;
 }
 
 .famous-info-image {
@@ -232,7 +232,7 @@ li a:hover{
 
 .landing-page-chess {
     margin-top: 16%;
-    margin-left: 18%;
+    margin-left: 25%;
     animation: fadein 2s ease-in;
 }
 
@@ -241,7 +241,7 @@ li a:hover{
 
 .knightdiv 
 {
-    margin-left: 5%;
+    margin-left: 2%;
     animation: fadein 2s ease-in;
 }
 
@@ -535,7 +535,7 @@ border-style: solid;
 {
     position: absolute;
     top: 10%;
-    left: 65%;
+    left: 68%;
     color: white;
     text-align: center;
 }
@@ -550,7 +550,7 @@ border-style: solid;
 {
     position: absolute;
     top: 65%;
-    left: 65%;
+    left: 68%;
     color: white;
     text-align: center;
 }
