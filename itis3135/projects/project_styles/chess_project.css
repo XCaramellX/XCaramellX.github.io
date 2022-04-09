@@ -296,8 +296,8 @@ img.pawndiv:hover {
 {
 position:absolute;
 top: 20%;
-height: 4%;
-margin-left: 90%;
+height: 3.2%;
+margin-left: 95%;
 border-style: solid;
 }
 
@@ -305,8 +305,8 @@ border-style: solid;
 {
 position:absolute;
 top: 25%;
-height: 4%;
-margin-left: 90%;
+height: 3.2%;
+margin-left: 95%;
 border-style: solid;
 }
 
@@ -314,19 +314,22 @@ border-style: solid;
 {
 position:absolute;
 top: 25%;
-height: 4%;
-margin-left: 94%;
+height: 3.2%;
+margin-left: 96%;
 border-style: solid;
 }
 
-.specific-close-modal-button
+.specific-rook-close-modal-button
 {
 position:absolute;
-top: 25%;
-height: 4%;
-margin-left: 90%;
+top: 27%;
+height: 3.2%;
+margin-left: 95%;
 border-style: solid;
+cursor: pointer;
 }
+
+
 
 .king-modal-content-box 
 {
