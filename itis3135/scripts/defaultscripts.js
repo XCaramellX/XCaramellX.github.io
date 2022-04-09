@@ -79,77 +79,8 @@ function multiplyRabbits()
     
 }
 
-function getShape()
-{
-    var text;
-    var sides = prompt("Plum Rabbit would like to know how many sides the shape is", "1");
-    validateEntry(sides);
-    switch(sides)
-    {
-        case "1":
-            
-            alert(text = "henagon");
-             
-            break;
-        case "2":
-            alert(text = "digon");
-           
-            break;
-        case "3":
-            alert(text = "trigon");
-            
-            break;
-        case "4": 
-            alert(text = "tetragon");
-            
-            break;
-        case "5":
-            alert(text = "pentagon");
-            
-            break;
-        case "6":
-            alert(text = "hexagon");
-           
-            break;
-        case "7":
-            alert(text = "heptagon");
-            
-            break;
-        case "8":
-            alert(text = "octagon");
-            
-            break;
-        case "9":
-            alert(text = "enneagon");
-            
-            break;
-        case "10":
-            alert(text = "decagon");
-            
-            break;
-        default:
-              break;
-
-            
-
-    }
-
-}
-
-function validateEntry(sides)
-{
 
 
-    while (isNaN(sides) || sides > 10 || sides % 1 != 0 || sides < 0)
-    {
-        
-       sides = prompt("You've entered something other than a number, a decimal, or a number not 1-10");
-    }
-
-
-    return sides;
- 
-}
 
 
 
