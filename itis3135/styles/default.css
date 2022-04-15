@@ -491,5 +491,28 @@ and (-webkit-min-device-pixel-ratio: 1)
     text-align: center;
 	font-size: 90%;
     }
+
+    /****ajax Activity 13***/
+
+    .activity13-header{
+        height: 100px;
+	    background: url('images/logo.gif') no-repeat 25px;
+    }
+
+    .activity13-h2{
+    font-size: 14px;
+	font-weight: bold;
+	background: #7B2CBF url('images/bullet.gif') no-repeat 7px center;
+	padding: 3px 0 3px 20px;
+	border: solid #DAB6FC 1px;
+	color: #DAB6FC;
+	text-align:center;
+    }
+
+    .activity13-footer{
+    height: 35px;
+	background: url('images/footer.gif');
+	clear: both;
+    }
     
 }
