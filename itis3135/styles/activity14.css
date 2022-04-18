@@ -130,7 +130,12 @@ aside img {
 footer {
 	border-top: 3px solid #800000;
 	padding: 1em 0;
+	text-align: center;
 	clear: both;
+}
+
+footer a{
+	color: black;
 }
 footer p {
 	text-align: center;

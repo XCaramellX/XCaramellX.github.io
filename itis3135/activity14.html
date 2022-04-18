@@ -4,13 +4,14 @@
 <head>
 	<meta charset="utf-8">
 	<title>Load Speaker Files</title>
-	<link rel="stylesheet" href="Activity14.css">
+	<link rel="stylesheet" href="styles/activity14.css">
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-	<script src="Activity14.js"></script>
+	<script src="scripts/activity14.js"></script>
 </head>
 
 <body>
 <header>
+
 	<img src="images/town_hall_logo.gif" alt="Town Hall logo" height="80">
 	<h1><a id="top">San Joaquin Valley Town Hall</a></h1>
 	<h2>Celebrating our <span class="shadow">75<sup>th</sup></span> Year</h2>
@@ -39,11 +40,11 @@
 		</ul>
 	</nav>
 </aside>
-<footer>
+<footer> 
 	<p>&copy; 2017, San Joaquin Valley Town Hall, Fresno, CA 93755</p>
 	<br/>
-	<a href="https://validator.w3.org/">HTML Validate</a>
-	<a href="https://jigsaw.w3.org/css-validator/">CSS Validate</a>
+	<div data-include="components/footer.html"></div>
 </footer>
+<script src="scripts/include.min.js"></script>
 </body>
 </html>
