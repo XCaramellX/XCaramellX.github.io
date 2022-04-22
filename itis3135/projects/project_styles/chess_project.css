@@ -63,7 +63,7 @@ p a:hover
 
 .navbar-header 
 {
-    margin-left: 16%;
+    margin-left: 5%;
 
 }
 
@@ -233,7 +233,7 @@ li a:hover{
 
 .landing-page-chess {
     margin-top: 16%;
-    margin-left: 25%;
+    text-align: center;
     animation: fadein 2s ease-in;
 }
 
@@ -242,7 +242,7 @@ li a:hover{
 
 .knightdiv 
 {
-    margin-left: 2%;
+    
     animation: fadein 2s ease-in;
 }
 
@@ -514,7 +514,7 @@ cursor: pointer;
 
 .chess-club-center-and-school-h3 {
 
-    padding-top: 17%;
+    padding-top: 14%;
     font-weight: bold;
     
     
@@ -703,7 +703,7 @@ and (-webkit-min-device-pixel-ratio: 1)
 
     .chess-club-center-and-school-h3 {
 
-        padding-top: 12%;
+      
         font-weight: bold;
         pointer-events: all;
         
@@ -833,12 +833,12 @@ and (-webkit-min-device-pixel-ratio: 1)
 
     .landing-page-chess {
         margin-top: 14%;
-        margin-left: 18%;
+        text-align: center;
         animation: fadein 2s ease-in;
     }
 
     .knightdiv {
-        margin-left: 5%;
+       
         animation: fadein 2s ease-in;
     }
 
