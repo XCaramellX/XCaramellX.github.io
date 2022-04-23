@@ -417,84 +417,192 @@ cursor: pointer;
 
 .basic-concept-container
 {
+    display: block;
     position: absolute;
     top: 47%;
+    cursor: pointer;
     height: 50%;
-    width: 40%;
-    margin-left: 5%;
-    display: none;
-    background-color: black;
-    color:white;
-    border-radius: 25px;
-    text-align: center;
+    width: 50%;
+    color: black;
+}
+.basic-concept-container h4{
+    border-style: solid;
+}
+
+.basic-concept-container div{
+   height: 40%;
+}
+
+
+
+.stratagy-figure-material-count
+    {
+        position: absolute;
+        top: 20%;
+        left: 65%;
     
-}
-
-
-.stratagy-figure
-{
-    position: absolute;
-    top: 25%;
-    left: 65%;
-
-}
+    }
+    
+    .stratagy-figure-piece-activity
+    {
+        position: absolute;
+        top: 35%;
+        left: 65%;
+    
+    }
+    
+    .stratagy-figure-pawn-structure
+    {
+        position: absolute;
+        top: 50%;
+        left: 65%;
+    
+    }
+    
+    .stratagy-figure-space
+    {
+        position: absolute;
+        top: 65%;
+        left: 65%;
+    
+    }
+    
+    .stratagy-figure-king-safety
+    {
+        position: absolute;
+        top: 80%;
+        left: 65%;
+    
+    }
 
 
 
 .p-basic-concept-and-openings
 {
     text-align:left;
-    display:flex;
-    flex-direction: column;
+    position: absolute;
+    top: 30%;
     inline-size: 350px;
     overflow-wrap:break-word;
-    margin-top: 5%;
-    margin-left: 5%;
 }
+
+.p-piece-activity
+    {
+    text-align:left;
+    position: absolute;
+    top: 35%;
+    inline-size: 350px;
+    overflow-wrap:break-word;
+    }
+
+.p-pawn-structure
+    {
+    text-align:left;
+    position: absolute;
+    top: 50%;
+    inline-size: 350px;
+    overflow-wrap:break-word;
+    }
+
+    .p-pawn-space
+    {
+    text-align:left;
+    position: absolute;
+    top: 65%;
+    inline-size: 350px;
+    overflow-wrap:break-word;
+    }
+
+    .p-pawn-king-safety
+    {
+    text-align:left;
+    position: absolute;
+    top: 80%;
+    inline-size: 350px;
+    overflow-wrap:break-word;
+    }
+
 
 .openings-container
 {
     position: absolute;
     top: 47%;
-    height: 50%;
-    width: 40%;
     margin-left: 55%;
-    display: none;
-    background-color: white;
-    color:black;
-    border-radius: 25px;
-    text-align:center;
+    display: block;
+    cursor: pointer;
+    height: 50%;
+    width: 50%;
+    color: white;
 }
 
+.openings-container h4{
+    border-style: solid;
+}
 
-.white-stratagy-close-button
+.openings-container div{
+   height: 40%;
+}
+
+.stratagy-figure-sicillian
 {
     position: absolute;
-    top: 80%;
-    left: 42%;
-    height: 5%;
-    width: 10%;
-    padding: 1%;
-    color:black;
-    background-color:white;
-    border-radius: 25px;
-    letter-spacing: 1px;
-    cursor: pointer;
+    top: 20%;
+    left: 65%;
+
 }
 
-.black-stratagy-close-button
+.stratagy-figure-french
 {
     position: absolute;
-    top: 80%;
-    left: 45%;
-    height: 5%;
-    width: 10%;
-    padding: 1%;
-    color:white;
-    background-color:black;
-    border-radius: 25px;
-    cursor: pointer;
+    top: 35%;
+    left: 65%;
+
 }
+
+.stratagy-figure-ruy
+{
+    position: absolute;
+    top: 50%;
+    left: 65%;
+
+}
+
+.stratagy-figure-caro
+{
+    position: absolute;
+    top: 65%;
+    left: 65%;
+
+}
+
+.p-french
+{
+text-align:left;
+position: absolute;
+top: 45%;
+inline-size: 350px;
+overflow-wrap:break-word;
+}
+
+.p-ruy
+{
+text-align:left;
+position: absolute;
+top: 50%;
+inline-size: 350px;
+overflow-wrap:break-word;
+}
+
+.p-caro
+{
+text-align:left;
+position: absolute;
+top: 70%;
+inline-size: 350px;
+overflow-wrap:break-word;
+}
+
+
 
 .link-span-modal
 {
@@ -751,85 +859,173 @@ and (-webkit-min-device-pixel-ratio: 1)
     
 
     .basic-concept-container
-{
-    position: absolute;
-    top: 47%;
-    height: 50%;
-    width: 40%;
-    margin-left: 5%;
-    display: none;
-    background-color: black;
-    color:white;
-    border-radius: 25px;
-    text-align: center;
+    {
+        display: block;
+        position: absolute;
+        top: 47%;
+        cursor: pointer;
+        height: 50%;
+        width: 50%;
+        color: black;
+    }
+    .basic-concept-container h4{
+        border-style: solid;
+    }
     
-}
+    .basic-concept-container div{
+       height: 40%;
+    }
+    
+    
+    
+    .stratagy-figure-material-count
+    {
+        position: absolute;
+        top: 20%;
+        left: 65%;
+    
+    }
+    
+    .stratagy-figure-piece-activity
+    {
+        position: absolute;
+        top: 30%;
+        left: 65%;
+    
+    }
+    
+    .stratagy-figure-pawn-structure
+    {
+        position: absolute;
+        top: 45%;
+        left: 65%;
+    
+    }
+    
+    .stratagy-figure-space
+    {
+        position: absolute;
+        top: 60%;
+        left: 65%;
+    
+    }
+    
+    .stratagy-figure-king-safety
+    {
+        position: absolute;
+        top: 70%;
+        left: 65%;
+    
+    }
 
-
-.stratagy-figure
-{
-    position: absolute;
-    top: 25%;
-    left: 65%;
-
-}
-
-
-
-.p-basic-concept-and-openings
-{
+    .p-pawn-structure
+    {
     text-align:left;
-    display:flex;
-    flex-direction: column;
+    position: absolute;
+    top: 45%;
     inline-size: 350px;
     overflow-wrap:break-word;
-    margin-top: 5%;
-    margin-left: 5%;
-}
+    }
 
-.openings-container
-{
+    .p-pawn-space
+    {
+    text-align:left;
     position: absolute;
-    top: 47%;
-    height: 50%;
-    width: 40%;
-    margin-left: 55%;
-    display: none;
-    background-color: white;
-    color:black;
-    border-radius: 25px;
-    text-align:center;
-}
+    top: 60%;
+    inline-size: 350px;
+    overflow-wrap:break-word;
+    }
 
-
-.white-stratagy-close-button
-{
+    .p-pawn-king-safety
+    {
+    text-align:left;
     position: absolute;
-    top: 80%;
-    left: 42%;
-    height: 5%;
-    width: 10%;
-    padding: 1%;
-    color:black;
-    background-color:white;
-    border-radius: 25px;
-    letter-spacing: 1px;
-    cursor: pointer;
-}
+    top: 70%;
+    inline-size: 350px;
+    overflow-wrap:break-word;
+    }
 
-.black-stratagy-close-button
-{
+
+
+    .openings-container
+    {
+        position: absolute;
+        top: 47%;
+        margin-left: 55%;
+        display: block;
+        cursor: pointer;
+        height: 50%;
+        width: 50%;
+        color: white;
+    }
+    
+    .openings-container h4{
+        border-style: solid;
+    }
+    
+    .openings-container div{
+       height: 40%;
+    }
+
+    .stratagy-figure-sicillian
+    {
+        position: absolute;
+        top: 20%;
+        left: 65%;
+    
+    }
+    
+    .stratagy-figure-french
+    {
+        position: absolute;
+        top: 30%;
+        left: 65%;
+    
+    }
+    
+    .stratagy-figure-ruy
+    {
+        position: absolute;
+        top: 45%;
+        left: 65%;
+    
+    }
+    
+    .stratagy-figure-caro
+    {
+        position: absolute;
+        top: 60%;
+        left: 65%;
+    
+    }
+
+    .p-french
+    {
+    text-align:left;
     position: absolute;
-    top: 80%;
-    left: 45%;
-    height: 5%;
-    width: 10%;
-    padding: 1%;
-    color:white;
-    background-color:black;
-    border-radius: 25px;
-    cursor: pointer;
-}
+    top: 45%;
+    inline-size: 350px;
+    overflow-wrap:break-word;
+    }
+
+    .p-ruy
+    {
+    text-align:left;
+    position: absolute;
+    top: 50%;
+    inline-size: 350px;
+    overflow-wrap:break-word;
+    }
+
+    .p-caro
+    {
+    text-align:left;
+    position: absolute;
+    top: 70%;
+    inline-size: 350px;
+    overflow-wrap:break-word;
+    }
+    
 
     .landing-page-chess {
         margin-top: 14%;

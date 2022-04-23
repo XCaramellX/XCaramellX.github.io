@@ -1,6 +1,9 @@
 
 /*Chess image buttons and modals */
 
+
+
+
 var kingButton = document.getElementById("king");
 var kingModal = document.getElementById("kingmodal");
 
@@ -29,46 +32,8 @@ var castleCloseButton = document.getElementById("castle-close");
 var pawnCloseButton = document.getElementById("pawn-close");
 
 
-/* Chess Stratagy spans*/
 
-var materialSpan = document.getElementById("material-click");
-var materialBox = document.getElementById("material-count-box");
 
-var pieceSpan = document.getElementById("piece-activity-click");
-var pieceBox = document.getElementById("piece-activity-box");
-
-var pawnSpan = document.getElementById("pawn-structure-click");
-var pawnBox = document.getElementById("pawn-structure-box");
-
-var spaceSpan = document.getElementById("space-hover-click");
-var spaceBox = document.getElementById("space-box");
-
-var kingSafetySpan = document.getElementById("king-safety-click");
-var kingSafetyBox = document.getElementById("king-safety-box");
-
-var sicilianSpan = document.getElementById("sicilian-defense-click");
-var sicilianBox = document.getElementById("sicillian-box");
-
-var frenchSpan = document.getElementById("french-defense-click");
-var frenchBox = document.getElementById("french-box");
-
-var ruylopezSpan = document.getElementById("ruy-lopez-opening-click");
-var ruylopezBox = document.getElementById("ruy-lopez-box");
-
-var carokannSpan = document.getElementById("caro-kann-defense-click");
-var carokannBox = document.getElementById("caro-kann-box");
-
-/*Chess Stratagy Close buttons*/
-var materialCloseButton = document.getElementById("material-close-button");
-var pieceCloseButton = document.getElementById("piece-close-button");
-var pawnStructureCloseButton = document.getElementById("pawn-structure-close-button");
-var spaceCloseButton = document.getElementById("space-close-button");
-var kingSafetyCloseButton = document.getElementById("king-safety-close-button");
-
-var sicillianCloseButton = document.getElementById("sicillian-close-button");
-var frenchCloseButton = document.getElementById("french-close-button");
-var ruylopezCloseButton = document.getElementById("ruy-close-button");
-var caroCloseButton = document.getElementById("caro-close-button");
 
 
 
@@ -175,132 +140,9 @@ window.onclick = function(event)
     {
         pawnModal.style.display = "none";
     }
- 
-    /*******Basic Concept Boxes********/
 
-    /* material count */
 
-    if(event.target == materialSpan){
-        materialBox.style.display = "block";
-    }else if(event.target == pieceSpan || event.target == pawnSpan ||
-         event.target == spaceSpan || event.target == kingSafetySpan) {
-
-        materialBox.style.display = "none";
-    }
-
-    if(event.target == materialCloseButton){
-        materialBox.style.display = "none";
-    }
-
-    /* piece activity */
-
-    if(event.target == pieceSpan){
-        pieceBox.style.display = "block";
-    }else if(event.target == materialSpan || event.target == pawnSpan ||
-        event.target == spaceSpan || event.target == kingSafetySpan){
-
-        pieceBox.style.display = "none";
-    }
-
-    if(event.target == pieceCloseButton){
-        pieceBox.style.display = "none";
-    }
-
-    /* pawn structure*/
-
-    if(event.target == pawnSpan){
-        pawnBox.style.display = "block";
-    }else if(event.target == materialSpan || event.target == pieceSpan ||
-        event.target == spaceSpan || event.target == kingSafetySpan){
-
-        pawnBox.style.display = "none";
-    }
-
-    if(event.target == pawnStructureCloseButton){
-        pawnBox.style.display = "none";
-    }
-
-    /* space */
-    if(event.target == spaceSpan){
-        spaceBox.style.display = "block";
-    }else if(event.target == pieceSpan || event.target == pawnSpan ||
-        event.target == materialSpan || event.target == kingSafetySpan){
-
-        spaceBox.style.display = "none";
-    }
-
-    if(event.target == spaceCloseButton){
-        spaceBox.style.display = "none";
-    }
-
-    /* king safety*/
-    if(event.target == kingSafetySpan){
-        kingSafetyBox.style.display = "block";
-    }else if(event.target == pieceSpan || event.target == pawnSpan ||
-        event.target == spaceSpan || event.target == materialSpan){
-
-        kingSafetyBox.style.display = "none";
-    }
-
-    if(event.target == kingSafetyCloseButton){
-        kingSafetyBox.style.display = "none";
-    }
-
-    /*******Openings*******/
-
-    /* sicilian defense */
-
-    if(event.target == sicilianSpan){
-        sicilianBox.style.display = "block";
-    }else if(event.target == frenchSpan || event.target == ruylopezSpan ||
-        event.target == carokannSpan){
-
-        sicilianBox.style.display = "none";
-    }
-
-    if(event.target == sicillianCloseButton){
-        sicilianBox.style.display = "none";
-    }
-
-    /* french defense */
-
-    if(event.target == frenchSpan){
-        frenchBox.style.display = "block";
-    }else if(event.target == sicilianSpan || event.target == ruylopezSpan ||
-        event.target == carokannSpan){
-        frenchBox.style.display = "none";
-    }
-
-    if(event.target == frenchCloseButton){
-        frenchBox.style.display = "none";
-    }
-
-    /* Ruy Lopez */
-
-    if(event.target == ruylopezSpan){
-        ruylopezBox.style.display = "block";
-    }else if(event.target == frenchSpan || event.target == sicilianSpan ||
-        event.target == carokannSpan){
-        ruylopezBox.style.display = "none";
-    }
-
-    if(event.target == ruylopezCloseButton){
-        ruylopezBox.style.display = "none";
-    }
-
-     /* Caro Kann */
-
-     if(event.target == carokannSpan){
-        carokannBox.style.display = "block";
-    }else if(event.target == frenchSpan || event.target == ruylopezSpan ||
-        event.target == sicilianSpan){
-        carokannBox.style.display = "none";
-    }
-
-    if(event.target == caroCloseButton){
-        carokannBox.style.display = "none";
-    }
-
+   
 
 }
 

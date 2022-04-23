@@ -9,7 +9,15 @@
 
  
     </title>
+   
+    <link href="../project_styles/magnify.css" type="text/css" rel="stylesheet" />
     <link href="../project_styles/chess_project.css" type="text/css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="../../jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="../project_scripts/jquery.magnify.js"></script>
+    <script src="../project_scripts/image-magnify.js"></script>
+    <script src="../project_scripts/chess_stratagy.js"></script>
+    <script src="../project_scripts/chess_openings.js"></script>
     
 </head>
 <body>
@@ -24,104 +32,87 @@
         <p class="p-stratagy-info">
             The stratagy of chess is complex and it requires many years of study and hard work to master. However you can learn a few concepts that can help you improve your games.
             Learning the 
-            <span id="material-click" class="link-span-modal">material count</span>, 
-            <span id="piece-activity-click" class="link-span-modal">piece activity</span>,  
-            <span id="pawn-structure-click" class="link-span-modal">pawn structure</span>, 
-            <span id="space-hover-click" class="link-span-modal">space</span>, and 
-            <span id="king-safety-click" class="link-span-modal">king safety</span> will help you win more games. If you want to know more about Basic Concepts click here: 
+            material count, 
+            piece activity,  
+            pawn structure, 
+            space, and 
+            king safety will help you win more games. If you want to know more about Basic Concepts click here: 
            <a href="https://www.chess.com/terms/chess-strategy">Basic concepts at chess.com</a>.
         </p>
 
     
-        <div id="material-count-box" class="basic-concept-container">
+        <div id="stratagypanels" class="basic-concept-container">
             <h4>Material Count</h4>
+            <div>
+           
              <p class="p-basic-concept-and-openings">
                 It is one of the most stright forward concepts to understand. If a player knows how to count the total Piece
                 value of each player they can determine who has the material advantage.
              </p>
-             <figure class="stratagy-figure">
-                 <img src="../project_images/material_count.png" alt="material count">
+             <figure class="stratagy-figure-material-count">
+                 <img src="../project_images/material_count.png" class ="zoom" alt="material count">
                  <figcaption><i>White has more material</i></figcaption>
                  <figcaption>Credit to chess.com</figcaption>
              </figure>
+            </div>
 
-             <div id="material-close-button" class="white-stratagy-close-button">
-                 Close
-             </div>
-        </div>
-
-        <div id="piece-activity-box" class="basic-concept-container">
             <h4>Piece Activity</h4>
-             <p class="p-basic-concept-and-openings">
+        <div>
+             <p class="p-piece-activity">
                 Piece activity is more of an abstrct concept. You can be low on material but have more active pieces
                 Which can make you have much more of an advantage.<br><br> For example: The image on the right shows that white
                 has more pieces to threaten black's king with.
              </p>
-             <figure class="stratagy-figure">
-                 <img src="../project_images/piece_activity.png" alt="material count">
+             <figure class="stratagy-figure-piece-activity">
+                 <img src="../project_images/piece_activity.png" class ="zoom1" alt="material count">
                  <figcaption><i>White has more active pieces</i></figcaption>
                  <figcaption>Credit to chess.com</figcaption>
              </figure>
-
-             <div id="piece-close-button" class="white-stratagy-close-button">
-                Close
-            </div>
         </div>
 
-        <div id="pawn-structure-box" class="basic-concept-container">
-            <h4>Pawn Structure</h4>
-             <p class="p-basic-concept-and-openings">
+        <h4>Pawn Structure</h4>
+        <div>
+             <p class="p-pawn-structure">
                 Pawn structure is the way the pawns are placed into a specific position.
                 understanding pawn structure is a must for any serious chess player becasue it affects other concepts.
                 Attack planing, piece activity, and holes are all influenced by pawn structure.
              </p>
-             <figure class="stratagy-figure">
-                 <img src="../project_images/pawn_structure.png" alt="material count">
+             <figure class="stratagy-figure-pawn-structure">
+                 <img src="../project_images/pawn_structure.png" class ="zoom2" alt="material count">
                  <figcaption><i>White's weak pawn structure</i></figcaption>
                  <figcaption>Credit to chess.com</figcaption>
              </figure>
-
-             <div id="pawn-structure-close-button" class="white-stratagy-close-button">
-                Close
-            </div>
         </div>
 
-        <div id="space-box" class="basic-concept-container">
-            <h4>Space</h4>
-             <p class="p-basic-concept-and-openings">
+        <h4>Space</h4>
+        <div>
+             <p class="p-pawn-space">
                 It is related to the number of squares that a player can move ther pawns.
                 A player could have more space queenside, kingside, center, or in all of the sections.
                 <br><br>
                 The figure on the right shows that White controls more sqaures than Black.
                 Therefore has more freedom to move.
              </p>
-             <figure class="stratagy-figure">
-                 <img src="../project_images/space.png" alt="material count">
+             <figure class="stratagy-figure-space">
+                 <img src="../project_images/space.png" class ="zoom3" alt="material count">
                  <figcaption><i>White has more space</i></figcaption>
                  <figcaption>Credit to chess.com</figcaption>
              </figure>
-
-             <div id="space-close-button" class="white-stratagy-close-button">
-                Close
-            </div>
         </div>
         
-        <div id="king-safety-box" class="basic-concept-container">
-            <h4>King Safety</h4>
-             <p class="p-basic-concept-and-openings">
+        <h4>King Safety</h4>
+        <div>
+             <p class="p-pawn-king-safety">
                 It is one of the most critical concepts in chess. If you have an unsafe king 
                 you could be at a losing disadvante because you might get checkmated.
              </p>
-             <figure class="stratagy-figure">
-                 <img src="../project_images/king_safety.png" alt="material count">
+             <figure class="stratagy-figure-king-safety">
+                 <img src="../project_images/king_safety.png" class ="zoom4" alt="material count">
                  <figcaption><i>Black is in check</i></figcaption>
                  <figcaption>Credit to chess.com</figcaption>
-             </figure>
-
-             <div id="king-safety-close-button" class="white-stratagy-close-button">
-                Close
-            </div>
+             </figure> 
         </div>
+    </div>
 
         <!---OPENINGS--->
 
@@ -129,90 +120,80 @@
 
         <p class="p-second-stratagy-info">
             Knowing openings can help you move your first pieces with confidence. The 
-            <span class="link-span-modal" id="sicilian-defense-click">Sicilian Defense</span>, 
-            <span class="link-span-modal" id="french-defense-click">French Defense</span>, 
-            <span class="link-span-modal" id="ruy-lopez-opening-click">Ruy Lopez Opening</span>, 
-            and the <span class="link-span-modal" id="caro-kann-defense-click">Caro-Kann Defense</span> are the four most popular openings.
+            Sicilian Defense, 
+            French Defense, 
+            Ruy Lopez Opening, 
+            and the Caro-Kann Defense are the four most popular openings.
             If you want to know more about openings click here: <a href="https://www.chess.com/openings">Chess openings at chess.com</a>
         </p>
-
-        <div id="sicillian-box" class="openings-container">
+        <div id="openingpanels"  class="openings-container">
             <h4>Sicilian Defense</h4>
+        <div>
+            
             <p class="p-basic-concept-and-openings">
                 Black's c5 posisition is the most popular response to White's e4 position. This defense is
                 a reputable and sound opening. It is one of the oldest known openings and it's popularity
                 sky rocketed in the second half of the 20th century.
             </p>
-            <figure class="stratagy-figure">
-                <img src="../project_images/sicilian_defense.jpeg" alt="material count">
+            <figure class="stratagy-figure-sicillian">
+                <img src="../project_images/sicilian_defense.jpeg"  class ="zoom5" alt="material count">
                 <figcaption><i>e5 in respose to e4</i></figcaption>
                 <figcaption>Credit to chess.com</figcaption>
             </figure>
-
-            <div id="sicillian-close-button" class="black-stratagy-close-button">
-                Close
-            </div>
         </div>
 
-        <div id="french-box" class="openings-container">
-            <h4>French Defense</h4>
-            <p class="p-basic-concept-and-openings">
+        <h4>French Defense</h4>
+        <div>
+        
+            <p class="p-french">
                 One of the most oldest openings in chess. The name comes from an 1834 game
                 between the London Chess Club and the Paris Chess Club. It is a repsonse to white's e4
                 by moving to e6.
             </p>
-            <figure class="stratagy-figure">
-                <img src="../project_images/french_defense.jpeg" alt="material count">
+            <figure class="stratagy-figure-french">
+                <img src="../project_images/french_defense.jpeg" class ="zoom6" alt="material count">
                 <figcaption><i>e6 in response to e4</i></figcaption>
                 <figcaption>Credit to chess.com</figcaption>
             </figure>
-
-            <div id="french-close-button" class="black-stratagy-close-button">
-                Close
-            </div>
         </div>
 
-        <div id="ruy-lopez-box" class="openings-container">
-            <h4>Ruy Lopez Opening</h4>
-            <p class="p-basic-concept-and-openings">
+        <h4>Ruy Lopez Opening</h4>
+        <div>
+           
+            <p class="p-ruy">
                 This opening is also known as the Spanish Opening or Spanish Game. It is one of
                 most analyzed openings in chess history. Most adopt this opening as apart of their
                 repertoire. This opening starts after the moves e4 e5(pawn moves to e5 in response to e4)
                 , Nf3 Nc6(knight to c6 in response to Knight to f3), and bb5(bishop goes to b5). White 
                 usually fights for control of the center and Black has hard time getting an advantage in this opening.
             </p>
-            <figure class="stratagy-figure">
-                <img src="../project_images/ruy_lopez_opening.jpeg" alt="material count">
+            <figure class="stratagy-figure-ruy">
+                <img src="../project_images/ruy_lopez_opening.jpeg" class ="zoom7" alt="material count">
                 <figcaption><i>Ruy Lopez Opening</i></figcaption>
                 <figcaption>Credit to chess.com</figcaption>
             </figure>
-
-            <div id="ruy-close-button" class="black-stratagy-close-button">
-                Close
-            </div>
         </div>
 
-        <div id="caro-kann-box" class="openings-container">
-            <h4>Caro Kann Defense</h4>
-            <p class="p-basic-concept-and-openings">
+        <h4>Caro Kann Defense</h4>
+        <div>
+           
+            <p class="p-caro">
                 It is known for it's solidity and it's defining move is c6 in response to e4.
                 It then goes to d5 without blocking the light-squared bishop. Which is considered
                 the main drawback of it's cousin the French Defense.
             </p>
-            <figure class="stratagy-figure">
-                <img src="../project_images/caro_kann_defense.jpeg" alt="material count">
+            <figure class="stratagy-figure-caro">
+                <img src="../project_images/caro_kann_defense.jpeg" class ="zoom8" alt="material count">
                 <figcaption><i>c6 in repsonse to e4</i></figcaption>
                 <figcaption>Credit to chess.com</figcaption>
             </figure>
-
-            <div id="caro-close-button" class="black-stratagy-close-button">
-                Close
-            </div>
         </div>
+    </div>
+        
     </main>
     <footer>
     </footer>
-    <script src="../project_scripts/chess_project.js"></script>
+    
     <script src="../project_scripts/include.min.js"></script>
 </body>
 </html>
