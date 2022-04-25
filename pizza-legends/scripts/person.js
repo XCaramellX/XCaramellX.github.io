@@ -7,7 +7,7 @@ class person extends gameObject{
 
         this.directionUpdate = {
             "up": ["y", -1],
-            "down": ["y", 1],
+            "down": ["y",1],
             "left": ["x", -1],
             "right": ["x", 1],
         }
@@ -16,6 +16,7 @@ class person extends gameObject{
 
     update(state){
         this.updatePosition();
+        this.updateSprite(state);
 
         if(this.isPlayerControlled && this.movementProgressRemaining === 0 && state.arrow){
             this.direction = state.arrow;
@@ -28,6 +29,17 @@ class person extends gameObject{
             this[property] += change;
             this.movementProgressRemaining -= 1;
         }
+    }
+
+     updateSprite(state){
+    if(this.isPlayerControlled && this.movementProgressRemaining === 0 && !state.arrow){
+     this.sprite.setAnimation("idle-"+this.direction);
+     return;
+    }
+
+     if(this.movementProgressRemaining > 0){
+         this.sprite.setAnimation("walk-"+this.direction);
+     }
     }
 
 }
