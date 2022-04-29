@@ -12,14 +12,20 @@
     <div data-include="../project_components/project_header.html"></div>
     <main>
         <h2>Contact</h2>
+        <form  class="contact-form" action="#">
+            <label for="name">*Name:</label>
+            <input type="text" id="name" name="name" required><br><br>
+            <label for="email">*Email:</label>
+            <input type="text" id="email" name="email" required><br><br>
+            <label for="phone-number">Phone Number:</label>
+            <input type="text" id="phone-number" name="phone-number"><br><br>
+            <textarea name="description" rows="10" cols="40">description....</textarea>
+        </form>
 
-        <p class="parent-contact-info">
-            <ul class="contact-info">
-                <li>Gautam Kapu</li><br>
-                <li>Email: gautkapur@gmail.com</li><br>
-                <li>Phone Number: 980-312-2058</li>
-            </ul>
-        </p>
+        <figure class="contact-figure">
+            <img class= "contact-figure-img" src="../project_images/client-image.jpg" alt="My Client's picture">
+            <figcaption><i>My client is on the left</i></figcaption>
+        </figure>
     </main>
     <footer>
     </footer>

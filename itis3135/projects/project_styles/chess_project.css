@@ -712,7 +712,7 @@ and (-webkit-min-device-pixel-ratio: 1)
     li {
         list-style-type: none;
         display: inline-block;  
-        margin-left: 90px;
+        margin-left: 30px;
     }
 
     h3 {
@@ -1030,6 +1030,7 @@ and (-webkit-min-device-pixel-ratio: 1)
     .landing-page-chess {
         margin-top: 14%;
         text-align: center;
+        margin-right: 3%;
         animation: fadein 2s ease-in;
     }
 
@@ -1144,6 +1145,31 @@ and (-webkit-min-device-pixel-ratio: 1)
         margin-left: 75%;
         text-align: center;
     }
+
+    .contact-figure{
+        position: absolute;
+        top: 30%;
+        left: 70%;
+        color: white;
+        text-align: center;
+
+    }
+
+    .contact-figure-img{
+        border-style: solid;
+        border-color: white;
+    }
+
+    .contact-form{
+        background-color: black;
+        color: white;
+        padding: 2%;
+        position: absolute;
+        top: 30%;
+        margin-left: 5%;
+    }
+
+   
 }
                             
 /*************************************************animations***************************************************************/
