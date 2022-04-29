@@ -63,7 +63,7 @@ p a:hover
 
 .navbar-header 
 {
-    margin-left: 5%;
+    margin-left: 10%;
 
 }
 
@@ -233,6 +233,7 @@ li a:hover{
 
 .landing-page-chess {
     margin-top: 16%;
+    margin-right: 2.5%;
     text-align: center;
     animation: fadein 2s ease-in;
 }
