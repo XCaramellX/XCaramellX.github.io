@@ -678,17 +678,34 @@ overflow-wrap:break-word;
   
 }
 
-.contact-info 
-{
 
+.contact-figure{
     position: absolute;
     top: 30%;
-    margin-left: 30px;
+    left: 70%;
+    color: white;
+    text-align: center;
+
 }
 
-.contact-info li
-{
-    display: list-item;
+.contact-figure-img{
+    border-style: solid;
+    border-color: white;
+}
+
+.contact-form{
+    background-color: black;
+    color: white;
+    padding: 2%;
+    position: absolute;
+    top: 30%;
+    margin-left: 5%;
+}
+
+.contact-paragraph{
+    position: absolute;
+    left: 25%;
+    top: 40%;
 }
 
 
