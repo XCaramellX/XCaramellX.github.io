@@ -60,17 +60,17 @@ candy.mixins = 'wafers';
 }*/
 
 
-let animals = [
-    ['dog', 'cat', 'rabbit'],
-    ['bear', 'Koala', 'lion'],
-    ['rat', 'bat', 'bird']
+// let animals = [
+//     ['dog', 'cat', 'rabbit'],
+//     ['bear', 'Koala', 'lion'],
+//     ['rat', 'bat', 'bird']
 
-];
+// ];
 
-for(let i = 0; i < animals.length; i++){
-    let numItems = animals[i]; // set animals index according to 'i'
-    for(let j = 0; j < numItems; j++){
-        console.log(numItems[j]);
-    }
-}
+// for(let i = 0; i < animals.length; i++){
+//     let numItems = animals[i]; // set animals index according to 'i'
+//     for(let j = 0; j < numItems; j++){
+//         console.log(numItems[j]);
+//     }
+// }
 
