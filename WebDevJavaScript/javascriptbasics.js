@@ -63,14 +63,43 @@ candy.mixins = 'wafers';
 // let animals = [
 //     ['dog', 'cat', 'rabbit'],
 //     ['bear', 'Koala', 'lion'],
-//     ['rat', 'bat', 'bird']
+
 
 // ];
 
 // for(let i = 0; i < animals.length; i++){
 //     let numItems = animals[i]; // set animals index according to 'i'
-//     for(let j = 0; j < numItems; j++){
+//     for(let j = 0; j < numItems.length; j++){
 //         console.log(numItems[j]);
 //     }
 // }
 
+// for(let animal of animals){
+//     for(let names of animal){
+//         console.log(names);
+//     }
+// }
+
+// const candy = {
+//     type: 'chocolate',
+//     flavor: 'milk',
+//     size: 'medium',
+//     brand: 'Hershey'
+// }
+
+// for(let items in candy){
+//     console.log(candy[items]);
+// }
+
+// const numberOfCandy = {
+//     chocolate: 20,
+//     hardCandy: 12,
+//     softCandy: 5
+// }
+
+// let total = 0;
+// let candyAmount = Object.values(numberOfCandy);
+// for(let average of candyAmount){
+// total += average; 
+// }
+// console.log(`The average number of candy is ${total/candyAmount.length}`);
