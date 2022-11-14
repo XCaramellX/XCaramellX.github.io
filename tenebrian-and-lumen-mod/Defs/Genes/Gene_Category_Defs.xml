@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+    <GenerCategoryDef>
+        <defName>Tenebre</defName>
+        <label>tenebre</label>
+        <displayPriorityInXenotype>600</displayPriorityInXenotype>
+    </GenerCategoryDef>
+    
+</Defs>

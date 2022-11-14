@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+    <GeneDef>
+        <defName>XenogermTenebrian</defName>
+        <label>tenebrian</label>
+        <labelShortAdj>tenebrian</labelShortAdj>
+        <description>Carriers of this gene are tenebrians. They are ageless, deathless, and have a huge boost in stats. They also come
+         with the innate ability to implant their genes and are immune to disease. They wish to spread this gift all over the rim!</description>
+        <iconPath>Genes\Icons\tenebrian_gene</iconPath>
+        <displayCategory>Tenebre</displayCategory>
+        <biologicalAgeTrickFactorFromAgeCurve>
+            <points>
+                <li>(13, 1)</li>
+                <li>(18, 0)</li>
+            </points>
+        </biologicalAgeTrickFactorFromAgeCurve>
+        <customEffectDescriptions>
+            <li>Can Only die from destruction of brain</li>
+        </customEffectDescriptions>
+        <abilities>
+            <li>ReimplantXenogerm</li>
+            <li>Longjump</li>
+        </abilities>
+        <symbolPack>
+            <wholeNameSymbols>
+                <li><symbol>immortal</symbol></li>
+            </wholeNameSymbols>
+        </symbolPack>
+        <descritpionHyperLinks>
+            <AbilityDef>ReimplantXenogerm</AbilityDef>
+            <AbilityDef>Longjump</AbilityDef>
+        </descritpionHyperLinks>
+    </GeneDef>
+</Defs>
