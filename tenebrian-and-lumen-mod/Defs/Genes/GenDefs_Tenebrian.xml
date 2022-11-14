@@ -3,6 +3,7 @@
 
     <GeneDef>
         <defName>XenogermTenebrian</defName>
+        <defName>Deathless</defName>
         <label>tenebrian</label>
         <labelShortAdj>tenebrian</labelShortAdj>
         <description>Carriers of this gene are tenebrians. They are ageless, deathless, and have a huge boost in stats. They also come
@@ -21,11 +22,21 @@
         <abilities>
             <li>ReimplantXenogerm</li>
             <li>Longjump</li>
+            <li>Resurrect</li>
         </abilities>
         <symbolPack>
             <wholeNameSymbols>
                 <li><symbol>immortal</symbol></li>
             </wholeNameSymbols>
+            <prefixsymbos>
+                <li><symbol>god</symbol></li>
+                <li><symbol>deo</symbol></li>
+                <li><symbol>deu</symbol></li>
+            </prefixsymbos>
+            <suffix>
+                <li><symbol>god</symbol></li>
+                <li><symbol>deus</symbol></li>
+            </suffix>
         </symbolPack>
         <descritpionHyperLinks>
             <AbilityDef>ReimplantXenogerm</AbilityDef>
