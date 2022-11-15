@@ -3,12 +3,15 @@
 
     <GeneDef>
         <defName>XenogermTenebrian</defName>
-        <defName>Deathless</defName>
+        <commonality>0.01</commonality>
         <label>tenebrian</label>
         <labelShortAdj>tenebrian</labelShortAdj>
         <description>Carriers of this gene are tenebrians. They are ageless, deathless, and have a huge boost in stats. They also come
          with the innate ability to implant their genes and are immune to disease. They wish to spread this gift all over the rim!</description>
-        <iconPath>Genes\Icons\tenebrian_gene</iconPath>
+        <iconPath>/Textures/Genes/Icons/tenebrian_gene</iconPath>
+        <biostatCpx>5</biostatCpx>
+        <biostatMet>70</biostatMet>
+
         <displayCategory>Tenebre</displayCategory>
         <biologicalAgeTrickFactorFromAgeCurve>
             <points>
@@ -16,14 +19,103 @@
                 <li>(18, 0)</li>
             </points>
         </biologicalAgeTrickFactorFromAgeCurve>
+        <ignoreDarkness>true</ignoreDarkness>
+        <preventPermanentWounds>true</preventPermanentWounds>
+        <foodPoisoningChanceFactor>0</foodPoisoningChanceFactor>
+        <painFactor>0.5</painFactor>
+
+        <damageFactors>
+            <Flame>0.01</Flame>
+            <Blunt>0.01</Blunt>
+            <Cut>0.01</Cut>
+            <Stab>0.01</Stab>
+            <Scratch>0.01</Scratch>
+            <Bite>0.01</Bite>
+            <Bullet>0.01</Bullet>
+            <Arrow>0.01</Arrow>
+        </damageFactors>
+
+        <disablesNeeds><li>Rest</li></disablesNeeds>
+
         <customEffectDescriptions>
-            <li>Can Only die from destruction of brain</li>
+            <li>Can only die from destruction of brain.</li>
+            <li>Romance attempts always succeed.</li>
+            <li>Every (*DateTime)1-2  days(/DateTime), one old wound or chronic illness is healed.</li>
         </customEffectDescriptions>
+
+        <makeImmuneTo>
+            <li>Flu</li>
+            <li>Malaria</li>
+            <li>SleepingSickness</li>
+            <li>Plague</li>
+            <li>WoundInfection</li>
+            <li>LungRot</li>
+        </makeImmuneTo>
+
+        <hediffGiversCannotGive>
+            <li>Carcinoma</li>
+            <li>HeartAttack</li>
+            <li>BadBack</li>
+            <li>Frail</li>
+            <li>Cataract</li>
+            <li>Dementia</li>
+            <li>Alzheimers</li>
+            <li>Asthma</li>
+            <li>HeartArteryBlockage</li>
+        </hediffGiversCannotGive>
+
+        <statOffsets>
+            <GlobalLearningFactor>2</GlobalLearningFactor>
+            <MeleeHitChance>1</MeleeHitChance>
+            <MeleeDogeChance>50</MeleeDogeChance>
+            <PainShockThreshold>50</PainShockThreshold>
+            <MoveSpeed>10</MoveSpeed>
+            <MentalBreakThreshold>-1</MentalBreakThreshold>
+            <WorkSpeedGlobal>10</WorkSpeedGlobal>
+            <AimingDelayFactor>-5</AimingDelayFactor>
+            <ShootingAccuracyPawn>3</ShootingAccuracyPawn>
+            <ImmunityGainSpeed>1</ImmunityGainSpeed>
+            <SocialImpact>0.5</SocialImpact>
+            <TameAnimalChance>1</TameAnimalChance>
+            <TrainAnimalChance>1</TrainAnimalChance>
+            <CarryingCapacity>2000</CarryingCapacity>
+            <ResearchSpeed>1</ResearchSpeed>
+            <RestRateMultiplier>0.5</RestRateMultiplier>
+            <PawnBeauty>50</PawnBeauty>
+            <ComfyTemperatureMin>-100</ComfyTemperatureMin>
+            <ComfyTemperatureMax>100</ComfyTemperatureMax>
+            <ToxicEnvironmentResistance>1</ToxicEnvironmentResistance>
+            <ToxicResistance>1</ToxicResistance>
+        </statOffsets>
+
+        <statFactors>
+            <Fertility>4</Fertility>
+            <Flammability>0.01</Flammability>
+            <ImmunityGainSpeed>10</ImmunityGainSpeed>
+            <IncomingDamageFactor>0.01</IncomingDamageFactor>
+            <InjuryHealingFactor>10</InjuryHealingFactor>
+            <LifespanFactor>5</LifespanFactor>
+            <MeleeDamageFactor>5</MeleeDamageFactor>
+            <PawnTrapSpringChance>0.01</PawnTrapSpringChance>
+            <ShootingAccuracyFactor_Long>10</ShootingAccuracyFactor_Long>
+            <ShootingAccuracyFactor_Medium>10</ShootingAccuracyFactor_Medium>
+            <ShootingAccuracyFactor_Short>10</ShootingAccuracyFactor_Short>
+            <StaggerDurationFactor>0</StaggerDurationFactor>
+            <RawNutritionFactor>10</RawNutritionFactor>
+        </statFactors>
+
         <abilities>
             <li>ReimplantXenogerm</li>
             <li>Longjump</li>
             <li>Resurrect</li>
         </abilities>
+
+        <forcedTraits>
+            <li>
+              <def>Darkness</def>
+            </li>
+          </forcedTraits>
+
         <symbolPack>
             <wholeNameSymbols>
                 <li><symbol>immortal</symbol></li>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Defs>
+    <HediffDef>
+        <defName>Tenebrian</defName>
+        <label>tenebrian</label>
+        <description>You are a Tenebrian</description>
+        <everCurableByItem>false</everCurableByItem>
+        <stages>
+            <li>
+                
+            </li>
+        </stages>
+    </HediffDef>
+</Defs>
