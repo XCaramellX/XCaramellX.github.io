@@ -1,15 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
+<!-- <?xml version="1.0" encoding="UTF-8"?>
 <Defs>
     <HediffDef>
         <defName>Tenebrian</defName>
         <label>tenebrian</label>
+        <defaultLabelColor>(0.5,1,0.5)</defaultLabelColor>
         <description>You are a Tenebrian</description>
         <everCurableByItem>false</everCurableByItem>
         <stages>
             <li>
-                
+                <statFactors>
+                    <PsychicSensitivity>1.2</PsychicSensitivity>
+                </statFactors>
             </li>
         </stages>
     </HediffDef>
 </Defs>
+ -->
