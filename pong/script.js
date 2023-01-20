@@ -2,14 +2,16 @@
 import Ball from './ball.js';
 
 
-const ball = new Ball(docoument.getElementById("ball"))
+const ball = new Ball(document.getElementById("ball"))
 
 let lastTime;
 function update(time) {
     if(lastTime != null){
-        
+        const delta = time - lastTime;
+        // update code 
+        ball.update(delta)
     }
-    const delta = time - lastTime;
+    
     lastTime = time;
     window.requestAnimationFrame(update)
 
