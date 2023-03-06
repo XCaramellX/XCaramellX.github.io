@@ -1,3 +1,0 @@
-This is unmodified version
-
-*This is the modified version
